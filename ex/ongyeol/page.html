@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>온결 필라테스 | 장유 삼문동 (찰칵홈 예시)</title>
+<meta name="description" content="김해 장유 삼문동 기구 필라테스 · 1:1 · 듀엣 · 그룹 · 체형 교정. 주간 시간표, 이용권 가격, 체험 수업 예약. (찰칵홈이 만든 예시 사이트)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap">
+<style>
+:root{--sg:#6E8B74;--sg2:#4E6A55;--cr:#F6F2EA;--sand:#EDE5D8;--ink:#2B2A26;--mu:#77736A;--ln:#E4DDD0;--serif:"Cormorant Garamond",serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:"Pretendard Variable",Pretendard,system-ui,sans-serif;color:var(--ink);background:#fff;font-size:16.5px;line-height:1.7;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.w{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.03em;line-height:1.3}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 26px;border-radius:99px;font:inherit;font-weight:700;border:0;cursor:pointer}
+.btn.s{background:var(--sg2);color:#fff}.btn.l{background:rgba(255,255,255,.9);color:var(--ink)}
+header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+header .w{display:flex;align-items:center;height:74px;gap:30px}
+.logo{font-family:var(--serif);font-size:28px;color:var(--sg2);line-height:1}.logo small{display:block;font-family:"Pretendard Variable",sans-serif;font-size:11px;letter-spacing:.3em;color:var(--mu);margin-top:3px}
+header nav{display:flex;gap:28px;margin-left:auto;font-size:15px;font-weight:600}
+header .btn{padding:11px 20px;font-size:14.5px}
+@media(max-width:900px){header nav{display:none}}
+.hero{position:relative;min-height:min(86vh,760px);display:flex;align-items:flex-end;color:#fff;background:#8A9A86 center/cover}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(30,34,28,.72),rgba(30,34,28,.1) 60%)}
+.hero .w{position:relative;padding-block:0 80px;width:100%}
+.hero .ey{font-size:13px;letter-spacing:.3em;opacity:.9}
+.hero h1{font-size:clamp(38px,5.4vw,70px);font-weight:600;margin:14px 0 14px}.hero h1 i{font-family:var(--serif);font-weight:500}
+.hero p{max-width:32em;font-size:18px;opacity:.92;margin:0 0 28px}
+.strip{background:var(--cr)}.strip .w{display:grid;grid-template-columns:repeat(4,1fr)}
+.strip div{padding:24px 18px;border-left:1px solid var(--ln)}.strip div:first-child{border-left:0}.strip b{display:block;font-size:20px}.strip span{color:var(--mu);font-size:14.5px}
+@media(max-width:760px){.strip .w{grid-template-columns:1fr 1fr}.strip div{border-top:1px solid var(--ln)}.strip div:nth-child(3){border-left:0}}
+section{padding-block:100px}section.alt{background:var(--cr)}
+.sh{margin-bottom:46px}.sh .k{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--sg)}.sh h2{font-size:clamp(28px,3.4vw,42px);margin-top:4px}.sh p{color:var(--mu);margin:10px 0 0;max-width:44em}.sh.c{text-align:center}.sh.c p{margin-inline:auto}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.intro .im{aspect-ratio:4/5;border-radius:200px 200px 24px 24px;background:var(--sand) center/cover}
+.intro q{display:block;font-family:var(--serif);font-size:clamp(26px,2.8vw,36px);line-height:1.35;color:var(--sg2);margin-bottom:20px}.intro q:before,.intro q:after{content:""}
+.intro ul{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}.intro li{display:flex;gap:12px}.intro li b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--sg);color:#fff;display:grid;place-items:center;font-size:13px}
+@media(max-width:860px){.intro{grid-template-columns:1fr}}
+.cls{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cl{background:#fff;border-radius:24px;overflow:hidden;border:1px solid var(--ln)}
+.cl .im{aspect-ratio:1/1;background:var(--sand) center/cover}.cl .in{padding:20px}.cl h3{font-size:20px}.cl small{display:block;color:var(--sg);font-weight:700;margin:2px 0 6px}.cl p{margin:0;color:var(--mu);font-size:15px}
+@media(max-width:960px){.cls{grid-template-columns:1fr 1fr}}@media(max-width:560px){.cls{grid-template-columns:1fr}}
+.sch{overflow-x:auto;border:1px solid var(--ln);border-radius:20px;background:#fff}
+.sch table{width:100%;min-width:720px;border-collapse:collapse;font-size:14.5px}.sch th,.sch td{padding:12px;text-align:center;border-bottom:1px solid var(--ln)}.sch th{background:var(--cr);font-weight:700}
+.sch td span{display:block;border-radius:10px;padding:6px 4px;font-weight:700;font-size:13.5px}
+.t1{background:#E4ECE3;color:var(--sg2)}.t2{background:#F3E8D6;color:#8A6A3A}.t3{background:#E8E3EF;color:#5E4E7A}
+.legend{display:flex;gap:14px;margin-top:12px;font-size:14px;color:var(--mu)}.legend i{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:6px;vertical-align:-1px}
+.price{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pr{background:#fff;border:1px solid var(--ln);border-radius:24px;padding:30px}.pr.on{border:2px solid var(--sg);position:relative}.pr.on:after{content:"가장 많이 선택";position:absolute;top:-13px;left:24px;background:var(--sg);color:#fff;font-size:12px;font-weight:700;border-radius:99px;padding:4px 12px}
+.pr b{font-size:20px}.pr .n{font-size:34px;font-weight:800;margin:10px 0 4px}.pr .n small{font-size:15px;color:var(--mu);font-weight:500}.pr ul{margin:12px 0 0;padding-left:18px;color:var(--mu);font-size:15px}
+@media(max-width:860px){.price{grid-template-columns:1fr}}
+.tch{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tc .im{aspect-ratio:3/4;border-radius:24px;background:var(--sand) center 25%/cover}.tc b{display:block;font-size:19px;margin-top:14px}.tc small{color:var(--sg);font-weight:700}.tc p{margin:6px 0 0;color:var(--mu);font-size:15px}
+@media(max-width:860px){.tch{grid-template-columns:1fr}}
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:14px}.gal div{border-radius:20px;background:var(--sand) center/cover}.gal div:first-child{grid-row:span 2}
+@media(max-width:760px){.gal{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.gal div:first-child{grid-column:span 2;grid-row:auto}}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.rv{background:#fff;border-radius:20px;padding:24px;border:1px solid var(--ln)}.rv q{display:block;font-size:16px}.rv q:before,.rv q:after{content:""}.rv small{display:block;color:var(--mu);margin-top:10px}
+@media(max-width:860px){.revs{grid-template-columns:1fr}}
+.bk{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;background:var(--sg2);color:#fff;border-radius:32px;padding:46px}
+.bk h2{font-size:clamp(28px,3vw,40px)}.bk p{opacity:.85}
+.bk form{background:#fff;color:var(--ink);border-radius:22px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bk label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14px}.bk .full{grid-column:1/-1}
+.bk input,.bk select,.bk textarea{font:inherit;padding:12px;border:1px solid var(--ln);border-radius:12px}
+.slots{display:flex;flex-wrap:wrap;gap:6px}.slots button{border:1.5px solid var(--ln);background:#fff;border-radius:99px;padding:7px 12px;font:inherit;font-size:14px;cursor:pointer}.slots button.on{background:var(--sg);border-color:var(--sg);color:#fff}
+.ok{grid-column:1/-1;font-weight:700;color:var(--sg2)}
+@media(max-width:860px){.bk{grid-template-columns:1fr;padding:28px}.bk form{grid-template-columns:1fr}}
+.info{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}.map{border-radius:20px;background:var(--sand);min-height:280px;display:grid;place-items:center;color:var(--mu);text-align:center}
+.info table{width:100%;border-collapse:collapse}.info th,.info td{text-align:left;padding:13px 4px;border-bottom:1px solid var(--ln)}.info th{width:100px;color:var(--mu);font-weight:600}
+@media(max-width:860px){.info{grid-template-columns:1fr}}
+footer{background:#2F3A31;color:#B9C2B5;padding-block:44px;font-size:14px}footer b{color:#fff}
+.fab{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;flex-direction:column;gap:8px;align-items:flex-end}.fab a{display:flex;align-items:center;gap:8px;background:var(--sg2);color:#fff;font-weight:700;border-radius:99px;padding:14px 20px;box-shadow:0 12px 26px rgba(0,0,0,.22)}
+.badge{position:fixed;left:14px;bottom:14px;z-index:40;background:rgba(47,58,49,.9);color:#fff;font-size:12px;font-weight:600;border-radius:99px;padding:7px 12px}.badge a{color:#D9E8C9}
+
+.offer{display:inline-flex;flex-direction:column;gap:2px;background:rgba(255,255,255,.88);border-left:4px solid var(--sg);border-radius:10px;padding:12px 18px;margin:0 0 22px;color:#2E3A30}.offer b{font-size:20px}.offer span{font-size:13.5px;opacity:.75}
+.hb{display:flex;gap:10px;flex-wrap:wrap}.btn.g{background:rgba(255,255,255,.9);color:#2E3A30}
+.cap{display:block;margin-top:16px;font-size:14.5px;opacity:.9}
+.fv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.fv div{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:18px;padding:26px}.fv b{font-size:18px}.fv p{margin:10px 0 0;color:var(--mu,#6b6b6b)}
+@media(max-width:760px){.fv{grid-template-columns:1fr}}
+.sch td span em{display:block;font-style:normal;font-size:11.5px;opacity:.7;margin-top:2px}
+.fcall{position:fixed;left:18px;bottom:64px;z-index:40;background:#fff;color:var(--ink);font-weight:800;border-radius:99px;padding:13px 18px;box-shadow:0 12px 26px rgba(0,0,0,.18)}
+
+.fqw{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+.fq{border-bottom:1px solid rgba(0,0,0,.1)}.fq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:12px;padding:18px 4px;font-weight:700;font-size:16.5px}.fq summary::-webkit-details-marker{display:none}.fq i{font-style:normal;font-size:22px;opacity:.5}.fq[open] i{transform:rotate(45deg)}.fq p{margin:0 4px 18px;opacity:.78;line-height:1.75}
+.kk{display:inline-block;margin-top:18px;background:#FEE500;color:#191600;font-weight:800;border-radius:12px;padding:13px 18px}
+.askw{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}.cw{display:grid;gap:10px}.cc{display:block;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:18px 20px}.cc b{display:block;font-size:17px}.cc small{opacity:.7}.kk2{background:#FEE500;border-color:#FEE500;color:#191600}
+#qf{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:20px;padding:24px;display:grid;gap:12px}#qf label{display:grid;gap:6px;font-size:14px;font-weight:700}#qf input,#qf textarea{font:inherit;border:1px solid rgba(0,0,0,.15);border-radius:10px;padding:11px 12px}
+.kkm{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:90;display:grid;place-items:center;padding:16px}.kkm[hidden]{display:none}.kkm>div{background:#fff;border-radius:18px;padding:24px;max-width:360px}.kkm p{opacity:.8;line-height:1.7}.kkm button{border:0;background:#FEE500;font-weight:800;border-radius:10px;padding:10px 18px;cursor:pointer}
+.fkk{background:#FEE500!important;color:#191600!important}
+@media(max-width:820px){.fqw,.askw{grid-template-columns:1fr}}
+.hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.12);transform-origin:30% 20%}.hero{overflow:hidden}.hero:before{z-index:1}.hero .w{z-index:2}
+@media (prefers-reduced-motion:reduce){.hv{display:none}}
+
+html{scroll-behavior:auto!important}
+.kkm>div.kw{background:#B2C7DA;padding:0;max-width:none;border-radius:20px}.kkm{position:fixed;inset:auto 18px 18px auto;z-index:96;background:none;display:block;padding:0;place-items:initial}.kkm[hidden]{display:none}
+.kw{width:min(360px,calc(100vw - 36px));height:min(560px,calc(100vh - 36px));background:#B2C7DA;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.kh{display:flex;align-items:center;gap:10px;background:#A7BCD0;padding:12px 14px}.kh div{flex:1;display:grid}.kh small{font-size:12px;opacity:.7}.kh button{border:0;background:rgba(255,255,255,.5);border-radius:9px;width:30px;height:30px;cursor:pointer}
+.ka{width:38px;height:38px;border-radius:14px;background:#FEE500;display:grid;place-items:center;font-weight:900;color:#191600}
+.kb{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:8px}.bu,.me{max-width:82%;padding:10px 13px;border-radius:14px;font-size:14.5px;line-height:1.55;background:#fff;align-self:flex-start;color:#222}.me{align-self:flex-end;background:#FEE500}
+.kq{display:flex;gap:6px;overflow-x:auto;padding:8px 12px;background:rgba(255,255,255,.35)}.kq button{flex:none;border:1px solid rgba(0,0,0,.1);background:#fff;border-radius:99px;padding:7px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer;color:#222}
+.kf{display:grid;gap:6px;padding:10px 12px;background:#fff}.kf input{font:inherit;font-size:14px;border:1px solid #E1E4EA;border-radius:10px;padding:9px 10px;min-width:0}.kf>input{display:block}.kr{display:flex;gap:6px}.kr input{flex:1}.kr button{border:0;background:#FEE500;font-weight:800;border-radius:10px;padding:0 14px;cursor:pointer}
+.kn{display:block;background:#fff;padding:0 12px 10px;font-size:11px;color:#888}
+
+.pk{position:fixed;inset:0;z-index:150;background:rgba(15,20,30,.5);display:grid;place-items:center;padding:14px}.pk[hidden]{display:none}
+.pkb{position:relative;background:#fff;border-radius:22px;width:min(1040px,100%);max-height:92vh;overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.3)}
+.pkb>#pkc>section,.pkb>#pkc>div{margin:0!important}.pkb #pkc section{padding:34px 0 30px!important}
+.pkx{position:sticky;top:12px;float:right;margin:12px 12px 0 0;border:0;background:#EEF1F5;width:38px;height:38px;border-radius:12px;cursor:pointer;font-size:16px;z-index:3}
+
+.odir{display:inline-flex;align-items:center;gap:12px;margin-top:16px;padding:9px 16px 9px 10px;border-radius:14px;background:rgba(255,255,255,.9);color:#2E3A30;text-decoration:none}.odir>span:first-child{width:38px;height:38px;border-radius:11px;background:var(--sg2);display:grid;place-items:center}.odir small{display:block;font-size:12px;opacity:.75;font-weight:700}.odir b{font-size:20px;font-weight:900;letter-spacing:.01em}
+.tc .im{aspect-ratio:4/3.3!important;background-position:center 35%!important}.tc q{display:block;margin-top:10px;font-size:15px;color:var(--ink);quotes:"“" "”";line-height:1.55}
+@keyframes ogpan{from{background-position:50% 40%}to{background-position:50% 62%}}
+@keyframes ogzoom{from{transform:scale(1)}to{transform:scale(1.06)}}
+.intro .im{overflow:hidden;position:relative;background-image:none!important}.intro .im i{position:absolute;inset:0;background:url(img/about.jpg) center 30%/cover;animation:ogzoom 16s ease-in-out infinite alternate}
+.cl .im,.gal div,.tc .im{animation:ogpan 18s ease-in-out infinite alternate}
+.gal div:nth-child(2n){animation-delay:-6s}.cl:nth-child(2n) .im{animation-delay:-9s}
+.map{background-size:cover!important;background-position:center!important;position:relative;place-items:end!important;padding:14px}.map a{background:#03C75A;color:#fff;font-weight:800;text-decoration:none;border-radius:10px;padding:9px 14px;font-size:14px}
+.odock{display:none}.fcall{display:none!important}
+@media(max-width:760px){.fcall,.fab{display:none!important}.odock{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:8px;background:rgba(36,48,40,.96);border-radius:18px;padding:8px;box-shadow:0 12px 30px rgba(0,0,0,.3)}.odock a{color:#fff;text-decoration:none;font-weight:800;font-size:14.5px;text-align:center;padding:12px 4px;border-radius:12px}.odock a.go{background:#E9F0E2;color:#2E3A30}footer{padding-bottom:110px!important}.badge{bottom:84px!important}}
+@media(prefers-reduced-motion:reduce){.intro .im i,.cl .im,.gal div,.tc .im{animation:none}}
+.intro .im video.av{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+
+/* 상단 메뉴 (펼침) · 휴대폰 메뉴 (11/23) */
+header nav.gnb{margin-left:auto;display:flex!important;gap:2px!important}
+header nav.gnb .gm{position:relative}header nav.gnb .gm>a.gt{display:block;text-decoration:none;font-weight:800;font-size:17px;color:#2B2A26!important;padding:26px 12px;white-space:nowrap}
+header nav.gnb .gm:hover>a.gt,header nav.gnb .gm.on>a.gt{color:#4E6A55!important}header nav.gnb .gm.on>a.gt{box-shadow:inset 0 -3px 0 #4E6A55}
+header nav.gnb .sub{position:absolute;left:50%;top:100%;transform:translateX(-50%);min-width:190px;background:#fff;border:1px solid #E4DDD0;border-radius:16px;box-shadow:0 16px 34px rgba(0,0,0,.12);padding:10px;display:none;margin-top:-6px;z-index:60}
+header nav.gnb .gm:hover .sub,header nav.gnb .gm:focus-within .sub{display:grid}header nav.gnb:hover .gm:not(:hover) .sub{display:none!important}header nav.gnb .sub a{text-decoration:none;color:#2B2A26!important;font-weight:700;font-size:16.5px;padding:11px 14px;border-radius:10px;white-space:nowrap}header nav.gnb .sub a:hover{background:#EDE5D8;color:#4E6A55!important}
+.hbm{display:none;border:0;background:#EDE5D8;border-radius:12px;width:44px;height:44px;font-size:20px;cursor:pointer;flex:none;color:#2B2A26}
+.mm{position:fixed;inset:0;z-index:90;background:rgba(0,0,0,.45)}.mm[hidden]{display:none}
+.mmi{position:absolute;right:0;top:0;bottom:0;width:min(86vw,360px);background:#F6F2EA;overflow:auto;padding:18px 20px 30px;display:grid;align-content:start;gap:16px;color:#2B2A26}
+.mmh{display:flex;justify-content:space-between;align-items:center}.mmh button{border:0;background:#EDE5D8;border-radius:10px;width:38px;height:38px;font-size:16px;cursor:pointer}
+.mmg{display:grid;gap:2px}.mmg b{font-size:14.5px;color:#4E6A55;letter-spacing:.04em;margin-bottom:4px}.mmg a{text-decoration:none;font-weight:700;font-size:18px;padding:10px 0;border-bottom:1px solid #E4DDD0;color:#2B2A26}
+@media(max-width:1180px){header nav.gnb .gm>a.gt{font-size:15.5px;padding:26px 8px}}
+@media(max-width:900px){header nav.gnb{display:none!important}.hbm{display:block}}
+.more{display:inline-flex;align-items:center;gap:6px;margin-top:26px;font-weight:800;font-size:17px;color:#4E6A55;text-decoration:none;border-bottom:2px solid #4E6A55;padding-bottom:3px}
+
+/* 글씨 크게 (들빛 수준, 11/23) */
+html,body{overflow-x:clip}
+@media(min-width:1000px){html{zoom:1.12}}@media(max-width:999px) and (min-width:561px){html{zoom:1.06}}@media(max-width:560px){html{zoom:1.05}}
+body{font-size:18px!important}.sh p,.intro p,.cl p,.tc p,.rv q,.fv p,.fq p,.pr ul,.info td{font-size:17px!important;color:#3C3A34!important}.cl h3,.fv b{font-size:21px!important}.sh h2{font-size:clamp(32px,3.8vw,46px)!important}
+.logo{font-size:31px!important}.hero p{font-size:19.5px!important}.strip b{font-size:22px!important}.strip span{font-size:16px!important}.fq summary{font-size:18px!important}.sch table{font-size:16px!important}
+footer{font-size:15px!important}.badge{left:auto!important;right:14px}
+@media(max-width:560px){header .btn.s{display:none!important}.logo small{letter-spacing:.12em!important;white-space:nowrap}.hbm{margin-left:auto}header .w{gap:12px!important}}
+/*//idx*/</style>
+<style>
+/* ===== 상세 페이지 (11/23) ===== */
+[hidden]{display:none!important}
+.gm.on>a.gt{color:var(--sg)!important;box-shadow:inset 0 -3px 0 var(--sg)}
+.sv2{position:relative;color:#fff;overflow:hidden;background:#2F3A31}
+.sv2>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%;opacity:.55;filter:saturate(.85)}
+.sv2:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,34,28,.82),rgba(30,34,28,.25) 70%)}
+.sv2 .w{position:relative;z-index:2;padding-top:40px;padding-bottom:40px}
+.sv2 .crumb{font-size:15px;opacity:.85}.sv2 .crumb a{color:#fff;text-decoration:none}
+.sv2 .en{display:block;margin-top:14px;font-size:14px;font-weight:800;letter-spacing:.22em;color:#D9E8C9}
+.sv2 h1{font-family:"Pretendard Variable",Pretendard,sans-serif;font-weight:800;font-size:clamp(38px,5.4vw,60px);margin:6px 0 8px;letter-spacing:-.03em;line-height:1.2}
+.sv2 p{margin:0;font-size:19px;opacity:.92}
+.stab{position:sticky;top:88px;z-index:20;background:#fff;border-bottom:1px solid var(--ln);box-shadow:0 6px 18px rgba(40,50,40,.05)}
+.stab .w{display:flex;justify-content:center;gap:6px;overflow-x:auto;scrollbar-width:none}.stab .w::-webkit-scrollbar{display:none}
+.stab a{flex:none;text-decoration:none;font-weight:800;font-size:17.5px;color:#5E5B53;padding:18px 18px;border-bottom:3px solid transparent;white-space:nowrap}
+.stab a:hover{color:var(--ink)}.stab a.on{color:var(--sg2);border-color:var(--sg)}
+.pw{padding:64px 0 100px}.pw article{animation:fi .35s ease}@keyframes fi{from{opacity:0}to{opacity:1}}
+mark{background:linear-gradient(transparent 58%,#E4ECE3 58%);color:inherit;padding:0 2px}
+.lead2{font-size:19px;color:#2B2B2B;max-width:760px;margin:0 0 30px;line-height:1.75}
+.sub2{color:var(--mu);font-size:16.5px;margin:0 0 16px}
+.h3{font-family:"Pretendard Variable",Pretendard,sans-serif;font-weight:800;font-size:clamp(25px,3vw,32px);margin:64px 0 22px;letter-spacing:-.02em}.h3 small{font-family:Pretendard,sans-serif;font-size:16px;color:var(--mu);font-weight:700}
+.g2{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:center}
+.ph.big img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:28px;box-shadow:0 24px 50px rgba(40,50,40,.18)}
+.letter h2{font-size:clamp(28px,3.4vw,40px)!important;line-height:1.45;margin:10px 0 22px!important}
+.letter p{font-size:18px;line-height:1.9;color:#2B2B2B;margin:0 0 14px}.letter .sign{margin-top:24px;font-size:17px;color:var(--mu)}.letter .sign b{font-family:"Pretendard Variable",Pretendard,sans-serif;font-size:24px;color:var(--ink);margin-left:6px}
+.c2,.c3,.c4,.kd{display:grid;gap:18px}.c2{grid-template-columns:1fr 1fr}.c3,.kd{grid-template-columns:repeat(3,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
+.bx{background:#fff;border:1.5px solid var(--ln);border-radius:22px;padding:26px 24px;position:relative}
+.bx>i{font-style:normal;font-size:28px;width:56px;height:56px;border-radius:16px;background:var(--sand);display:grid;place-items:center;margin-bottom:14px}
+.bx>b,.bx div>b{display:block;font-size:21px;font-weight:900;letter-spacing:-.02em;margin-bottom:6px}
+.bx p{margin:0;font-size:17px;line-height:1.7;color:#2B2B2B}
+.bx.tall{padding-top:30px}.bx .no{position:absolute;right:22px;top:18px;font-family:"Pretendard Variable",Pretendard,sans-serif;font-weight:800;font-size:34px;color:#E4DDD0}
+.bx.row{display:flex;gap:18px;align-items:flex-start}.bx.row>i{flex:none;margin:0}.tm{display:inline-block;font-size:14px;font-weight:800;color:var(--sg);margin-bottom:4px}
+.ck{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:8px}.ck li{position:relative;padding-left:26px;font-size:17px;line-height:1.6;color:#2B2B2B}.ck li:before{content:"✓";position:absolute;left:2px;color:var(--sg);font-weight:900}
+.cta2{margin-top:56px;background:var(--sg);color:#fff;border-radius:26px;padding:30px 34px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.cta2 b{display:block;font-size:24px;font-family:"Pretendard Variable",Pretendard,sans-serif}.cta2 span{opacity:.9;font-size:17px}.cta2 .btn{margin-left:auto;background:#fff;color:var(--sg2)}
+.name{background:#fff;border:1.5px solid var(--ln);border-radius:28px;padding:40px 44px}.name h2{margin:8px 0 14px!important}.name p{font-size:18.5px;line-height:1.85;margin:0;color:#2B2B2B;max-width:820px}
+.hist{list-style:none;margin:0;padding:0 0 0 28px;border-left:3px solid var(--ln);display:grid;gap:22px}
+.hist li{position:relative;display:grid;grid-template-columns:90px 1fr;gap:16px;align-items:baseline}.hist li:before{content:"";position:absolute;left:-37px;top:9px;width:15px;height:15px;border-radius:50%;background:#fff;border:3px solid var(--sg)}
+.hist b{font-family:"Pretendard Variable",Pretendard,sans-serif;font-size:26px;color:var(--sg2)}.hist p{margin:0;font-size:18px}
+.staff{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.stf{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1.5px solid var(--ln);border-radius:22px;padding:22px}
+.stf>i{font-style:normal;flex:none;width:64px;height:64px;border-radius:50%;background:var(--sand);display:grid;place-items:center;font-size:28px}
+.stf span{font-size:14px;font-weight:800;color:var(--sg)}.stf b{display:block;font-size:21px;margin:2px 0 6px}.stf p{margin:0;font-size:16.5px;line-height:1.65;color:#2B2B2B}.stf small{display:block;margin-top:8px;color:var(--mu);font-size:15px}
+.stf.main{grid-column:1/-1;align-items:center}.stf.main img{width:150px;height:170px;object-fit:cover;border-radius:18px;flex:none}.stf.main b{font-size:26px;font-family:"Pretendard Variable",Pretendard,sans-serif}
+.note{margin-top:22px;background:var(--sand);border-radius:16px;padding:16px 20px;font-size:17px}
+.give2{margin-top:30px;display:flex;gap:24px;align-items:center;flex-wrap:wrap;background:#fff;border:1.5px dashed var(--sg);border-radius:22px;padding:24px 28px}.give2>div:first-child{flex:1;min-width:260px}.give2 b{font-size:20px}.give2 p{margin:6px 0 0;font-size:16.5px;color:#2B2B2B}
+.acc{display:grid;gap:4px;justify-items:start}.acc code{font-size:19px;font-weight:800;background:var(--sand);padding:6px 12px;border-radius:10px}.acc small{color:var(--mu)}
+.gb{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--ln);background:#fff;border-radius:12px;padding:11px 18px;font:inherit;font-weight:800;font-size:16px;cursor:pointer;text-decoration:none;color:inherit}.gb:hover{border-color:var(--sg)}
+.map2{min-height:420px;border-radius:26px;background:repeating-linear-gradient(45deg,#EFE6D6 0 14px,#F5EEE2 14px 28px);display:grid;place-content:center;justify-items:center;gap:6px;text-align:center;padding:20px}
+.map2 span{font-size:44px}.map2 b{font-size:22px}.map2 small{color:var(--mu);font-size:15px}.mb{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;justify-content:center}
+.lnk2{border:0;background:none;color:var(--sg);font:inherit;font-weight:800;cursor:pointer;text-decoration:underline}
+.wy{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:14px}.wy li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--ln);border-radius:16px;padding:14px 16px}.wy i{font-style:normal;font-size:24px}.wy b{font-size:18px}.wy p{margin:2px 0 0;font-size:16.5px;color:#2B2B2B;line-height:1.6}
+.order{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.order li{background:#fff;border:1.5px solid var(--ln);border-radius:18px;padding:16px;display:grid;gap:4px}.order b{font-size:20px;color:var(--sg2)}.order span{font-size:16px;line-height:1.5}
+.vid2{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:16/9;background:#000}.vid2 img{width:100%;height:100%;object-fit:cover;opacity:.7}.vid2 b{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:54px}.vid2 small{position:absolute;left:16px;bottom:12px;color:#fff;font-size:14px;opacity:.9}
+.wd blockquote{font-size:clamp(24px,2.6vw,30px);line-height:1.5;margin:18px 0 0;padding-left:18px;border-left:4px solid var(--sg)}
+.serm{list-style:none;padding:0;margin:0;background:#fff;border:1.5px solid var(--ln);border-radius:22px;overflow:hidden}
+.serm li{display:grid;grid-template-columns:80px 1fr auto auto;gap:16px;align-items:center;padding:18px 22px;border-bottom:1px solid var(--ln)}.serm li:last-child{border:0}
+.serm .d{font-weight:800;color:var(--mu);font-size:16px}.serm b{font-size:19px}.serm .r{color:var(--mu);font-size:15.5px}.serm .pl{font-weight:800;color:var(--sg2);font-size:15.5px;cursor:pointer}
+.faq2{margin-top:44px;display:grid;gap:10px;max-width:900px}.faq2 details{background:#fff;border:1.5px solid var(--ln);border-radius:18px;padding:4px 22px}.faq2 summary{font-size:19px!important;font-weight:800;padding:16px 0;cursor:pointer}.faq2 p{font-size:17.5px!important;line-height:1.8;margin:0 0 18px;color:#2B2B2B}
+.tl{list-style:none;padding:0;margin:0;display:grid;gap:0;max-width:900px}
+.tl li{display:grid;grid-template-columns:100px 1fr;gap:22px;position:relative;padding-bottom:26px}.tl li:after{content:"";position:absolute;left:46px;top:44px;bottom:0;width:2px;background:var(--ln)}.tl li:last-child:after{display:none}
+.tl .t2{width:92px;height:44px;border-radius:99px;background:var(--sg);color:#fff;font-weight:900;font-size:17px;display:grid;place-items:center}
+.tl li>div{background:#fff;border:1.5px solid var(--ln);border-radius:20px;padding:18px 22px}.tl b{font-size:20px}.tl p{margin:6px 0 0;font-size:17px;line-height:1.7;color:#2B2B2B}
+.wk{text-align:center;padding-top:34px}.wk span{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--sg);color:#fff;font-weight:900;border-radius:99px;padding:4px 14px;font-size:15px}.wk b{font-size:22px!important}
+.ag{display:inline-block;background:var(--sand);color:var(--sg);font-weight:800;font-size:14.5px;border-radius:99px;padding:4px 12px;margin-bottom:6px}
+.yr{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.yr li{background:#fff;border:1.5px solid var(--ln);border-radius:18px;padding:18px;text-align:center;font-size:17px}.yr b{display:block;font-family:"Pretendard Variable",Pretendard,sans-serif;font-size:24px;color:var(--sg2)}
+.big2 b small{font-size:15px;color:var(--mu);font-weight:700;margin-left:6px}.big2 p{margin-bottom:10px!important}
+.bk{align-items:start}
+@media(max-width:900px){.stab{top:76px}.stab .w{justify-content:flex-start}.stab a{font-size:16px;padding:15px 13px}.g2{grid-template-columns:1fr;gap:28px}.c3,.c4,.kd{grid-template-columns:1fr 1fr}.order{grid-template-columns:repeat(3,1fr)}.yr{grid-template-columns:repeat(3,1fr)}.staff{grid-template-columns:1fr}.ph.big img{aspect-ratio:4/3}}
+@media(max-width:560px){.sv2 .w{padding-top:40px;padding-bottom:36px}.sv2 p{font-size:16.5px}.pw{padding:36px 0 110px}.c2,.c3,.c4,.kd{grid-template-columns:1fr}.order{grid-template-columns:1fr 1fr}.yr{grid-template-columns:1fr 1fr}.stf.main{flex-direction:column;align-items:flex-start}.serm li{grid-template-columns:60px 1fr;row-gap:2px}.serm .r,.serm .pl{grid-column:2}.tl li{grid-template-columns:1fr;gap:8px}.tl li:after{display:none}.name{padding:26px 22px}.hist li{grid-template-columns:70px 1fr}.cta2{padding:24px}.cta2 .btn{margin-left:0}.lead2,.letter p{font-size:17px}.wk{padding-top:30px}.c4{gap:24px}}
+
+/* 글씨 크게 (들빛 수준, 11/23) */
+html,body{overflow-x:clip}
+@media(min-width:1000px){html{zoom:1.12}}@media(max-width:999px) and (min-width:561px){html{zoom:1.06}}@media(max-width:560px){html{zoom:1.05}}
+body{font-size:18px!important}.sh p,.intro p,.cl p,.tc p,.rv q,.fv p,.fq p,.pr ul,.info td{font-size:17px!important;color:#3C3A34!important}.cl h3,.fv b{font-size:21px!important}.sh h2{font-size:clamp(32px,3.8vw,46px)!important}
+.logo{font-size:31px!important}.hero p{font-size:19.5px!important}.strip b{font-size:22px!important}.strip span{font-size:16px!important}.fq summary{font-size:18px!important}.sch table{font-size:16px!important}
+footer{font-size:15px!important}.badge{left:auto!important;right:14px}
+@media(max-width:560px){header .btn.s{display:none!important}.logo small{letter-spacing:.12em!important;white-space:nowrap}.hbm{margin-left:auto}header .w{gap:12px!important}}
+
+.sv2 h1{font-weight:700!important;letter-spacing:-.03em}.sv2 .en{font-family:var(--serif);font-style:italic;font-size:20px!important;letter-spacing:.06em!important;font-weight:500}
+.ek{display:block;font-family:var(--serif);font-style:italic;font-size:22px;color:var(--sg)}
+.letter h2,.cls2 h2,.way h2{font-size:clamp(28px,3.2vw,38px);line-height:1.4;margin:6px 0 18px}
+.arch img{border-radius:220px 220px 26px 26px!important}
+.bx>.no{color:#E4DDD0}
+.bk2{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;background:var(--sg2);color:#fff;border-radius:32px;padding:46px}.bk2 p{opacity:.9;font-size:17.5px}.ck.lt li{color:#fff}.ck.lt li:before{color:#D9E8C9}
+.bk2 form{background:#fff;color:var(--ink);border-radius:22px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px}.bk2 label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:15px}.bk2 .full{grid-column:1/-1}.bk2 input,.bk2 select,.bk2 textarea{font:inherit;padding:12px;border:1px solid var(--ln);border-radius:12px;width:100%}
+#ok{display:none}
+.gal2{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:230px 230px;gap:14px}.gal2 figure{margin:0;position:relative;border-radius:22px;overflow:hidden}.gal2 figure.big{grid-row:span 2}.gal2 img{width:100%;height:100%;object-fit:cover}.gal2 figcaption{position:absolute;left:12px;bottom:12px;background:rgba(47,58,49,.78);color:#fff;font-size:14.5px;font-weight:700;border-radius:99px;padding:5px 12px}
+.cls2 .ph img{aspect-ratio:1/1}.feeL{margin-top:24px;background:var(--cr);border:1.5px dashed var(--sg);border-radius:16px;padding:16px 20px;font-size:17px}.feeL a{color:var(--sg2);font-weight:800}
+.pill{display:inline-block;background:#E4ECE3;color:var(--sg2);font-weight:800;font-size:14px;border-radius:99px;padding:4px 12px}
+.note2{margin-top:14px;color:var(--mu);font-size:15.5px}
+.tcs{display:grid;gap:18px}.tcard{display:grid;grid-template-columns:260px 1fr;gap:28px;background:#fff;border:1.5px solid var(--ln);border-radius:24px;overflow:hidden}.tcard img{width:100%;height:100%;min-height:280px;object-fit:cover;object-position:center 25%}.tcard>div{padding:26px 26px 26px 0}.tcard b{display:block;font-size:26px;margin:8px 0 4px}.tcard p{margin:0;font-size:17px;color:#3C3A34}.tcard q{display:block;margin-top:14px;font-family:var(--serif);font-style:italic;color:var(--sg2);font-size:21px}
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;counter-reset:s}.steps li{background:#fff;border:1.5px solid var(--ln);border-radius:20px;padding:20px;display:grid;gap:4px}.steps li:before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-style:italic;font-size:30px;color:var(--sg)}.steps li b{font-size:20px}.steps li span{font-size:16.5px;color:#3C3A34}
+.pkg .bx>.pill{margin:0 0 10px}.prc{font-size:30px!important;font-weight:900;color:var(--sg2)!important;margin:4px 0 6px!important}.prc small{font-size:15px;color:var(--mu)}.pkg .hot{border:2px solid var(--sg);box-shadow:0 16px 34px rgba(40,50,40,.12)}.pkg .hot .pill{background:var(--sg);color:#fff}
+.tb2{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--ln)}.tb2 th{background:var(--cr);text-align:left;padding:15px 16px;font-size:16px}.tb2 td{padding:15px 16px;border-top:1px solid var(--ln);font-size:17px}.tb2 td.r{text-align:right;font-weight:900;color:var(--sg2)}
+.rv2 p{margin:0 0 12px!important;font-size:17.5px!important;line-height:1.75!important}.rv2 small{color:var(--mu);font-weight:700;font-size:15px}.rv2:before{content:"“";font-family:var(--serif);font-size:60px;line-height:.6;color:#CFDCCF;display:block;height:28px}
+.sch2{overflow-x:auto;border:1px solid var(--ln);border-radius:20px;background:#fff}.sch2 table{width:100%;min-width:720px;border-collapse:collapse;font-size:16px}.sch2 th,.sch2 td{padding:13px;text-align:center;border-bottom:1px solid var(--ln)}.sch2 th{background:var(--cr);font-weight:800}.sch2 th.td{background:var(--sg);color:#fff}.sch2 td span{display:block;border-radius:10px;padding:7px 4px;font-weight:800;font-size:14.5px}.sch2 td span em{display:block;font-style:normal;font-size:12.5px;opacity:.75}
+.legend2{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:15.5px;color:var(--mu)}.legend2 i{display:inline-block;width:13px;height:13px;border-radius:4px;margin-right:6px;vertical-align:-1px}
+.map2{position:relative;overflow:hidden;padding:0!important}.map2 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}.map2>div{position:relative;display:grid;justify-items:center;gap:6px;padding:20px}
+nav.stab{display:block!important;margin:0!important;gap:0!important;font-size:inherit!important}
+.cta2 .btn{margin-left:auto}
+@media(max-width:900px){.bk2{grid-template-columns:1fr;padding:28px}.bk2 form{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.gal2{grid-template-columns:1fr 1fr;grid-template-rows:200px 160px 160px}.gal2 figure.big{grid-column:span 2;grid-row:auto}.tcard{grid-template-columns:1fr}.tcard img{min-height:0;height:280px}.tcard>div{padding:0 22px 24px}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}.tb2 td,.tb2 th{font-size:15px;padding:12px 10px}.bk2{padding:22px 16px;border-radius:24px}}
+</style></head><body class="subp">
+<header><div class="w"><a class="logo" href="./">Ongyeol<small>온결 필라테스 · 장유</small></a>
+ <nav class="gnb"><div class="gm"><a class="gt" href="page.html?p=hello">스튜디오 소개</a><div class="sub"><a href="page.html?p=hello">온결 이야기</a><a href="page.html?p=tch">강사 소개</a><a href="page.html?p=space">공간 둘러보기</a></div></div><div class="gm"><a class="gt" href="page.html?p=p1">수업 안내</a><div class="sub"><a href="page.html?p=p1">1:1 개인 레슨</a><a href="page.html?p=duet">듀엣 레슨</a><a href="page.html?p=group">소그룹 기구</a><a href="page.html?p=mom">산전 · 산후</a><a href="page.html?p=posture">체형 분석</a></div></div><div class="gm"><a class="gt" href="page.html?p=sch">시간표 · 이용권</a><div class="sub"><a href="page.html?p=sch">주간 시간표</a><a href="page.html?p=price">이용권</a><a href="page.html?p=rule">이용 규정</a></div></div><div class="gm"><a class="gt" href="page.html?p=first">처음 오시는 분</a><div class="sub"><a href="page.html?p=first">첫날 안내</a><a href="page.html?p=faq">자주 묻는 질문</a><a href="page.html?p=reviews">회원 후기</a></div></div><div class="gm"><a class="gt" href="page.html?p=book">예약 · 오시는 길</a><div class="sub"><a href="page.html?p=book">체험 예약</a><a href="page.html?p=way">오시는 길</a></div></div></nav>
+ <a class="btn s" href="page.html?p=book">체험 예약</a><button type="button" class="hbm" id="hb" aria-label="전체 메뉴">☰</button></div></header>
+<div class="mm" id="mm" hidden><div class="mmi"><div class="mmh"><b>전체 메뉴</b><button type="button" id="mmx" aria-label="닫기">✕</button></div><div class="mmg"><b>스튜디오 소개</b><a href="page.html?p=hello">온결 이야기</a><a href="page.html?p=tch">강사 소개</a><a href="page.html?p=space">공간 둘러보기</a></div><div class="mmg"><b>수업 안내</b><a href="page.html?p=p1">1:1 개인 레슨</a><a href="page.html?p=duet">듀엣 레슨</a><a href="page.html?p=group">소그룹 기구</a><a href="page.html?p=mom">산전 · 산후</a><a href="page.html?p=posture">체형 분석</a></div><div class="mmg"><b>시간표 · 이용권</b><a href="page.html?p=sch">주간 시간표</a><a href="page.html?p=price">이용권</a><a href="page.html?p=rule">이용 규정</a></div><div class="mmg"><b>처음 오시는 분</b><a href="page.html?p=first">첫날 안내</a><a href="page.html?p=faq">자주 묻는 질문</a><a href="page.html?p=reviews">회원 후기</a></div><div class="mmg"><b>예약 · 오시는 길</b><a href="page.html?p=book">체험 예약</a><a href="page.html?p=way">오시는 길</a></div><a class="btn s" href="page.html?p=book" style="justify-content:center;margin-top:10px">🧘 체험 예약 · 1만 원</a></div></div><section class="sv2" id="sv2"><img id="svImg" src="img/hero.jpg" alt=""><div class="w"><div class="crumb"><a href="./">홈</a> › <span id="crG"></span> › <b id="crP"></b></div><span class="en" id="svEn"></span><h1 id="svT"></h1><p id="svD"></p></div></section>
+<nav class="stab" id="stab"><div class="w" id="stabI"></div></nav>
+<main class="pw">
+
+<!-- ───── 스튜디오 소개 ───── -->
+<article data-p="hello" hidden><div class="w">
+ <div class="g2">
+  <figure class="ph big arch"><img src="img/about.jpg" alt="온결 필라테스 스튜디오 (예시 사진)"><figcaption>정유나 원장 (예시 사진)</figcaption></figure>
+  <div class="letter">
+   <span class="ek">Our story</span>
+   <h2>“운동이 처음이어도 괜찮아요.<br><mark>몸이 먼저 달라지는 걸</mark> 느끼실 거예요.”</h2>
+   <p>온결은 <b>‘바른 결’</b>이라는 뜻이에요. 나무에 결이 있듯 사람의 몸에도 결이 있어요. 오래 앉아 일하고, 아이를 안고, 휴대폰을 보는 동안 조금씩 틀어진 결을 다시 바르게 되돌리는 곳이 되고 싶었어요.</p>
+   <p>재활 병원에서 8년 동안 일하며 배운 건, 아픈 사람에게 필요한 건 ‘힘든 동작’이 아니라 <b>‘내 몸에 맞는 동작’</b>이라는 거예요. 그래서 온결은 첫날 운동보다 체형 분석을 먼저 해요.</p>
+   <p>한 수업에 최대 4명. 발끝 각도 하나까지 같이 맞춰 드리고, 한 달마다 자세 사진을 비교해 변화를 눈으로 보여 드릴게요.</p>
+   <p class="sign">온결 필라테스 원장 <b>정유나</b> (예시)</p>
+  </div>
+ </div>
+ <h3 class="h3">온결이 다른 세 가지</h3>
+ <div class="c3">
+  <div class="bx"><span class="no">01</span><i>📷</i><b>체형 분석부터</b><p>첫 수업에서 자세 사진으로 어깨 · 골반 균형을 확인하고 나에게 맞는 동작을 골라요.</p></div>
+  <div class="bx"><span class="no">02</span><i>👥</i><b>최대 4명</b><p>소그룹도 4명까지만. 강사가 모든 회원의 동작을 하나하나 봐 드려요.</p></div>
+  <div class="bx"><span class="no">03</span><i>📈</i><b>한 달마다 비교</b><p>매달 같은 자세로 사진을 찍어 변화를 나란히 보여 드려요.</p></div>
+ </div>
+ <div class="cta2"><div><b>첫 체험 1회 1만 원 (예시)</b><span>체형 분석 15분 + 맞춤 체험 35분. 등록은 천천히 결정하셔도 돼요.</span></div><a class="btn l" href="page.html?p=book">체험 예약하기 →</a></div>
+</div></article>
+
+<article data-p="tch" hidden><div class="w">
+ <p class="lead2">모든 강사가 재활 · 체형 교정 과정을 거쳤어요. 회원 한 분 한 분의 몸 상태를 수업 노트에 기록해 함께 봐요.</p>
+ <div class="tcs">
+  <div class="tcard"><img src="img/t1.jpg" alt="정유나 원장 (예시 사진)"><div><span class="pill">원장 · 재활 필라테스 8년</span><b>정유나 원장</b><p>국제 필라테스 자격 · 산전산후 전문 과정 · 전 재활의학과 운동치료실 근무 (예시)</p><ul class="ck"><li>1:1 체형 교정 · 통증 관리 · 산전 · 산후</li><li>모든 신규 회원 체형 분석 직접 진행</li></ul><q>“아픈 곳부터 먼저 여쭤봐요. 동작은 그다음이에요.”</q></div></div>
+  <div class="tcard"><img src="img/t2.jpg" alt="한지수 강사 (예시 사진)"><div><span class="pill">기구 소그룹 · 5년</span><b>한지수 강사</b><p>체형 교정 · 바른 자세 프로그램 · 리포머 · 체어 · 바렐</p><ul class="ck"><li>평일 오전 · 토요일 소그룹 담당</li><li>거북목 · 라운드숄더 집중 클래스</li></ul><q>“발끝 각도 하나까지 같이 맞춰 드릴게요.”</q></div></div>
+  <div class="tcard"><img src="img/t3.jpg" alt="오세린 강사 (예시 사진)"><div><span class="pill">코어 · 다이어트 · 4년</span><b>오세린 강사</b><p>퇴근 후 저녁반 담당 · 코어 집중 · 듀엣 레슨</p><ul class="ck"><li>평일 19:00 – 22:00 수업</li><li>운동 처음인 분 입문 프로그램</li></ul><q>“지친 저녁, 웃으면서 땀 흘리고 가세요.”</q></div></div>
+ </div>
+</div></article>
+
+<article data-p="space" hidden><div class="w">
+ <p class="lead2">장유 삼문동 4층, 큰 창으로 햇살이 드는 스튜디오예요. 기구 룸과 개인 레슨 룸이 나뉘어 있어 1:1 수업도 조용하게 받을 수 있어요.</p>
+ <div class="gal2">
+  <figure class="big"><img src="img/s1.jpg" alt="기구 룸 (예시 사진)"><figcaption>기구 룸 · 리포머 4대</figcaption></figure>
+  <figure><img src="img/s2.jpg" alt="개인 레슨 룸 (예시 사진)"><figcaption>개인 레슨 룸</figcaption></figure>
+  <figure><img src="img/s3.jpg" alt="스튜디오 (예시 사진)"><figcaption>체어 · 바렐</figcaption></figure>
+  <figure><img src="img/s4.jpg" alt="스튜디오 (예시 사진)"><figcaption>스트레칭 공간</figcaption></figure>
+  <figure><img src="img/s5.jpg" alt="스튜디오 (예시 사진)"><figcaption>파우더룸</figcaption></figure>
+ </div>
+ <div class="c4" style="margin-top:26px">
+  <div class="bx"><i>🛠</i><b>기구</b><p>리포머 4 · 캐딜락 1 · 체어 2 · 바렐 2</p></div>
+  <div class="bx"><i>🚿</i><b>샤워 · 파우더룸</b><p>수건 · 드라이기 · 기초 화장품</p></div>
+  <div class="bx"><i>🔒</i><b>개인 사물함</b><p>장기 회원 전용 사물함</p></div>
+  <div class="bx"><i>🧦</i><b>무료 양말</b><p>첫 방문 미끄럼 방지 양말 증정</p></div>
+ </div>
+</div></article>
+
+<!-- ───── 수업 안내 ───── -->
+<article data-p="p1" hidden><div class="w">
+ <div class="g2 cls2"><figure class="ph big"><img src="img/c1.jpg" alt="1:1 개인 레슨 (예시 사진)"></figure>
+  <div><span class="ek">Private</span><h2>1:1 개인 레슨</h2><p class="lead2">50분 동안 강사가 나만 봐요. 통증이 있거나 체형 교정이 필요한 분, 운동이 완전히 처음인 분께 추천해요.</p>
+  <ul class="ck"><li>매 수업 전 그날 몸 상태 체크 (통증 · 피로)</li><li>목 · 어깨 · 허리 · 골반 맞춤 교정 동작</li><li>집에서 할 5분 홈 운동 카드</li><li>원하는 시간으로 예약 (평일 09 – 22시)</li></ul>
+  <div class="feeL"><b>1:1 개인 10회</b> 65만 원 · 3개월 · 회당 65,000원 (예시)</div></div></div>
+ <h3 class="h3">이런 분께 추천해요</h3>
+ <div class="c4"><div class="bx"><b>🧍 거북목 · 라운드숄더</b><p>하루 종일 앉아 일하는 직장인</p></div><div class="bx"><b>🦴 허리 · 골반 통증</b><p>병원 치료 후 재발이 걱정될 때</p></div><div class="bx"><b>🏌️ 운동 전 기초</b><p>골프 · 테니스 · 러닝 부상 예방</p></div><div class="bx"><b>🌱 완전 처음</b><p>그룹 수업이 부담스러운 분</p></div></div>
+</div></article>
+
+<article data-p="duet" hidden><div class="w">
+ <div class="g2 cls2"><figure class="ph big"><img src="img/c2.jpg" alt="듀엣 레슨 (예시 사진)"></figure>
+  <div><span class="ek">Duet</span><h2>듀엣 레슨</h2><p class="lead2">친구 · 부부 · 엄마와 딸이 함께. 1:1처럼 꼼꼼하게 봐 드리면서 비용은 나눠요.</p>
+  <ul class="ck"><li>50분 · 2인 · 원하는 시간 예약</li><li>두 분 체형 분석 따로 진행</li><li>서로 다른 목표에 맞춰 동작 조절</li><li>함께 다니니 꾸준히 오게 돼요</li></ul>
+  <div class="feeL"><b>듀엣 10회</b> 1인 45만 원 · 3개월 (예시)</div></div></div>
+</div></article>
+
+<article data-p="group" hidden><div class="w">
+ <div class="g2 cls2"><figure class="ph big"><img src="img/c3.jpg" alt="소그룹 기구 수업 (예시 사진)"></figure>
+  <div><span class="ek">Small group</span><h2>소그룹 기구 수업</h2><p class="lead2">최대 4명. 리포머 · 체어 · 바렐을 번갈아 쓰며 50분 동안 전신을 써요.</p>
+  <ul class="ck"><li><b>기구 소그룹</b> — 전신 기초 · 초급</li><li><b>바른 자세</b> — 거북목 · 굽은 등 집중</li><li><b>코어 집중</b> — 땀 나는 저녁반 · 중급</li><li>앱으로 예약 · 4시간 전까지 취소 가능</li></ul>
+  <div class="feeL"><b>소그룹 24회</b> 54만 원 · 4개월 · 회당 22,500원 (예시) · <a href="page.html?p=sch">시간표 보기 →</a></div></div></div>
+</div></article>
+
+<article data-p="mom" hidden><div class="w">
+ <div class="g2 cls2"><figure class="ph big"><img src="img/c4.jpg" alt="산전 · 산후 수업 (예시 사진)"></figure>
+  <div><span class="ek">Pre &amp; post natal</span><h2>산전 · 산후 필라테스</h2><p class="lead2">임신 중 허리 통증, 출산 후 약해진 코어와 골반. 산전산후 전문 과정을 마친 원장이 1:1 또는 듀엣으로 진행해요.</p>
+  <ul class="ck"><li>임신 16주 이후 · 담당 의사 확인 후 시작</li><li>호흡 · 골반저근 · 복직근 이개 확인</li><li>출산 6주 이후 산후 회복 프로그램</li><li>아기 동반 상담 가능</li></ul>
+  <p class="note2">※ 운동 시작 전 꼭 담당 의사와 상의해 주세요.</p></div></div>
+</div></article>
+
+<article data-p="posture" hidden><div class="w">
+ <p class="lead2">온결의 모든 수업은 체형 분석에서 시작해요. 첫 방문 15분, 그리고 한 달마다 다시 찍어 변화를 비교해요.</p>
+ <ol class="steps"><li><b>자세 사진</b><span>앞 · 옆 · 뒤 3장 촬영</span></li><li><b>균형 체크</b><span>어깨 높이 · 골반 기울기 · 목 각도</span></li><li><b>생활 습관</b><span>일하는 자세 · 통증 부위 · 운동 경험</span></li><li><b>맞춤 추천</b><span>수업 종류 · 주 몇 회 · 주의할 동작</span></li></ol>
+ <div class="c2" style="margin-top:26px">
+  <div class="bx"><i>📊</i><b>분석 리포트</b><p>사진 위에 선을 그어 어디가 기울었는지 보여 드리고, 카카오톡으로 보내 드려요.</p></div>
+  <div class="bx"><i>🔁</i><b>매달 비교 사진</b><p>같은 위치 · 같은 자세로 찍어 한 달 전과 나란히 비교해요.</p></div>
+ </div>
+</div></article>
+
+<!-- ───── 시간표 · 이용권 ───── -->
+<article data-p="sch" hidden><div class="w">
+ <p class="lead2">소그룹 수업 시간이에요. 1:1과 듀엣은 원하는 시간으로 예약해요. 오늘 요일은 진하게 표시돼요.</p>
+ <div class="sch2"><table id="tb2"></table></div>
+ <div class="legend2"><span><i class="t1"></i>기구 소그룹 (초급)</span><span><i class="t2"></i>바른 자세</span><span><i class="t3"></i>코어 집중</span></div>
+ <ul class="ck" style="margin-top:18px"><li>평일 09:00 – 22:00 · 토 09:00 – 14:00 · 일 휴무</li><li>예약 · 취소는 앱에서 수업 4시간 전까지</li></ul>
+</div></article>
+
+<article data-p="price" hidden><div class="w">
+ <p class="lead2">가격을 먼저 보여 드려요. 상담 때 더 비싼 걸 권하지 않아요. ※ 찰칵홈 예시라 가격은 예시예요.</p>
+ <div class="c3 pkg">
+  <div class="bx"><span class="pill">입문</span><b>소그룹 8회</b><p class="prc">22만 원 <small>2개월</small></p><ul class="ck"><li>주 1 – 2회 · 회당 27,500원</li><li>첫 체형 분석 포함</li></ul></div>
+  <div class="bx hot"><span class="pill">가장 많이 선택</span><b>소그룹 24회</b><p class="prc">54만 원 <small>4개월</small></p><ul class="ck"><li>주 2회 추천 · 회당 22,500원</li><li>한 달마다 자세 비교 사진</li></ul></div>
+  <div class="bx"><span class="pill">맞춤</span><b>1:1 개인 10회</b><p class="prc">65만 원 <small>3개월</small></p><ul class="ck"><li>회당 65,000원</li><li>체형 교정 · 통증 관리</li></ul></div>
+ </div>
+ <table class="tb2" style="margin-top:26px"><tr><th>그 밖의 이용권 (예시)</th><th style="text-align:right">가격</th></tr>
+  <tr><td>첫 체험 1회 (체형 분석 포함)</td><td class="r">1만 원</td></tr><tr><td>듀엣 10회 (1인)</td><td class="r">45만 원</td></tr><tr><td>산전 · 산후 1:1 10회</td><td class="r">70만 원</td></tr><tr><td>소그룹 1회권</td><td class="r">35,000원</td></tr></table>
+</div></article>
+
+<article data-p="rule" hidden><div class="w">
+ <div class="c2">
+  <div class="bx"><i>📅</i><b>예약 · 취소</b><ul class="ck"><li>앱으로 예약 · 수업 4시간 전까지 취소 가능</li><li>4시간 이내 취소 · 노쇼는 1회 차감</li><li>대기 신청하면 자리 날 때 알림</li></ul></div>
+  <div class="bx"><i>⏸</i><b>홀딩 (일시 정지)</b><ul class="ck"><li>8회권 1회 · 24회권 2회 · 최대 4주</li><li>임신 · 부상은 진단서로 연장</li></ul></div>
+  <div class="bx"><i>💳</i><b>환불</b><ul class="ck"><li>이용 횟수만큼 1회권 가격으로 계산 후 환불</li><li>위약금 10% (예시) · 소비자 기준 준수</li></ul></div>
+  <div class="bx"><i>🧼</i><b>위생</b><ul class="ck"><li>수업마다 기구 소독</li><li>미끄럼 방지 양말 착용</li></ul></div>
+ </div>
+</div></article>
+
+<!-- ───── 처음 오시는 분 ───── -->
+<article data-p="first" hidden><div class="w">
+ <p class="lead2">운동이 처음이어도 괜찮아요. 첫날은 이렇게 진행돼요.</p>
+ <ol class="tl">
+  <li><span class="t2">도착</span><div><b>👟 편한 운동복만</b><p>양말은 미끄럼 방지 양말을 드려요. 탈의실에서 갈아입으시면 돼요.</p></div></li>
+  <li><span class="t2">15분</span><div><b>📷 체형 분석</b><p>자세 사진을 찍고 어깨 · 골반 균형을 같이 확인해요. 아픈 곳이 있으면 말씀해 주세요.</p></div></li>
+  <li><span class="t2">35분</span><div><b>🧘 맞춤 체험</b><p>내 몸에 맞는 동작 몇 가지를 리포머로 천천히 해 봐요. 힘들면 언제든 쉬어도 돼요.</p></div></li>
+  <li><span class="t2">상담</span><div><b>☕ 결과 설명 · 추천</b><p>분석 결과와 맞는 수업을 추천해 드려요. 등록은 천천히 결정하셔도 돼요.</p></div></li>
+ </ol>
+</div></article>
+
+<article data-p="faq" hidden><div class="w">
+ <div class="faq2">
+  <details open><summary>🎁 체험 수업은 어떻게 하나요?</summary><p>첫 체험 1회 1만 원(예시)이에요. 체형 분석 15분 + 맞춤 체험 35분이고, 등록은 천천히 결정하셔도 돼요.</p></details>
+  <details><summary>🧘 운동이 처음인데 괜찮을까요?</summary><p>대부분 처음 오세요. 소그룹도 최대 4명이라 강사가 동작을 하나하나 잡아 드려요.</p></details>
+  <details><summary>💪 몸이 너무 뻣뻣해요.</summary><p>그래서 필라테스를 하시는 거예요. 유연성보다 바른 자세가 먼저라, 뻣뻣해도 할 수 있는 동작부터 시작해요.</p></details>
+  <details><summary>🚗 주차 돼요?</summary><p>건물 주차장 2시간 무료예요.</p></details>
+  <details><summary>⏰ 저녁 수업 있어요?</summary><p>평일 저녁 7시 · 8시 10분 · 9시 20분 수업이 있어요. 퇴근 후에도 편하게 오세요.</p></details>
+  <details><summary>📆 일주일에 몇 번 와야 하나요?</summary><p>주 2회를 추천해요. 바쁘시면 주 1회로 시작하고 홈 운동 카드로 보충해요.</p></details>
+  <details><summary>🤕 허리 디스크가 있어요.</summary><p>통증이 심할 땐 먼저 진료를 받으세요. 진료 후 1:1 수업으로 조심스럽게 시작하는 걸 추천해요.</p></details>
+ </div>
+</div></article>
+
+<article data-p="reviews" hidden><div class="w">
+ <div class="c3">
+  <div class="bx rv2"><p>“운동이 처음인데 동작 하나하나 잡아 주셔서 무섭지 않았어요. 한 달 만에 어깨가 가벼워졌어요.”</p><small>30대 직장인 · 예시</small></div>
+  <div class="bx rv2"><p>“출산 후 허리가 계속 아팠는데 산후 수업 받고 나서 많이 좋아졌어요.”</p><small>30대 회원 · 예시</small></div>
+  <div class="bx rv2"><p>“저녁 9시 수업이 있어서 퇴근하고 와도 돼요. 주차도 편해요.”</p><small>40대 회원 · 예시</small></div>
+  <div class="bx rv2"><p>“한 달 전 사진이랑 비교해 주시는데, 어깨 높이가 맞춰진 게 눈에 보여서 신기했어요.”</p><small>20대 회원 · 예시</small></div>
+  <div class="bx rv2"><p>“엄마랑 듀엣으로 다녀요. 같이 다니니까 빠지지 않게 돼요.”</p><small>50대 회원 · 예시</small></div>
+  <div class="bx rv2"><p>“4명이라 그룹인데도 개인 레슨 받는 느낌이에요.”</p><small>30대 회원 · 예시</small></div>
+ </div>
+ <p class="note2">※ 예시 사이트라 후기는 예시 문구예요. 실제 사이트에는 회원 동의를 받은 후기만 올려요.</p>
+</div></article>
+
+<!-- ───── 예약 · 오시는 길 ───── -->
+<article data-p="book" hidden><div class="w">
+ <div class="bk2">
+  <div><span class="ek" style="color:#D9E8C9">Book a trial</span><h2 style="color:#fff">첫 체험 수업 예약</h2><p>체험 수업 50분 + 체형 분석이 포함돼요. 예약하시면 원장님이 확인 문자를 보내 드려요.</p><ul class="ck lt"><li>편한 운동복만 챙겨 오세요</li><li>양말은 미끄럼 방지 양말을 드려요</li><li>원장 직통 010-0000-0000 (문자 OK)</li></ul></div>
+  <form id="f">
+   <label>이름<input required placeholder="홍길동"></label>
+   <label>연락처<input required inputmode="tel" placeholder="010-0000-0000"></label>
+   <label class="full">희망 수업<select><option>소그룹 기구</option><option>1:1 개인</option><option>듀엣</option><option>산전 · 산후</option></select></label>
+   <label>희망 날짜<input type="date"></label>
+   <label>희망 시간<select><option>오전 9 – 12시</option><option>오후 12 – 17시</option><option>저녁 18 – 20시</option><option>밤 20 – 22시</option></select></label>
+   <label class="full">몸 상태 · 목표 (선택)<textarea rows="3" placeholder="예) 거북목, 허리가 자주 뻐근해요"></textarea></label>
+   <button class="btn s full" type="submit" style="justify-content:center">체험 예약하기 →</button>
+   <div class="ok full" id="ok">예약 요청이 접수됐어요. 원장님이 확인 문자를 보내 드릴게요. (예시 사이트라 실제로 전송되지는 않아요)</div>
+  </form>
+ </div>
+</div></article>
+
+<article data-p="way" hidden><div class="w">
+ <div class="g2 way">
+  <div class="map2"><img src="img/s1.jpg" alt=""><div><span>🗺</span><b>온결 필라테스</b><small>실제 사이트에서는 네이버 · 카카오 지도가 들어가요</small></div></div>
+  <div>
+   <h2 style="margin-top:0">경남 김해시 장유 삼문동<br>○○로 ○○, 4층</h2>
+   <p class="sub2">온결 필라테스 (예시 주소) · <button type="button" class="lnk2" id="cpAd">주소 복사</button></p>
+   <ul class="wy">
+    <li><i>⏰</i><div><b>운영</b><p>평일 09:00 – 22:00 · 토 09:00 – 14:00 · 일 휴무</p></div></li>
+    <li><i>📞</i><div><b>원장 직통</b><p>010-0000-0000 (문자 OK · 예시)</p></div></li>
+    <li><i>🅿️</i><div><b>주차</b><p>건물 주차장 2시간 무료</p></div></li>
+    <li><i>🚌</i><div><b>버스</b><p>‘삼문동 ○○아파트’ 정류장 도보 3분 (예시)</p></div></li>
+   </ul>
+  </div>
+ </div>
+</div></article>
+
+</main>
+<footer><div class="w"><b>온결 필라테스</b> (예시) · 김해 장유<br>© 2026 Ongyeol Pilates · 이 사이트는 <a href="https://kisthestar1-boop.github.io/minsung-ai/web/" style="color:#D9E8C9">찰칵홈</a>이 만든 예시예요 · 상호·가격·후기는 가상</div></footer><div class="badge">찰칵홈 예시 · 가상 스튜디오 · <a href="https://kisthestar1-boop.github.io/minsung-ai/web/">만들기 문의</a></div><script>
+(()=>{const G=[["about", "스튜디오 소개", "ABOUT", "img/about.jpg", [["hello", "온결 이야기", "page.html?p=hello"], ["tch", "강사 소개", "page.html?p=tch"], ["space", "공간 둘러보기", "page.html?p=space"]]], ["class", "수업 안내", "CLASSES", "img/hero.jpg", [["p1", "1:1 개인 레슨", "page.html?p=p1"], ["duet", "듀엣 레슨", "page.html?p=duet"], ["group", "소그룹 기구", "page.html?p=group"], ["mom", "산전 · 산후", "page.html?p=mom"], ["posture", "체형 분석", "page.html?p=posture"]]], ["price", "시간표 · 이용권", "SCHEDULE & PRICE", "img/s1.jpg", [["sch", "주간 시간표", "page.html?p=sch"], ["price", "이용권", "page.html?p=price"], ["rule", "이용 규정", "page.html?p=rule"]]], ["first", "처음 오시는 분", "FIRST VISIT", "img/about.jpg", [["first", "첫날 안내", "page.html?p=first"], ["faq", "자주 묻는 질문", "page.html?p=faq"], ["reviews", "회원 후기", "page.html?p=reviews"]]], ["visit", "예약 · 오시는 길", "BOOK & VISIT", "img/s2.jpg", [["book", "체험 예약", "page.html?p=book"], ["way", "오시는 길", "page.html?p=way"]]]],DESC={"hello": "몸의 결을 다시 바르게", "tch": "아픈 곳부터 먼저 여쭤보는 강사들", "space": "햇살이 드는 삼문동 4층 스튜디오", "p1": "50분 동안 나만 보는 수업", "duet": "함께 다니면 꾸준해져요", "group": "최대 4명, 동작 하나하나", "mom": "산전산후 전문 과정 원장 직접", "posture": "모든 수업은 체형 분석에서 시작해요", "sch": "퇴근 후 밤 9시 20분 수업까지", "price": "가격을 먼저 보여 드려요", "rule": "예약 · 취소 · 홀딩 · 환불", "first": "운동이 처음이어도 괜찮아요", "faq": "처음 오시는 분들이 가장 많이 묻는 것", "reviews": "온결 회원들의 이야기", "book": "첫 체험 1회 1만 원 (예시)", "way": "건물 주차장 2시간 무료"},$=s=>document.querySelector(s);
+const find=p=>{for(const g of G)for(const it of g[4])if(it[0]===p)return[g,it];return null};
+function show(p,push){let f=find(p);if(!f){p=G[0][4][0][0];f=find(p)}const[g,it]=f;
+ document.querySelectorAll('main.pw article').forEach(a=>a.hidden=a.dataset.p!==p);
+ $('#svImg').src=g[3];$('#svEn').textContent=g[2];$('#svT').textContent=it[1];$('#svD').textContent=DESC[p]||'';$('#crG').textContent=g[1];$('#crP').textContent=it[1];
+ $('#stabI').innerHTML=g[4].map(x=>`<a href="${x[2]}" class="${x[0]===p?'on':''}">${x[1]}</a>`).join('');
+ document.querySelectorAll('.gnb .gm').forEach((m,i)=>m.classList.toggle('on',G[i]&&G[i][0]===g[0]));
+ document.title=it[1]+' | '+'온결 필라테스 (찰칵홈 예시)';
+ try{document.activeElement&&document.activeElement.blur()}catch(_){}if(push)history.pushState(null,'','page.html?p='+p);
+ const hd=document.querySelector('header');if(hd)$('#stab').style.top=hd.offsetHeight+'px';const on=$('#stabI a.on');on&&on.scrollIntoView({block:'nearest',inline:'center'});scrollTo({top:0})}
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="page.html?p="]');
+ if(e.target.closest('#mm a')||e.target.id==='mmx'||e.target.id==='mm')$('#mm').hidden=true;
+ if(!a||e.ctrlKey||e.metaKey)return;e.preventDefault();show(new URLSearchParams(a.getAttribute('href').split('?')[1]).get('p'),1)});
+addEventListener('popstate',()=>show(new URLSearchParams(location.search).get('p')));
+$('#hb')&&$('#hb').addEventListener('click',()=>{$('#mm').hidden=false});
+// 오늘 예배 표시 · 방문 날짜 · 복사 · 신청
+const n=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Seoul'})),d=n.getDay();
+document.querySelectorAll('table tr[data-d]').forEach(r=>{if(r.dataset.d.split(',').includes(String(d)))r.classList.add('today')});
+const s=new Date(n);s.setDate(n.getDate()+((7-d)%7));const sel=$('#sd');if(sel)for(let i=0;i<4;i++){const x=new Date(s);x.setDate(s.getDate()+7*i);const o=document.createElement('option');o.textContent=(x.getMonth()+1)+'월 '+x.getDate()+'일 주일 · 오전 11시'+(i===0?' (이번 주)':'');sel.appendChild(o)}
+const cp=(btn,t)=>{(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{btn.textContent='복사됐어요 ✓'},()=>{btn.textContent='길게 눌러 복사'})};
+$('#cp')&&$('#cp').addEventListener('click',e=>cp(e.target,''));$('#cpAd')&&$('#cpAd').addEventListener('click',e=>cp(e.target,'경남 김해시 장유 삼문동 ○○로 ○○, 4층'));
+$('#f')&&$('#f').addEventListener('submit',e=>{e.preventDefault();$('#ok').style.display='block';e.target.querySelector('button[type=submit]').disabled=true});
+show(new URLSearchParams(location.search).get('p'));history.replaceState(null,'',location.href)})();
+
+;(()=>{const t=document.getElementById('tb2');if(!t)return;const D=["월","화","수","목","금","토"],TM=["09:30","11:00","19:00","20:10","21:20"];
+const C={"월":{"09:30":1,"19:00":2,"20:10":1,"21:20":3},"화":{"11:00":2,"19:00":1,"20:10":3},"수":{"09:30":1,"19:00":2,"20:10":1,"21:20":3},"목":{"11:00":2,"19:00":1,"20:10":3},"금":{"09:30":1,"19:00":1,"20:10":2},"토":{"09:30":2,"11:00":1}};
+const N={1:"기구 소그룹",2:"바른 자세",3:"코어 집중"};const td=["일","월","화","수","목","금","토"][new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Seoul'})).getDay()];
+t.innerHTML='<tr><th>시간</th>'+D.map(d=>'<th class="'+(d===td?'td':'')+'">'+d+(d===td?' (오늘)':'')+'</th>').join('')+'</tr>'+TM.map(m=>'<tr><th>'+m+'</th>'+D.map(d=>{const k=(C[d]||{})[m];const r=(d.charCodeAt(0)+m.charCodeAt(1)+m.charCodeAt(3))%4;return '<td>'+(k?'<span class="t'+k+'">'+N[k]+'<em>'+(r?r+'자리':'마감')+'</em></span>':'')+'</td>'}).join('')+'</tr>').join('')})();
+
+</script>
+</body></html>

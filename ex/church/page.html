@@ -276,6 +276,7 @@ mark{background:linear-gradient(transparent 58%,#F1E2B8 58%);color:inherit;paddi
 .bk{align-items:start}
 @media(max-width:900px){.stab{top:76px}.stab .w{justify-content:flex-start}.stab a{font-size:16px;padding:15px 13px}.g2{grid-template-columns:1fr;gap:28px}.c3,.c4,.kd{grid-template-columns:1fr 1fr}.order{grid-template-columns:repeat(3,1fr)}.yr{grid-template-columns:repeat(3,1fr)}.staff{grid-template-columns:1fr}.ph.big img{aspect-ratio:4/3}}
 @media(max-width:560px){.sv2 .w{padding-top:40px;padding-bottom:36px}.sv2 p{font-size:16.5px}.pw{padding:36px 0 110px}.c2,.c3,.c4,.kd{grid-template-columns:1fr}.order{grid-template-columns:1fr 1fr}.yr{grid-template-columns:1fr 1fr}.sf.main{flex-direction:column;align-items:flex-start}.serm li{grid-template-columns:60px 1fr;row-gap:2px}.serm .r,.serm .pl{grid-column:2}.tl li{grid-template-columns:1fr;gap:8px}.tl li:after{display:none}.name{padding:26px 22px}.hist li{grid-template-columns:70px 1fr}.cta2{padding:24px}.cta2 .btn{margin-left:0}.lead2,.letter p{font-size:17px}.wk{padding-top:30px}.c4{gap:24px}}
+.gnb:hover .gm:not(:hover) .sub{display:none!important}
 </style></head><body class="subp">
 <header><div class="w">
  <a class="logo" href="./"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#56663A"/><path d="M20 8v24M13 15h14" stroke="#FBF6EE" stroke-width="3" stroke-linecap="round"/><path d="M8 31c4-3 8-4 12-4s8 1 12 4" stroke="#E9C98B" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><div><b>들빛교회</b><small>DEULBIT CHURCH · 장유</small></div></a>
@@ -534,13 +535,13 @@ mark{background:linear-gradient(transparent 58%,#F1E2B8 58%);color:inherit;paddi
 <script>
 (()=>{const G=[["about", "교회 소개", "ABOUT US", "img/pastor.jpg", [["greet", "인사말", "page.html?p=greet"], ["vision", "교회 비전 · 연혁", "page.html?p=vision"], ["serve", "섬기는 분들", "page.html?p=serve"], ["together", "공동체 · 나눔", "page.html?p=together"], ["way", "오시는 길", "page.html?p=way"]]], ["worship", "예배 · 말씀", "WORSHIP", "img/hero.jpg", [["times", "예배 시간", "page.html?p=times"], ["word", "이번 주 말씀", "page.html?p=word"], ["board:주보", "주보", "board.html?c=주보"]]], ["newc", "새가족", "WELCOME", "img/welcome.jpg", [["new", "처음 오셨나요?", "page.html?p=new"], ["first", "첫 주일 순서", "page.html?p=first"], ["course", "새가족 4주 과정", "page.html?p=course"], ["board:새가족", "새가족 소개", "board.html?c=새가족"], ["visit", "방문 안내 신청", "page.html?p=visit"]]], ["next", "다음세대", "NEXT GENERATION", "img/welcome.jpg", [["kids", "교회학교", "page.html?p=kids"], ["youth", "청소년 · 청년부", "page.html?p=youth"]]], ["board", "교회 게시판", "NEWS & BOARD", "img/hero.jpg", [["board:전체", "전체 글", "board.html"], ["board:공지", "공지사항", "board.html?c=공지"], ["board:주보", "주보", "board.html?c=주보"], ["board:새가족", "새가족 소개", "board.html?c=새가족"], ["board:앨범", "교회 앨범", "board.html?c=앨범"], ["board:기도", "기도 제목", "board.html?c=기도"]]]],DESC={"greet": "들빛교회에 오신 것을 환영합니다", "vision": "들판에 비치는 햇살 같은 교회", "serve": "들빛교회를 섬기는 사람들", "together": "예배 밖에서 이웃이 되는 시간", "way": "장유 율하, 주차 걱정 없이 오세요", "times": "모든 예배는 1층 본당에서 드려요", "word": "한 주 동안 붙잡을 한 문장", "new": "처음 오시는 분이 가장 궁금해하는 것", "first": "도착부터 집에 가실 때까지", "course": "차 마시며 나누는 네 번의 만남", "visit": "오시는 날을 남겨 주시면 입구에서 기다릴게요", "kids": "아이들도 즐거운 주일", "youth": "솔직하게 나누는 다음세대"},$=s=>document.querySelector(s);
 const find=p=>{for(const g of G)for(const it of g[4])if(it[0]===p)return[g,it];return null};
-function show(p,push){let f=find(p);if(!f){p='greet';f=find(p)}const[g,it]=f;
+function show(p,push){let f=find(p);if(!f){p=G[0][4][0][0];f=find(p)}const[g,it]=f;
  document.querySelectorAll('main.pw article').forEach(a=>a.hidden=a.dataset.p!==p);
  $('#svImg').src=g[3];$('#svEn').textContent=g[2];$('#svT').textContent=it[1];$('#svD').textContent=DESC[p]||'';$('#crG').textContent=g[1];$('#crP').textContent=it[1];
  $('#stabI').innerHTML=g[4].map(x=>`<a href="${x[2]}" class="${x[0]===p?'on':''}">${x[1]}</a>`).join('');
  document.querySelectorAll('.gnb .gm').forEach((m,i)=>m.classList.toggle('on',G[i]&&G[i][0]===g[0]));
  document.title=it[1]+' | 장유 들빛교회 (찰칵홈 예시)';
- if(push)history.pushState(null,'','page.html?p='+p);
+ try{document.activeElement&&document.activeElement.blur()}catch(_){}if(push)history.pushState(null,'','page.html?p='+p);
  const on=$('#stabI a.on');on&&on.scrollIntoView({block:'nearest',inline:'center'});scrollTo({top:0})}
 document.addEventListener('click',e=>{const a=e.target.closest('a[href^="page.html?p="]');
  if(e.target.closest('#mm a')||e.target.id==='mmx'||e.target.id==='mm')$('#mm').hidden=true;

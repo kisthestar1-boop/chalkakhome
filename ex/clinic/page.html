@@ -266,6 +266,7 @@ table.t td,table.t th{font-size:17px!important;padding:15px 16px!important}
 .tl .t2{width:auto;min-width:44px;padding:0 14px}
 @media(max-width:900px){.gal{grid-template-columns:1fr}.gal img{height:240px}.steps,.yr4,.prep2{grid-template-columns:1fr 1fr}.g2.sm{grid-template-columns:1fr}}
 @media(max-width:560px){.c2s{grid-template-columns:1fr}table.t td,table.t th{font-size:15.5px!important;padding:12px 10px!important}.tel2{font-size:26px}}
+.gnb:hover .gm:not(:hover) .sub{display:none!important}
 </style></head><body class="subp">
 <header><div class="w">
  <a class="logo" href="./"><span class="mk">다</span><div><b>다온내과의원</b><small><i>DAON INTERNAL MEDICINE · </i>김해 장유 내과</small></div></a>
@@ -549,13 +550,13 @@ table.t td,table.t th{font-size:17px!important;padding:15px 16px!important}
 <script>
 (()=>{const G=[["about", "병원 소개", "ABOUT", "img/doctor.jpg", [["hello", "인사말", "page.html?p=hello"], ["doctor", "의료진", "page.html?p=doctor"], ["tour", "병원 둘러보기", "page.html?p=tour"], ["hours", "진료시간 · 비용", "page.html?p=hours"]]], ["care", "진료 안내", "MEDICAL CARE", "img/hero.jpg", [["general", "감기 · 내과 일반", "page.html?p=general"], ["chronic", "혈압 · 당뇨 관리", "page.html?p=chronic"], ["endo", "위 · 대장 내시경", "page.html?p=endo"], ["ultra", "초음파 · 심전도", "page.html?p=ultra"], ["vaccine", "예방접종", "page.html?p=vaccine"]]], ["check", "건강검진", "CHECK-UP", "img/desk.jpg", [["national", "국가건강검진", "page.html?p=national"], ["premium", "추가 검진", "page.html?p=premium"], ["prep", "검진 준비", "page.html?p=prep"]]], ["first", "처음 오시는 분", "FIRST VISIT", "img/desk.jpg", [["flow", "진료 순서", "page.html?p=flow"], ["faq", "자주 묻는 질문", "page.html?p=faq"], ["docs", "서류 발급", "page.html?p=docs"]]], ["visit", "예약 · 오시는 길", "BOOK & VISIT", "img/hero.jpg", [["book", "진료 예약", "page.html?p=book"], ["way", "오시는 길", "page.html?p=way"]]]],DESC={"hello": "좋은 일이 다 오는 동네 내과", "doctor": "내과 · 소화기내과 분과 전문의가 직접 진료해요", "tour": "메디컬빌딩 3층, 엘리베이터 앞", "hours": "평일 저녁 8시 · 토요일 오후 1시까지", "general": "갑자기 아플 때 가까운 내과부터", "chronic": "증상이 없어도 꾸준히, 잊지 않게", "endo": "수면 내시경 · 용종 당일 제거", "ultra": "검사한 날 화면을 같이 보며 설명", "vaccine": "어른도 맞아야 하는 예방접종", "national": "국가건강검진 지정 기관", "premium": "필요한 항목만 골라서", "prep": "검진 전날 이것만 챙기세요", "flow": "접수부터 처방전까지 미리 알려 드려요", "faq": "가장 많이 물어보시는 것", "docs": "실손보험 청구 서류는 무료", "book": "예약하시면 기다림이 줄어요", "way": "건물 지하 주차 2시간 무료"},$=s=>document.querySelector(s);
 const find=p=>{for(const g of G)for(const it of g[4])if(it[0]===p)return[g,it];return null};
-function show(p,push){let f=find(p);if(!f){p='greet';f=find(p)}const[g,it]=f;
+function show(p,push){let f=find(p);if(!f){p=G[0][4][0][0];f=find(p)}const[g,it]=f;
  document.querySelectorAll('main.pw article').forEach(a=>a.hidden=a.dataset.p!==p);
  $('#svImg').src=g[3];$('#svEn').textContent=g[2];$('#svT').textContent=it[1];$('#svD').textContent=DESC[p]||'';$('#crG').textContent=g[1];$('#crP').textContent=it[1];
  $('#stabI').innerHTML=g[4].map(x=>`<a href="${x[2]}" class="${x[0]===p?'on':''}">${x[1]}</a>`).join('');
  document.querySelectorAll('.gnb .gm').forEach((m,i)=>m.classList.toggle('on',G[i]&&G[i][0]===g[0]));
  document.title=it[1]+' | '+'장유 다온내과의원 (찰칵홈 예시)';
- if(push)history.pushState(null,'','page.html?p='+p);
+ try{document.activeElement&&document.activeElement.blur()}catch(_){}if(push)history.pushState(null,'','page.html?p='+p);
  const hd=document.querySelector('header');if(hd)$('#stab').style.top=hd.offsetHeight+'px';const on=$('#stabI a.on');on&&on.scrollIntoView({block:'nearest',inline:'center'});scrollTo({top:0})}
 document.addEventListener('click',e=>{const a=e.target.closest('a[href^="page.html?p="]');
  if(e.target.closest('#mm a')||e.target.id==='mmx'||e.target.id==='mm')$('#mm').hidden=true;
