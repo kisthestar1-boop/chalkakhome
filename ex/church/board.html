@@ -1,0 +1,290 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>교회 게시판 | 장유 들빛교회 (찰칵홈 예시)</title>
+<meta name="description" content="장유 들빛교회(예시) — 처음 오시는 분을 위한 작은 동네 교회. 주일예배 오전 11시, 주차 · 아이 돌봄 · 새가족 안내. 김해 장유 율하.">
+<meta name="keywords" content="장유 교회, 율하 교회, 김해 장유 교회, 장유 주일예배, 장유 새가족, 장유 어린이 교회학교">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="그냥 오셔도 괜찮아요 — 장유 들빛교회"><meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--ink:#2A2620;--mu:#62594D;--bg:#FBF6EE;--ln:#EADFCD;--ol:#56663A;--ol2:#3F4D28;--clay:#B5643C;--sand:#F3EADB;--card:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Pretendard,"Apple SD Gothic Neo",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7;word-break:keep-all}
+a{color:inherit}img{display:block;max-width:100%}figure{margin:0}
+.w{max-width:1100px;margin:0 auto;padding:0 20px}
+.mj{font-family:"Nanum Myeongjo",serif;font-weight:800;letter-spacing:-.03em}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:99px;padding:15px 26px;font:inherit;font-weight:800;font-size:16px;text-decoration:none;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn.ol{background:var(--ol);color:#fff}.btn.ol:hover{background:var(--ol2)}
+.btn.ln{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.6)}
+.k{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.14em;color:var(--clay)}
+section{padding:84px 0}
+h2{font-size:clamp(30px,4vw,46px);line-height:1.3;margin:8px 0 12px}
+.lead{color:#5A5145;font-size:18px;margin:0 0 32px;max-width:620px}
+/* 헤더 */
+header{position:sticky;top:0;z-index:30;background:rgba(251,246,238,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+header .w{display:flex;align-items:center;gap:18px;height:76px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:40px;height:40px;flex:none}
+.logo b{display:block;font-family:"Nanum Myeongjo",serif;font-weight:800;font-size:29px;line-height:1;letter-spacing:-.03em}
+.logo small{display:block;font-size:11.5px;font-weight:700;color:var(--mu);margin-top:5px;letter-spacing:.1em}
+.gnb{margin-left:auto;display:flex;gap:4px;font-weight:700;font-size:15.5px}
+.gm{position:relative}.gm>button{border:0;background:none;font:inherit;font-weight:800;color:#4A4339;padding:26px 12px;cursor:pointer}.gm:hover>button,.gm:focus-within>button{color:var(--ol)}
+.gm .sub{position:absolute;left:50%;top:100%;transform:translateX(-50%);min-width:170px;background:#fff;border:1px solid var(--ln);border-radius:16px;box-shadow:0 16px 34px rgba(60,40,20,.14);padding:8px;display:none;margin-top:-6px}
+.gm:hover .sub,.gm:focus-within .sub{display:grid}.gm .sub a{text-decoration:none;color:#3E372D;font-weight:700;font-size:14.5px;padding:9px 12px;border-radius:10px;white-space:nowrap}.gm .sub a:hover{background:var(--sand);color:var(--ol2)}
+.hb{display:none;border:0;background:var(--sand);border-radius:12px;width:44px;height:44px;font-size:20px;cursor:pointer;flex:none}
+.mm{position:fixed;inset:0;z-index:60;background:rgba(30,24,16,.45)}.mm[hidden]{display:none}
+.mmi{position:absolute;right:0;top:0;bottom:0;width:min(86vw,360px);background:var(--bg);overflow:auto;padding:18px 20px 30px;display:grid;align-content:start;gap:16px}
+.mmh{display:flex;justify-content:space-between;align-items:center}.mmh button{border:0;background:var(--sand);border-radius:10px;width:38px;height:38px;font-size:16px;cursor:pointer}
+.mmg{display:grid;gap:2px}.mmg b{font-size:13px;color:var(--clay);letter-spacing:.06em;margin-bottom:4px}.mmg a{text-decoration:none;font-weight:700;font-size:16.5px;padding:9px 0;border-bottom:1px solid var(--ln)}
+header .btn{padding:11px 20px;font-size:15px}
+@media(max-width:1180px){.gnb{gap:0;font-size:14.5px}.gnb .gm>button{padding-left:9px;padding-right:9px}header .btn{padding:10px 14px;font-size:14px}}@media(max-width:900px){.gnb{display:none}.hb{display:block}header .btn{margin-left:auto;padding:10px 16px;font-size:14px}}@media(max-width:420px){header .btn{display:none}.hb{margin-left:auto}}
+/* 히어로 */
+.hero{position:relative;min-height:min(86vh,740px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#3a3329}
+.hero video,.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}@media(min-width:761px){.hero video,.hero img.bg{transform:scaleX(-1)}}@media(max-width:760px){.hero video,.hero img.bg{object-position:42% 35%}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(30,24,16,.88) 0%,rgba(30,24,16,.45) 45%,rgba(30,24,16,.1) 75%)}
+.hero .w{position:relative;z-index:2;width:100%;padding-bottom:56px}
+.hero h1{font-size:clamp(44px,7vw,88px);line-height:1.18;margin:0 0 16px}
+.hero p{font-size:clamp(16px,1.6vw,19px);max-width:560px;margin:0 0 26px;color:rgba(255,255,255,.92)}
+.hero .cta{display:flex;gap:10px;flex-wrap:wrap}
+.times{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.times div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(6px);border-radius:16px;padding:12px 16px;min-width:150px}
+.times b{display:block;font-size:22px;line-height:1.2}.times span{font-size:13.5px;opacity:.9}
+.times div.main{background:#fff;color:var(--ink);border-color:#fff}.times div.main span{color:var(--mu)}
+@media(max-width:760px){.hero{min-height:0;padding-top:110px!important}.hero .w{padding-bottom:100px}.hero h1{font-size:44px}.hero p{font-size:16px;margin-bottom:20px}.hero .btn{padding:13px 18px;font-size:15px}.times{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:22px}.times div{min-width:0;padding:10px 8px;border-radius:12px}.times b{font-size:14.5px}.times span{font-size:11.5px;display:block;line-height:1.35}}
+/* 이번 주일 띠 */
+.sun{background:var(--ol);color:#fff}
+.sun .w{display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding-top:16px;padding-bottom:16px;font-weight:700}
+.sun .w>b{background:#fff;color:var(--ol2);border-radius:99px;padding:4px 12px;font-size:13.5px}
+.sun span{font-size:15.5px}.sun a{margin-left:auto;font-size:14.5px}
+/* 처음 오셨나요 */
+.new{display:grid;grid-template-columns:1fr 1.15fr;gap:46px;align-items:center}@media(max-width:920px){.new{grid-template-columns:1fr}}
+.ph{border-radius:26px;overflow:hidden;position:relative;box-shadow:0 22px 50px rgba(60,40,20,.15)}
+.ph figcaption{position:absolute;left:14px;bottom:14px;background:rgba(0,0,0,.55);color:#fff;font-size:12.5px;padding:6px 11px;border-radius:99px}
+.qa{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:560px){.qa{grid-template-columns:1fr}}
+.qa div{background:var(--card);border:1px solid var(--ln);border-radius:20px;padding:18px}
+.qa i{font-style:normal;font-size:24px}.qa b{display:block;font-size:17px;margin:6px 0 2px}.qa p{margin:0;color:var(--mu);font-size:14.5px}
+/* 첫 방문 순서 */
+.alt{background:var(--sand)}
+.path{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:s}@media(max-width:920px){.path{grid-template-columns:1fr 1fr}}@media(max-width:560px){.path{grid-template-columns:1fr}}
+.path div{background:var(--card);border-radius:22px;padding:22px 20px;position:relative}
+.path div:before{counter-increment:s;content:counter(s);font-family:"Nanum Myeongjo",serif;font-weight:800;font-size:44px;color:var(--clay);line-height:1;display:block;margin-bottom:8px}
+.path b{font-size:18px}.path p{margin:6px 0 0;color:var(--mu);font-size:15px}
+.path small{display:block;margin-top:10px;font-weight:800;color:var(--ol);font-size:13px}
+/* 예배 */
+table.t{width:100%;border-collapse:collapse;background:#fff;border-radius:20px;overflow:hidden;font-size:15.5px}
+table.t th,table.t td{padding:14px 16px;border-bottom:1px solid var(--ln);text-align:left}table.t th{background:var(--sand);font-size:14px;color:var(--mu)}
+table.t td:nth-child(2){font-weight:800;white-space:nowrap}table.t tr.today td{background:#F1F4E8}
+table.t tr.today td:first-child:after{content:"오늘";margin-left:8px;font-size:11px;background:var(--ol);color:#fff;border-radius:6px;padding:1px 6px}
+/* 말씀 */
+.msg{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center}@media(max-width:920px){.msg{grid-template-columns:1fr}}
+.vid{position:relative;border-radius:22px;overflow:hidden;background:#2A2620;aspect-ratio:16/9;display:grid;place-items:center;color:#fff}
+.vid img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.vid b{position:relative;width:74px;height:74px;border-radius:50%;background:#fff;color:var(--ol);display:grid;place-items:center;font-size:26px;padding-left:4px}
+.vid small{position:absolute;left:14px;bottom:12px;font-size:13px;background:rgba(0,0,0,.5);padding:5px 10px;border-radius:99px}
+.msg blockquote{margin:0 0 14px;font-size:clamp(22px,2.4vw,28px);line-height:1.55}
+.msg cite{font-style:normal;color:var(--mu);font-size:15px}
+.past{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:8px}
+.past li{display:flex;justify-content:space-between;gap:10px;background:#fff;border:1px solid var(--ln);border-radius:14px;padding:12px 14px;font-size:15px}.past li span{color:var(--mu);font-size:13.5px;white-space:nowrap}
+/* 아이들 */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}@media(max-width:920px){.cards{grid-template-columns:1fr 1fr}}@media(max-width:520px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:22px;padding:22px 20px}
+.card i{font-style:normal;font-size:30px}.card h3{font-size:20px;margin:8px 0 2px}.card .age{font-size:13.5px;font-weight:800;color:var(--clay)}
+.card p{margin:8px 0 0;color:var(--mu);font-size:14.5px}
+/* 목사 */
+.pas{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:center}@media(max-width:920px){.pas{grid-template-columns:1fr}}
+.pas blockquote{margin:0 0 16px;font-size:clamp(22px,2.6vw,30px);line-height:1.55}
+.pas p{color:#4A4339;font-size:16px}
+.sign{font-weight:800;margin-top:14px}
+.pas .story{font-size:17.5px;color:#3E372D;margin:0 0 20px;line-height:1.85}.pas .story b{background:linear-gradient(transparent 60%,#EBDDB8 60%)}
+.prom{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 16px}@media(max-width:560px){.prom{grid-template-columns:1fr}}
+.prom div{background:#fff;border:1px solid var(--ln);border-radius:16px;padding:14px}.prom i{font-style:normal;font-size:22px}.prom b{display:block;font-size:15.5px;margin:4px 0 2px}.prom span{font-size:13.5px;color:var(--mu);line-height:1.45;display:block}
+.bh{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:22px}
+.adm{border:1.5px solid var(--ln);background:#fff;border-radius:99px;padding:9px 14px;font:inherit;font-weight:800;font-size:14px;cursor:pointer;white-space:nowrap}.adm.on{background:var(--ol);color:#fff;border-color:var(--ol)}
+.adbox{background:#fff;border:1.5px dashed var(--ol);border-radius:20px;padding:18px;margin-bottom:18px}
+.adlog{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.adlog span{color:var(--mu);font-size:14px}.adlog code{background:var(--sand);padding:2px 6px;border-radius:6px}.adlog input{width:130px}
+.wr{display:grid;gap:10px;border:0;padding:0;background:none}.wrh{display:flex;justify-content:space-between;align-items:center}.lnk{border:0;background:none;color:var(--clay);font:inherit;font-weight:800;cursor:pointer}
+.ph2{font-size:14px;font-weight:700;color:var(--mu)}.ph2 input{border:0;padding:6px 0;background:none}#wrPrev{max-height:160px;border-radius:12px;width:auto}
+.pin{display:flex!important;align-items:center;gap:6px;font-weight:700}.pin input{width:auto}
+.bt{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.bt button{border:1.5px solid var(--ln);background:#fff;border-radius:99px;padding:8px 14px;font:inherit;font-weight:700;font-size:14.5px;cursor:pointer}.bt button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.bl{list-style:none;margin:0;padding:0;background:#fff;border:1px solid var(--ln);border-radius:20px;overflow:hidden}
+.bl li{border-bottom:1px solid var(--ln)}.bl li:last-child{border-bottom:0}
+.bl .row{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:15px 18px;cursor:pointer}
+.bl .cat{font-size:12.5px;font-weight:800;border-radius:8px;padding:3px 8px;background:var(--sand);color:var(--clay);white-space:nowrap}
+.bl .tt{font-weight:700;font-size:16px;display:flex;align-items:center;gap:10px}.bl .tt img{width:46px;height:46px;border-radius:10px;object-fit:cover;flex:none}.bl .tt i{font-style:normal;margin-right:4px}.bl .dt{font-size:13px;color:var(--mu);white-space:nowrap}
+.bl .bd{display:none;padding:0 18px 18px 18px;color:#3E372D;white-space:pre-line;font-size:15.5px}.bl li.op .bd{display:block}.bl .bd img{max-width:100%;border-radius:14px;margin-top:10px}
+.bl .ed{display:flex;gap:10px;margin-top:12px}.bl .ed button{border:1px solid var(--ln);background:var(--bg);border-radius:10px;padding:6px 12px;font:inherit;font-size:13.5px;font-weight:700;cursor:pointer}
+.bl .em{padding:30px;text-align:center;color:var(--mu)}
+@media(max-width:560px){.bl .row{grid-template-columns:auto 1fr;}.bl .dt{grid-column:2;margin-top:-8px}.bh{align-items:flex-start}}
+.serve{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0 6px}.serve b{font-size:13.5px;color:var(--clay);margin-right:4px}.serve span{background:#fff;border:1px solid var(--ln);border-radius:99px;padding:5px 11px;font-size:13.5px;font-weight:700}
+/* 함께 */
+.grp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}@media(max-width:920px){.grp{grid-template-columns:1fr}}
+.grp div{background:var(--ol);color:#fff;border-radius:22px;padding:24px 22px}
+.grp b{font-size:20px;display:block}.grp span{font-size:13.5px;opacity:.85;font-weight:700}.grp p{margin:10px 0 0;font-size:15px;opacity:.92}
+/* 헌금 */
+.give{background:#fff;border:1px solid var(--ln);border-radius:22px;padding:22px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.give b{font-size:18px}.give code{font-family:inherit;font-weight:800;font-size:17px;background:var(--sand);padding:6px 12px;border-radius:10px}
+.give button{margin-left:auto;border:0;background:var(--ink);color:#fff;font:inherit;font-weight:800;padding:11px 16px;border-radius:12px;cursor:pointer}
+/* FAQ */
+details{background:#fff;border:1px solid var(--ln);border-radius:16px;padding:16px 18px;margin-bottom:10px}
+summary{font-weight:800;font-size:16.5px;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}summary:after{content:"+";float:right;color:var(--clay);font-size:20px}
+details[open] summary:after{content:"−"}details p{margin:10px 0 0;color:#4A4339}
+/* 방문 예약 */
+.bk{display:grid;grid-template-columns:1fr 1fr;gap:36px}@media(max-width:920px){.bk{grid-template-columns:1fr}}
+form{background:#fff;border:1px solid var(--ln);border-radius:24px;padding:24px;display:grid;gap:12px}
+label{font-size:14px;font-weight:700;display:grid;gap:6px}
+input,select,textarea{font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid var(--ln);border-radius:12px;background:var(--bg)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ol)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chips label{display:block}.chips input{display:none}
+.chips span{display:inline-block;padding:9px 14px;border-radius:99px;border:1.5px solid var(--ln);font-weight:700;font-size:14.5px;cursor:pointer;background:#fff}
+.chips input:checked+span{background:var(--ol);border-color:var(--ol);color:#fff}
+.ok{display:none;background:#F1F4E8;border-radius:14px;padding:14px;font-weight:700;color:var(--ol2)}
+.map{background:#E9E0CF;border-radius:20px;min-height:230px;display:grid;place-items:center;color:var(--mu);font-weight:700}
+.info{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px;font-size:15.5px}.info b{display:inline-block;width:64px;color:var(--mu)}
+footer{background:var(--ink);color:#BDB3A5;font-size:13.5px;padding:40px 0 110px}footer b{color:#fff}footer a{color:#fff}
+.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:none;gap:8px;background:rgba(42,38,32,.95);padding:8px;border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+.dock a{flex:1;text-align:center;color:#fff;text-decoration:none;font-weight:800;font-size:14.5px;padding:12px 4px;border-radius:12px}.dock a.m{background:var(--ol)}
+@media(max-width:760px){.dock{display:flex}}
+.badge{position:fixed;left:12px;bottom:86px;z-index:41;background:var(--ink);color:#fff;font-size:12px;padding:6px 11px;border-radius:99px}.badge a{color:#E9C98B}
+@media(min-width:761px){.badge{bottom:14px}}@media(max-width:760px){.badge{display:none}}
+
+/* 읽기 좋게 (11/23) */
+body{font-size:17px}
+.bk>*{min-width:0}input,select,textarea{width:100%;min-width:0}.chips input,.pin input{width:auto}
+.card p,.qa p,.path p,.flow p,.grp p{font-size:16px;line-height:1.65;color:#3A3A3A}
+.card h3{font-size:22px}.card ul{font-size:15.5px;color:#2F3B3D;line-height:1.75}
+.qa b,.path b,.flow b{font-size:18.5px}
+.prom span,.prep span,.note,.info{font-size:15px}
+.uxk-hint{font-size:13.5px!important;opacity:.75!important}
+table.t{font-size:16px}
+details p{font-size:16px}summary{font-size:17px}
+.k{font-size:13.5px}
+@media(max-width:560px){body{font-size:16.5px}.card p,.qa p,.path p,.flow p{font-size:15.5px}}
+
+/* 눈에 띄게 (11/23 2차) */
+body{font-size:18px}
+.lead{font-size:19.5px!important;color:#2B2B2B!important;font-weight:500}
+h2{font-size:clamp(32px,4.4vw,50px)!important}
+.card{padding:28px 26px!important;border-width:1.5px!important;background:#fff!important}
+.card i{font-size:30px;width:58px;height:58px;border-radius:18px;background:var(--sand);display:grid;place-items:center}
+.card h3{font-size:25px!important;font-weight:900;margin:14px 0 8px!important;letter-spacing:-.02em}
+.card p{font-size:17.5px!important;color:#1F1F1F!important;font-weight:500;line-height:1.6!important}
+.card ul{list-style:none;padding-left:0!important;font-size:16.5px!important;color:#1F1F1F!important;font-weight:600}
+.card ul li{padding-left:24px;position:relative;margin-top:6px}.card ul li:before{content:"✓";position:absolute;left:0;color:var(--ol);font-weight:900}
+.card .age{font-size:15px!important}
+.qa p,.path p,.flow p,.grp p{font-size:17px!important;color:#1F1F1F!important;font-weight:500}
+.qa b,.path b,.flow b{font-size:20px!important;font-weight:900}
+.prom b{font-size:17px!important}.prom span{font-size:15.5px!important;color:#333!important}
+.uxk-hint{font-size:14px!important;opacity:1!important;color:var(--ol)}
+table.t{font-size:17px!important}details p{font-size:17px!important;color:#1F1F1F}summary{font-size:18px!important}
+.k{font-size:14px!important}
+@media(max-width:560px){body{font-size:17px}.lead{font-size:17.5px!important}.card h3{font-size:22px!important}.card p,.qa p,.path p,.flow p{font-size:16.5px!important}.card ul{font-size:16px!important}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Church","name":"들빛교회 (예시)","areaServed":["김해 장유","율하"],"address":{"@type":"PostalAddress","addressLocality":"김해시","addressRegion":"경상남도","streetAddress":"장유 율하 ○○로 ○○ (예시)"},"openingHours":"Su 11:00-12:10"}</script>
+<style>
+/* 게시판 페이지 (11/23) */
+.sv{background:linear-gradient(120deg,#56663A,#3F4D28);color:#fff;padding:46px 0 40px}
+.sv h1{font-family:"Nanum Myeongjo",serif;font-weight:800;font-size:clamp(34px,5vw,52px);margin:4px 0 6px;letter-spacing:-.03em}
+.sv p{margin:0;opacity:.9;font-size:17px}.crumb{font-size:14px;opacity:.85}.crumb a{text-decoration:none}
+.bw{display:grid;grid-template-columns:220px 1fr;gap:34px;padding-top:40px;padding-bottom:90px;align-items:start}
+.lnb{position:sticky;top:96px;background:#fff;border:1.5px solid var(--ln);border-radius:20px;padding:10px;display:grid;gap:2px}
+.lnb b{font-size:13px;color:var(--clay);letter-spacing:.08em;padding:10px 12px 6px}
+.lnb a{display:flex;justify-content:space-between;text-decoration:none;font-weight:800;font-size:16.5px;padding:12px 14px;border-radius:12px;color:#3E372D}
+.lnb a span{font-size:13px;color:var(--mu);font-weight:700}.lnb a:hover{background:var(--sand)}.lnb a.on{background:var(--ol);color:#fff}.lnb a.on span{color:#E8EDD9}
+.top{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.top h2{font-family:"Nanum Myeongjo",serif;font-size:30px!important;margin:0 auto 0 0!important}
+.top .n{color:var(--mu);font-size:15px;font-weight:700}
+[hidden]{display:none!important}
+form.sch{padding:0!important;margin:0!important;box-shadow:none!important;border-radius:99px!important;height:44px;align-items:center}.sch{display:flex;border:1.5px solid var(--ln);border-radius:99px;background:#fff;overflow:hidden}.sch input{border:0;padding:10px 14px;font:inherit;font-size:15px;width:170px;outline:0;background:none}.sch button{border:0;background:none;padding:0 14px;cursor:pointer;font-size:16px}
+table.bt2{width:100%;border-collapse:collapse;background:#fff;border-top:2.5px solid var(--ink);font-size:16.5px}
+.bt2 th{font-size:14.5px;color:var(--mu);font-weight:800;padding:13px 10px;border-bottom:1px solid var(--ln);background:#FDFAF4}
+.bt2 td{padding:16px 10px;border-bottom:1px solid var(--ln);text-align:center;color:#4A4339;font-size:15px}
+.bt2 td.tl{text-align:left;font-weight:700;font-size:17px;color:#1F1F1F}.bt2 tr{cursor:pointer}.bt2 tbody tr:hover td{background:#FBF6EE}
+.bt2 tr.pn td{background:#F6F3EA}.tag{display:inline-block;font-size:12.5px;font-weight:800;border-radius:7px;padding:2px 8px;background:var(--sand);color:var(--clay);white-space:nowrap}.tag.p{background:var(--clay);color:#fff}
+.bt2 .ph{font-size:14px;margin-left:6px}.bt2 .new{display:inline-block;background:#E8674A;color:#fff;font-size:11px;font-weight:900;border-radius:5px;padding:1px 5px;margin-left:6px;vertical-align:2px}
+.alb{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.alb a{text-decoration:none;background:#fff;border:1.5px solid var(--ln);border-radius:18px;overflow:hidden;cursor:pointer}.alb img{width:100%;aspect-ratio:4/3;object-fit:cover}.alb .nb{aspect-ratio:4/3;display:grid;place-items:center;background:var(--sand);font-size:40px}.alb div{padding:12px 14px}.alb b{display:block;font-size:16.5px;line-height:1.4}.alb small{color:var(--mu);font-size:13.5px}
+.pg{display:flex;justify-content:center;gap:6px;margin-top:22px}.pg button{min-width:40px;height:40px;border:1.5px solid var(--ln);background:#fff;border-radius:10px;font:inherit;font-weight:800;cursor:pointer}.pg button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.em2{padding:50px;text-align:center;color:var(--mu);background:#fff;border-bottom:1px solid var(--ln)}
+.rd{background:#fff;border-top:2.5px solid var(--ink)}.rd .h{padding:22px 24px;border-bottom:1px solid var(--ln)}.rd h3{font-size:clamp(22px,3vw,30px);margin:8px 0 8px;line-height:1.4}
+.rd .m{color:var(--mu);font-size:14.5px;display:flex;gap:14px;flex-wrap:wrap}.rd .b{padding:28px 24px 34px;white-space:pre-line;font-size:17.5px;line-height:1.85;color:#1F1F1F;border-bottom:1px solid var(--ln)}.rd .b img{max-width:100%;border-radius:14px;margin-top:16px}
+.nx{display:grid;background:#fff}.nx a{display:grid;grid-template-columns:90px 1fr;padding:14px 20px;border-bottom:1px solid var(--ln);text-decoration:none;font-size:16px}.nx a b{color:var(--mu);font-size:14px}.nx a span{font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.acts{display:flex;gap:8px;justify-content:space-between;margin-top:16px;flex-wrap:wrap}.acts>div{display:flex;gap:8px}
+.gb{border:1.5px solid var(--ln);background:#fff;border-radius:12px;padding:11px 18px;font:inherit;font-weight:800;font-size:15px;cursor:pointer;text-decoration:none;color:inherit}.gb.k2{background:var(--ink);color:#fff;border-color:var(--ink)}.gb.d{color:#B23A2B}
+.wf{display:grid;gap:12px;background:#fff;border:1.5px solid var(--ln);border-radius:20px;padding:24px}.wf input:not([type]),.wf input[name=t],.wf textarea{width:100%}
+.mt{display:none}
+@media(max-width:900px){.bw{grid-template-columns:1fr;gap:16px;}.bw{padding-top:20px}.lnb{position:static;display:flex;overflow-x:auto;padding:6px;border-radius:14px;gap:4px}.lnb b{display:none}.lnb a{white-space:nowrap;font-size:15px;padding:9px 13px}.lnb a span{display:none}}
+@media(max-width:640px){.bt2 thead,.bt2 td.c-n,.bt2 td.c-v,.bt2 td.c-c{display:none}.bt2 tr{display:grid;grid-template-columns:1fr auto;padding:12px 4px;border-bottom:1px solid var(--ln)}.bt2 td{border:0;padding:2px 8px;text-align:left}.bt2 td.tl{grid-column:1/-1;font-size:16.5px}.bt2 td.c-d{font-size:13.5px;color:var(--mu)}.mt{display:inline}.alb{grid-template-columns:1fr 1fr;gap:10px}.alb b{font-size:15px}.sch input{width:120px}.top h2{font-size:25px!important;width:100%}.rd .b{padding:20px 16px;font-size:16.5px}.rd .h{padding:18px 16px}}
+</style></head><body>
+<header><div class="w">
+ <a class="logo" href="#"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#56663A"/><path d="M20 8v24M13 15h14" stroke="#FBF6EE" stroke-width="3" stroke-linecap="round"/><path d="M8 31c4-3 8-4 12-4s8 1 12 4" stroke="#E9C98B" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><div><b>들빛교회</b><small>DEULBIT CHURCH · 장유</small></div></a>
+ <nav class="gnb"><div class="gm"><button type="button">교회 소개</button><div class="sub"><a href="./#pastor">인사말</a><a href="./#serve">섬기는 분들</a><a href="./#way">오시는 길</a></div></div><div class="gm"><button type="button">예배 · 말씀</button><div class="sub"><a href="./#time">예배 시간</a><a href="./#word">이번 주 말씀</a><a href="board.html?c=주보">주보</a></div></div><div class="gm"><button type="button">새가족</button><div class="sub"><a href="./#new">처음 오셨나요?</a><a href="./#first">첫 주일 순서</a><a href="board.html?c=새가족">새가족 소개</a><a href="./#visit">방문 안내 받기</a></div></div><div class="gm"><button type="button">다음세대</button><div class="sub"><a href="./#kids">영아 · 유치 · 초등</a><a href="./#kids">청소년부</a></div></div><div class="gm"><button type="button">교회 게시판</button><div class="sub"><a href="board.html?c=전체">전체 글</a><a href="board.html?c=공지">공지사항</a><a href="board.html?c=주보">주보</a><a href="board.html?c=새가족">새가족 소개</a><a href="board.html?c=앨범">교회 앨범</a><a href="board.html?c=기도">기도 제목</a></div></div></nav><button type="button" class="hb" id="hb" aria-label="전체 메뉴">☰</button>
+ <a class="btn ol" href="./#visit">방문 안내 받기</a>
+</div></header>
+
+<div class="mm" id="mm" hidden><div class="mmi"><div class="mmh"><b>전체 메뉴</b><button type="button" id="mmx" aria-label="닫기">✕</button></div><div class="mmg"><b>교회 소개</b><a href="./#pastor">인사말</a><a href="./#serve">섬기는 분들</a><a href="./#way">오시는 길</a></div><div class="mmg"><b>예배 · 말씀</b><a href="./#time">예배 시간</a><a href="./#word">이번 주 말씀</a><a href="board.html?c=주보">주보</a></div><div class="mmg"><b>새가족</b><a href="./#new">처음 오셨나요?</a><a href="./#first">첫 주일 순서</a><a href="board.html?c=새가족">새가족 소개</a><a href="./#visit">방문 안내 받기</a></div><div class="mmg"><b>다음세대</b><a href="./#kids">영아 · 유치 · 초등</a><a href="./#kids">청소년부</a></div><div class="mmg"><b>교회 게시판</b><a href="board.html?c=전체">전체 글</a><a href="board.html?c=공지">공지사항</a><a href="board.html?c=주보">주보</a><a href="board.html?c=새가족">새가족 소개</a><a href="board.html?c=앨범">교회 앨범</a><a href="board.html?c=기도">기도 제목</a></div><a class="btn ol" href="./#visit" style="justify-content:center;margin-top:10px">🌿 방문 안내 받기</a></div></div>
+
+<section class="sv"><div class="w"><div class="crumb"><a href="./">홈</a> › 교회 게시판 › <b id="cr">전체 글</b></div><h1>교회 게시판</h1><p>공지 · 주보 · 새가족 소개 · 앨범 · 기도 제목을 한곳에서 보세요.</p></div></section>
+<div class="w bw">
+ <nav class="lnb" id="lnb"><b>교회 게시판</b></nav>
+ <main id="main"></main>
+</div>
+<footer><div class="w">
+ <b>들빛교회 (예시)</b> · 장유 교회 · 율하 교회 · 김해 장유 주일예배 · 장유 교회학교<br>
+ 대한예수교장로회 (예시) · 담임목사 이○○ · 고유번호 000-00-00000 · 김해시 장유 율하 ○○로 ○○ (모두 예시)<br>© 2026 · 이 사이트는 <a href="https://chalkakhome.com/" target="_blank" rel="noopener">찰칵홈</a>이 만든 예시예요 · 교회 이름 · 목사 · 계좌는 가상
+</div></footer>
+<div class="dock"><a href="./#time">🕚 예배 시간</a><a class="m" href="./#visit">🌿 방문 안내</a><a href="./#way">🗺 길찾기</a></div>
+<div class="badge">찰칵홈 예시 · <a href="https://chalkakhome.com/" target="_blank" rel="noopener">만들기 문의</a></div>
+<script src="board-data.js"></script>
+<script>
+(()=>{const D=window.DB,$=s=>document.querySelector(s),esc=D.esc;let L=D.load(),img='';const PER=10;
+const Q=()=>{const u=new URLSearchParams(location.search);return{c:u.get('c')||'전체',id:u.get('id'),p:+(u.get('p')||1),q:u.get('q')||'',w:u.get('w')}};
+const go=(o,rep)=>{const u=new URLSearchParams();for(const k in o)if(o[k]&&!(k==='c'&&o[k]==='전체')&&!(k==='p'&&o[k]==1))u.set(k,o[k]);const s='board.html'+(u+''?'?'+u:'');rep?history.replaceState(null,'',s):history.pushState(null,'',s);draw();scrollTo({top:0})};
+const cnt=c=>L.filter(x=>c==='전체'||x.c===c).length;
+function lnb(c){$('#lnb').innerHTML='<b>교회 게시판</b>'+['전체',...D.CATS].map(k=>`<a href="#" data-go="${k}" class="${k===c?'on':''}">${k==='전체'?'📋 전체 글':D.IC[k]+' '+D.NM[k]}<span>${cnt(k)}</span></a>`).join('');$('#cr').textContent=c==='전체'?'전체 글':D.NM[c]}
+function list(o){let a=D.sort(L.filter(x=>(o.c==='전체'||x.c===o.c)&&(!o.q||(x.t+x.b).includes(o.q))));
+ const pins=o.q?[]:a.filter(x=>x.pin);if(!o.q)a=a.filter(x=>!x.pin);const pages=Math.max(1,Math.ceil(a.length/PER)),p=Math.min(o.p,pages),sl=a.slice((p-1)*PER,p*PER);
+ const nm=o.c==='전체'?'전체 글':D.NM[o.c];
+ let h=`<div class="top"><h2>${D.IC[o.c]||'📋'} ${nm}</h2><span class="n">총 ${a.length+pins.length}개</span><form class="sch" id="sch"><input name="q" value="${esc(o.q)}" placeholder="제목·내용 찾기"><button aria-label="찾기">🔍</button></form>${D.isAdm()?`<button class="gb k2" data-w="1">✏️ 글쓰기</button><button class="gb" id="out">관리자 나가기</button>`:`<button class="gb" id="adm">🔒 관리자</button>`}</div>
+ <div id="adbox" hidden class="wf" style="margin-bottom:14px"><b>관리자 로그인</b><span style="color:var(--mu)">예시 사이트라 비밀번호는 <code>1234</code> 예요.</span><div style="display:flex;gap:8px"><input id="adpw" type="password" inputmode="numeric" placeholder="비밀번호" style="max-width:180px"><button class="gb k2" id="adgo">들어가기</button></div></div>`;
+ if(o.c==='앨범'){h+=sl.length?`<div class="alb">${sl.map(x=>`<a data-id="${x.id}">${x.img?`<img src="${x.img}" alt="" loading="lazy">`:'<span class="nb">📷</span>'}<div><b>${esc(x.t)}</b><small>${x.d.replace(/-/g,'.')} · 조회 ${x.v||0}</small></div></a>`).join('')}</div>`:'<div class="em2">아직 올라온 사진이 없어요</div>'}
+ else{const row=(x,i)=>`<tr data-id="${x.id}" class="${x.pin?'pn':''}"><td class="c-n">${x.pin?'<span class="tag p">공지</span>':i}</td><td class="c-c"><span class="tag">${esc(D.NM[x.c])}</span></td><td class="tl">${x.pin?'<span class="mt">📌 </span>':''}${esc(x.t)}${x.img?'<span class="ph">📷</span>':''}${D.isNew(x.d)?'<span class="new">N</span>':''}</td><td class="c-d">${x.d.replace(/-/g,'.')}</td><td class="c-v">${x.v||0}</td></tr>`;
+  const tot=a.length;h+=`<table class="bt2"><thead><tr><th style="width:70px">번호</th><th style="width:110px">분류</th><th>제목</th><th style="width:110px">날짜</th><th style="width:60px">조회</th></tr></thead><tbody>${pins.map(x=>row(x)).join('')}${sl.map((x,i)=>row(x,tot-(p-1)*PER-i)).join('')}${!pins.length&&!sl.length?`<tr><td colspan="5" class="em2">${o.q?'찾는 글이 없어요':'아직 올라온 글이 없어요'}</td></tr>`:''}</tbody></table>`}
+ if(pages>1)h+=`<div class="pg">${Array.from({length:pages},(_,i)=>`<button data-p="${i+1}" class="${i+1===p?'on':''}">${i+1}</button>`).join('')}</div>`;
+ $('#main').innerHTML=h}
+function read(o){const x=L.find(y=>y.id===o.id);if(!x){go({c:o.c},1);return}
+ const vk='dv_'+x.id;try{if(!sessionStorage.getItem(vk)){sessionStorage.setItem(vk,1);x.v=(x.v||0)+1;D.save(L)}}catch(e){}
+ const a=D.sort(L.filter(y=>o.c==='전체'||y.c===o.c)),i=a.findIndex(y=>y.id===x.id),pv=a[i+1],nx=a[i-1];
+ $('#main').innerHTML=`<article class="rd"><div class="h"><span class="tag">${D.IC[x.c]} ${esc(D.NM[x.c])}</span><h3>${esc(x.t)}</h3><div class="m"><span>✍️ 들빛교회</span><span>📅 ${x.d.replace(/-/g,'.')}</span><span>👀 조회 ${x.v||0}</span></div></div><div class="b">${esc(x.b)}${x.img?`<img src="${x.img}" alt="">`:''}</div>
+ <div class="nx">${nx?`<a href="#" data-id="${nx.id}"><b>▲ 다음 글</b><span>${esc(nx.t)}</span></a>`:''}${pv?`<a href="#" data-id="${pv.id}"><b>▼ 이전 글</b><span>${esc(pv.t)}</span></a>`:''}</div></article>
+ <div class="acts"><button class="gb k2" data-list="1">☰ 목록으로</button>${D.isAdm()?`<div><button class="gb" data-e="${x.id}">✏️ 고치기</button><button class="gb d" data-x="${x.id}">🗑 지우기</button></div>`:''}</div>`}
+function write(o){if(!D.isAdm()){go({c:o.c},1);return}const x=o.id?L.find(y=>y.id===o.id):null;img=x&&x.img||'';const cc=x?x.c:(o.c!=='전체'?o.c:'공지');
+ $('#main').innerHTML=`<div class="top"><h2>${x?'✏️ 글 고치기':'✏️ 새 글 쓰기'}</h2></div><form class="wf" id="wf"><div class="chips">${D.CATS.map(k=>`<label><input type="radio" name="c" value="${k}" ${k===cc?'checked':''}><span>${D.IC[k]} ${D.NM[k]}</span></label>`).join('')}</div>
+ <input name="t" required placeholder="제목 (예: 12월 성탄 예배 안내)" value="${x?esc(x.t):''}"><textarea name="b" rows="9" required placeholder="내용을 적어 주세요. 줄을 바꾸면 그대로 보여요.">${x?esc(x.b):''}</textarea>
+ <label class="ph2">📷 사진 붙이기 (선택)<input type="file" accept="image/*" id="wrImg"></label><img id="wrPrev" alt="" ${img?`src="${img}"`:'hidden'}>
+ <label class="pin"><input type="checkbox" name="pin" ${x&&x.pin?'checked':''}> 📌 목록 맨 위에 고정</label>
+ <div style="display:flex;gap:8px"><button class="btn ol" type="submit">${x?'고친 내용 저장':'올리기'}</button><button class="gb" type="button" data-list="1">취소</button></div>
+ <small style="color:var(--mu)">※ 예시 사이트라 이 브라우저에만 저장돼요. 실제 사이트는 교회 계정으로 저장되어 모두에게 보여요.</small></form>`;
+ $('#wrImg').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const W=Math.min(900,im.width),c=document.createElement('canvas');c.width=W;c.height=Math.round(im.height*W/im.width);c.getContext('2d').drawImage(im,0,0,c.width,c.height);img=c.toDataURL('image/jpeg',.8);$('#wrPrev').src=img;$('#wrPrev').hidden=false};im.src=r.result};r.readAsDataURL(f)});
+ $('#wf').addEventListener('submit',e=>{e.preventDefault();const f=e.target,n={c:f.c.value,t:f.t.value.trim(),b:f.b.value.trim(),pin:f.pin.checked?1:0,img};
+  if(x)Object.assign(x,n);else{n.id='p'+Date.now();n.d=D.today();n.v=0;L.unshift(n)}D.save(L);go({c:n.c,id:x?x.id:n.id},1)})}
+function draw(){L=D.load();const o=Q();lnb(o.c);document.title=(o.id&&!o.w?((L.find(y=>y.id===o.id)||{}).t||'')+' | ':'')+'교회 게시판 | 장유 들빛교회 (찰칵홈 예시)';o.w?write(o):o.id?read(o):list(o)}
+document.addEventListener('click',e=>{const t=e.target,o=Q();
+ const g=t.closest('[data-go]');if(g){e.preventDefault();go({c:g.dataset.go});$('#mm')&&($('#mm').hidden=true);return}
+ if(t.closest('#mm a')||t.id==='mmx'||t.id==='mm'){$('#mm').hidden=true}
+ const pg=t.closest('[data-p]');if(pg){go({c:o.c,q:o.q,p:pg.dataset.p});return}
+ if(t.closest('[data-list]')){go({c:o.c});return}
+ if(t.closest('[data-w]')){go({c:o.c,w:1});return}
+ const ed=t.closest('[data-e]');if(ed){go({c:o.c,id:ed.dataset.e,w:1});return}
+ const dx=t.closest('[data-x]');if(dx){if(dx.dataset.sure){L=L.filter(y=>y.id!==dx.dataset.x);D.save(L);go({c:o.c},1)}else{dx.dataset.sure=1;dx.textContent='정말 지울까요? 한 번 더'}return}
+ const r=t.closest('[data-id]');if(r&&$('#main').contains(r)){e.preventDefault();go({c:o.c,id:r.dataset.id});return}
+ if(t.id==='adm'){const b=$('#adbox');b.hidden=!b.hidden;if(!b.hidden)$('#adpw').focus();return}
+ if(t.id==='adgo'){if($('#adpw').value==='1234'){D.setAdm(1);draw()}else{$('#adpw').value='';$('#adpw').placeholder='비밀번호가 달라요'}return}
+ if(t.id==='out'){D.setAdm(0);draw()}});
+document.addEventListener('keydown',e=>{if(e.target.id==='adpw'&&e.key==='Enter'){e.preventDefault();$('#adgo').click()}});
+document.addEventListener('submit',e=>{if(e.target.id==='sch'){e.preventDefault();go({c:Q().c,q:e.target.q.value.trim()})}});
+addEventListener('popstate',draw);
+const hb=$('#hb');hb&&hb.addEventListener('click',()=>{$('#mm').hidden=false});
+draw()})();
+
+</script>
+</body></html>

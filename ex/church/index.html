@@ -179,16 +179,18 @@ h2{font-size:clamp(32px,4.4vw,50px)!important}
 table.t{font-size:17px!important}details p{font-size:17px!important;color:#1F1F1F}summary{font-size:18px!important}
 .k{font-size:14px!important}
 @media(max-width:560px){body{font-size:17px}.lead{font-size:17.5px!important}.card h3{font-size:22px!important}.card p,.qa p,.path p,.flow p{font-size:16.5px!important}.card ul{font-size:16px!important}}
+.bq{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.bq a{border:1.5px solid var(--ln);background:#fff;border-radius:99px;padding:9px 15px;font-weight:800;font-size:15px;text-decoration:none}.bq a:hover{border-color:var(--ol);color:var(--ol2)}
+.bl a.row{text-decoration:none;color:inherit}.nw{font-style:normal;background:#E8674A;color:#fff;font-size:11px;font-weight:900;border-radius:5px;padding:1px 5px;vertical-align:2px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Church","name":"들빛교회 (예시)","areaServed":["김해 장유","율하"],"address":{"@type":"PostalAddress","addressLocality":"김해시","addressRegion":"경상남도","streetAddress":"장유 율하 ○○로 ○○ (예시)"},"openingHours":"Su 11:00-12:10"}</script>
 </head><body>
 <header><div class="w">
  <a class="logo" href="#"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#56663A"/><path d="M20 8v24M13 15h14" stroke="#FBF6EE" stroke-width="3" stroke-linecap="round"/><path d="M8 31c4-3 8-4 12-4s8 1 12 4" stroke="#E9C98B" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><div><b>들빛교회</b><small>DEULBIT CHURCH · 장유</small></div></a>
- <nav class="gnb"><div class="gm"><button type="button">교회 소개</button><div class="sub"><a href="#pastor">인사말</a><a href="#serve">섬기는 분들</a><a href="#way">오시는 길</a></div></div><div class="gm"><button type="button">예배 · 말씀</button><div class="sub"><a href="#time">예배 시간</a><a href="#word">이번 주 말씀</a><a href="#board" data-cat="주보">주보</a></div></div><div class="gm"><button type="button">새가족</button><div class="sub"><a href="#new">처음 오셨나요?</a><a href="#first">첫 주일 순서</a><a href="#board" data-cat="새가족">새가족 소개</a><a href="#visit">방문 안내 받기</a></div></div><div class="gm"><button type="button">다음세대</button><div class="sub"><a href="#kids">영아 · 유치 · 초등</a><a href="#kids">청소년부</a></div></div><div class="gm"><button type="button">교회 게시판</button><div class="sub"><a href="#board" data-cat="전체">전체 글</a><a href="#board" data-cat="공지">공지사항</a><a href="#board" data-cat="주보">주보</a><a href="#board" data-cat="새가족">새가족 소개</a><a href="#board" data-cat="앨범">교회 앨범</a><a href="#board" data-cat="기도">기도 제목</a></div></div></nav><button type="button" class="hb" id="hb" aria-label="전체 메뉴">☰</button>
+ <nav class="gnb"><div class="gm"><button type="button">교회 소개</button><div class="sub"><a href="#pastor">인사말</a><a href="#serve">섬기는 분들</a><a href="#way">오시는 길</a></div></div><div class="gm"><button type="button">예배 · 말씀</button><div class="sub"><a href="#time">예배 시간</a><a href="#word">이번 주 말씀</a><a href="board.html?c=주보">주보</a></div></div><div class="gm"><button type="button">새가족</button><div class="sub"><a href="#new">처음 오셨나요?</a><a href="#first">첫 주일 순서</a><a href="board.html?c=새가족">새가족 소개</a><a href="#visit">방문 안내 받기</a></div></div><div class="gm"><button type="button">다음세대</button><div class="sub"><a href="#kids">영아 · 유치 · 초등</a><a href="#kids">청소년부</a></div></div><div class="gm"><button type="button">교회 게시판</button><div class="sub"><a href="board.html">전체 글</a><a href="board.html?c=공지">공지사항</a><a href="board.html?c=주보">주보</a><a href="board.html?c=새가족">새가족 소개</a><a href="board.html?c=앨범">교회 앨범</a><a href="board.html?c=기도">기도 제목</a></div></div></nav><button type="button" class="hb" id="hb" aria-label="전체 메뉴">☰</button>
  <a class="btn ol" href="#visit">방문 안내 받기</a>
 </div></header>
 
-<div class="mm" id="mm" hidden><div class="mmi"><div class="mmh"><b>전체 메뉴</b><button type="button" id="mmx" aria-label="닫기">✕</button></div><div class="mmg"><b>교회 소개</b><a href="#pastor">인사말</a><a href="#serve">섬기는 분들</a><a href="#way">오시는 길</a></div><div class="mmg"><b>예배 · 말씀</b><a href="#time">예배 시간</a><a href="#word">이번 주 말씀</a><a href="#board" data-cat="주보">주보</a></div><div class="mmg"><b>새가족</b><a href="#new">처음 오셨나요?</a><a href="#first">첫 주일 순서</a><a href="#board" data-cat="새가족">새가족 소개</a><a href="#visit">방문 안내 받기</a></div><div class="mmg"><b>다음세대</b><a href="#kids">영아 · 유치 · 초등</a><a href="#kids">청소년부</a></div><div class="mmg"><b>교회 게시판</b><a href="#board" data-cat="전체">전체 글</a><a href="#board" data-cat="공지">공지사항</a><a href="#board" data-cat="주보">주보</a><a href="#board" data-cat="새가족">새가족 소개</a><a href="#board" data-cat="앨범">교회 앨범</a><a href="#board" data-cat="기도">기도 제목</a></div><a class="btn ol" href="#visit" style="justify-content:center;margin-top:10px">🌿 방문 안내 받기</a></div></div>
+<div class="mm" id="mm" hidden><div class="mmi"><div class="mmh"><b>전체 메뉴</b><button type="button" id="mmx" aria-label="닫기">✕</button></div><div class="mmg"><b>교회 소개</b><a href="#pastor">인사말</a><a href="#serve">섬기는 분들</a><a href="#way">오시는 길</a></div><div class="mmg"><b>예배 · 말씀</b><a href="#time">예배 시간</a><a href="#word">이번 주 말씀</a><a href="board.html?c=주보">주보</a></div><div class="mmg"><b>새가족</b><a href="#new">처음 오셨나요?</a><a href="#first">첫 주일 순서</a><a href="board.html?c=새가족">새가족 소개</a><a href="#visit">방문 안내 받기</a></div><div class="mmg"><b>다음세대</b><a href="#kids">영아 · 유치 · 초등</a><a href="#kids">청소년부</a></div><div class="mmg"><b>교회 게시판</b><a href="board.html">전체 글</a><a href="board.html?c=공지">공지사항</a><a href="board.html?c=주보">주보</a><a href="board.html?c=새가족">새가족 소개</a><a href="board.html?c=앨범">교회 앨범</a><a href="board.html?c=기도">기도 제목</a></div><a class="btn ol" href="#visit" style="justify-content:center;margin-top:10px">🌿 방문 안내 받기</a></div></div>
 <section class="hero" style="padding:0">
  <video autoplay muted loop playsinline preload="metadata" poster="img/hero.jpg"><source src="img/hero.mp4" type="video/mp4"></video>
  <div class="w">
@@ -249,22 +251,9 @@ table.t{font-size:17px!important}details p{font-size:17px!important;color:#1F1F1
 </div></section>
 
 <section id="board"><div class="w">
- <div class="bh"><div><span class="k">NEWS & BOARD</span><h2 class="mj">교회 소식 · 게시판</h2><p class="lead" style="margin-bottom:0">주보, 공지, 기도 제목을 여기서 확인하세요. 교회 사무실에서 휴대폰으로 바로 올려요.</p></div>
-  <button type="button" class="adm" id="admBtn">🔒 관리자</button></div>
- <div class="adbox" id="adbox" hidden>
-  <div class="adlog" id="adlog"><b>관리자 로그인</b><span>예시 사이트라 비밀번호는 <code>1234</code> 예요.</span><input id="adpw" type="password" inputmode="numeric" placeholder="비밀번호"><button type="button" class="btn ol" id="adgo">들어가기</button></div>
-  <form class="wr" id="wr" hidden>
-   <div class="wrh"><b id="wrT">✏️ 새 글 쓰기</b><button type="button" class="lnk" id="adout">관리자 나가기</button></div>
-   <div class="chips" id="wrC"><label><input type="radio" name="c" value="공지" checked><span>📢 공지</span></label><label><input type="radio" name="c" value="주보"><span>📰 주보</span></label><label><input type="radio" name="c" value="새가족"><span>🤝 새가족 소개</span></label><label><input type="radio" name="c" value="앨범"><span>📷 교회 앨범</span></label><label><input type="radio" name="c" value="소식"><span>🌿 교회 소식</span></label><label><input type="radio" name="c" value="기도"><span>🙏 기도 제목</span></label></div>
-   <input name="t" required placeholder="제목 (예: 12월 성탄 예배 안내)">
-   <textarea name="b" rows="4" required placeholder="내용을 적어 주세요. 줄을 바꾸면 그대로 보여요."></textarea>
-   <label class="ph2">📷 사진 붙이기 (선택)<input type="file" accept="image/*" id="wrImg"></label><img id="wrPrev" alt="" hidden>
-   <label class="pin"><input type="checkbox" name="pin"> 📌 맨 위에 고정</label>
-   <div style="display:flex;gap:8px"><button class="btn ol" type="submit" id="wrGo">올리기</button><button class="btn" type="button" id="wrCancel" style="background:var(--sand)">취소</button></div>
-   <small style="color:var(--mu)">※ 예시 사이트라 이 휴대폰(브라우저)에만 저장돼요. 실제 사이트는 교회 계정으로 저장되어 모두에게 보여요.</small>
-  </form>
- </div>
- <div class="bt" id="bt"><button class="on" data-c="전체">전체</button><button data-c="공지">📢 공지</button><button data-c="주보">📰 주보</button><button data-c="새가족">🤝 새가족 소개</button><button data-c="앨범">📷 교회 앨범</button><button data-c="소식">🌿 교회 소식</button><button data-c="기도">🙏 기도 제목</button></div>
+ <div class="bh"><div><span class="k">NEWS & BOARD</span><h2 class="mj">교회 게시판</h2><p class="lead" style="margin-bottom:0">공지 · 주보 · 새가족 소개 · 앨범 · 기도 제목. 교회 사무실에서 휴대폰으로 바로 올려요.</p></div>
+  <a class="btn ol" href="board.html">게시판 전체 보기 →</a></div>
+ <div class="bq" id="bq"></div>
  <ul class="bl" id="bl"></ul>
 </div></section>
 
@@ -353,41 +342,14 @@ const sel=document.getElementById('sd');for(let i=0;i<4;i++){const x=new Date(s)
 document.getElementById('cp').addEventListener('click',e=>{const t='○○은행 000-0000-0000-00';(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{e.target.textContent='복사됐어요 ✓'},()=>{e.target.textContent='길게 눌러 복사'})});
 document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();document.getElementById('ok').style.display='block';e.target.querySelector('button').disabled=true});})();
 </script>
+<script src="board-data.js"></script>
 <script>
-(()=>{const K='deulbit_board_v2',AK='deulbit_admin';const $=s=>document.querySelector(s);
-const SEED=[{id:'s1',c:'공지',t:'12월 성탄 축하 예배 안내',b:'12월 25일(목) 오전 11시, 온 가족이 함께 드리는 성탄 예배가 있어요.\n예배 후 아이들 성탄 발표회와 떡 나눔이 있습니다. 처음 오시는 분도 환영해요!',d:'2026-11-22',pin:1},
-{id:'s2',c:'주보',t:'11월 넷째 주 주보',b:'• 말씀: 쉼이 필요한 사람에게 (마태복음 11:28)\n• 찬양: 주님의 마음을 가진 자\n• 광고: 김장 나눔 봉사자 모집 (11/29 토 오전 10시)',d:'2026-11-23'},
-{id:'s6',c:'새가족',t:'이번 주 새가족을 소개합니다 · 정○○ 성도 가정',b:'율하로 이사 온 정○○ · 윤○○ 성도 가정과 아기 하린이가 들빛교회 가족이 되었어요.\n“아기와 함께 편하게 예배드릴 곳을 찾았어요.”\n다음 주일에 만나면 반갑게 인사해 주세요!',d:'2026-11-23',img:'img/pastor.jpg'},
-{id:'s7',c:'앨범',t:'11월 셋째 주 · 주일 아침 풍경',b:'햇살 좋은 주일 아침, 할머니 손을 잡고 온 지우와 함께.',d:'2026-11-16',img:'img/welcome.jpg'},
-{id:'s3',c:'소식',t:'동네 어르신 김장 나눔 함께해요',b:'11월 29일 토요일 오전 10시, 교회 지하 식당에서 김장을 담가 홀로 계신 어르신 30가정에 전해 드려요. 앞치마만 챙겨 오세요.',d:'2026-11-20'},
-{id:'s4',c:'기도',t:'수능을 마친 고3 학생들을 위해',b:'시험을 마치고 새로운 길을 준비하는 청소년부 학생 6명을 위해 함께 기도해 주세요.',d:'2026-11-17'},
-{id:'s5',c:'공지',t:'주차장 이용 안내 (주일)',b:'주일 오전에는 건물 뒤 주차장이 붐벼요. 율하 공영주차장(도보 3분)도 이용하실 수 있어요.',d:'2026-11-10'}];
-const IC={공지:'📢',주보:'📰',소식:'🌿',기도:'🙏',새가족:'🤝',앨범:'📷'};const NM={소식:'교회 소식',기도:'기도 제목',새가족:'새가족 소개',앨범:'교회 앨범'};
-const ld=()=>{try{const v=JSON.parse(localStorage.getItem(K)||'null');return Array.isArray(v)?v:SEED.slice()}catch(e){return SEED.slice()}},sv=a=>{try{localStorage.setItem(K,JSON.stringify(a))}catch(e){}};
-let L=ld(),cat='전체',adm=false,edit=null,img='';try{adm=sessionStorage.getItem(AK)==='1'}catch(e){}
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-function draw(){const a=L.filter(x=>cat==='전체'||x.c===cat).sort((x,y)=>(y.pin?1:0)-(x.pin?1:0)||y.d.localeCompare(x.d));
- $('#bl').innerHTML=a.length?a.map(x=>`<li data-id="${x.id}"><div class="row"><span class="cat">${IC[x.c]||''} ${esc(NM[x.c]||x.c)}</span><span class="tt">${x.img&&(x.c==='새가족'||x.c==='앨범')?`<img src="${x.img}" alt="">`:''}<span>${x.pin?'<i>📌</i>':''}${esc(x.t)}</span></span><span class="dt">${x.d.slice(5).replace('-','.')}</span></div><div class="bd">${esc(x.b)}${x.img?`<img src="${x.img}" alt="">`:''}${adm?`<div class="ed"><button data-e="${x.id}">✏️ 고치기</button><button data-x="${x.id}">🗑 지우기</button></div>`:''}</div></li>`).join(''):'<li class="em">아직 올라온 글이 없어요</li>';
- $('#admBtn').classList.toggle('on',adm);$('#admBtn').textContent=adm?'✏️ 글쓰기':'🔒 관리자';$('#adlog').hidden=adm;$('#wr').hidden=!adm}
-$('#bt').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;cat=b.dataset.c;$('#bt').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));draw()});
-$('#bl').addEventListener('click',e=>{const ed=e.target.closest('[data-e]'),dx=e.target.closest('[data-x]');
- if(dx){const li=dx.closest('li');if(dx.dataset.sure){L=L.filter(x=>x.id!==dx.dataset.x);sv(L);draw()}else{dx.dataset.sure=1;dx.textContent='정말 지울까요? 한 번 더 누르기'}return}
- if(ed){const x=L.find(y=>y.id===ed.dataset.e);edit=x.id;const f=$('#wr');f.t.value=x.t;f.b.value=x.b;f.pin.checked=!!x.pin;f.querySelector(`input[name=c][value="${x.c}"]`).checked=true;img=x.img||'';$('#wrPrev').src=img;$('#wrPrev').hidden=!img;$('#wrT').textContent='✏️ 글 고치기';$('#wrGo').textContent='고친 내용 저장';$('#adbox').hidden=false;$('#adbox').scrollIntoView({behavior:'smooth',block:'center'});return}
- const r=e.target.closest('.row');if(r)r.parentElement.classList.toggle('op')});
-$('#admBtn').addEventListener('click',()=>{$('#adbox').hidden=!$('#adbox').hidden;if(!adm)setTimeout(()=>$('#adpw').focus(),50)});
-const login=()=>{if($('#adpw').value==='1234'){adm=true;try{sessionStorage.setItem(AK,'1')}catch(e){}$('#adpw').value='';draw()}else{$('#adpw').value='';$('#adpw').placeholder='비밀번호가 달라요'}};
-$('#adgo').addEventListener('click',login);$('#adpw').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();login()}});
-$('#adout').addEventListener('click',()=>{adm=false;try{sessionStorage.removeItem(AK)}catch(e){}$('#adbox').hidden=true;draw()});
-const reset=()=>{const f=$('#wr');f.reset();edit=null;img='';$('#wrPrev').hidden=true;$('#wrT').textContent='✏️ 새 글 쓰기';$('#wrGo').textContent='올리기'};
-$('#wrCancel').addEventListener('click',reset);
-$('#wrImg').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const W=Math.min(900,im.width),c=document.createElement('canvas');c.width=W;c.height=Math.round(im.height*W/im.width);c.getContext('2d').drawImage(im,0,0,c.width,c.height);img=c.toDataURL('image/jpeg',.8);$('#wrPrev').src=img;$('#wrPrev').hidden=false};im.src=r.result};r.readAsDataURL(f)});
-$('#wr').addEventListener('submit',e=>{e.preventDefault();const f=e.target,o={c:f.c.value,t:f.t.value.trim(),b:f.b.value.trim(),pin:f.pin.checked?1:0,img};
- if(edit){Object.assign(L.find(x=>x.id===edit),o)}else{const n=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Seoul'}));o.id='p'+Date.now();o.d=n.getFullYear()+'-'+String(n.getMonth()+1).padStart(2,'0')+'-'+String(n.getDate()).padStart(2,'0');L.unshift(o)}
- sv(L);reset();cat='전체';$('#bt').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x.dataset.c==='전체'));draw();const li=$('#bl li');li&&li.classList.add('op')});
-const go=c=>{cat=c;$('#bt').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x.dataset.c===c));draw()};
-document.addEventListener('click',e=>{const a=e.target.closest('a[data-cat]');if(a)go(a.dataset.cat);if(e.target.closest('#mm a')||e.target.id==='mmx'||e.target.id==='mm')$('#mm').hidden=true});
+(()=>{const D=window.DB,$=s=>document.querySelector(s),esc=D.esc,L=D.sort(D.load());
+$('#bq').innerHTML=D.CATS.map(c=>`<a href="board.html?c=${c}">${D.IC[c]} ${D.NM[c]}</a>`).join('');
+$('#bl').innerHTML=L.slice(0,5).map(x=>`<li><a class="row" href="board.html?c=${x.c}&id=${x.id}"><span class="cat">${D.IC[x.c]} ${esc(D.NM[x.c])}</span><span class="tt">${x.img?`<img src="${x.img}" alt="">`:''}<span>${esc(x.t)}${D.isNew(x.d)?' <em class="nw">N</em>':''}</span></span><span class="dt">${x.d.slice(5).replace('-','.')}</span></a></li>`).join('');
 $('#hb').addEventListener('click',()=>{$('#mm').hidden=false});
-draw()})();
+document.addEventListener('click',e=>{if(e.target.closest('#mm a')||e.target.id==='mmx'||e.target.id==='mm')$('#mm').hidden=true});
+})();
 </script>
 <script>window.UXK={pop:'.card',cta:'#visit',ctaText:'방문 안내 받기',reveal:'section h2,section .lead,.card,blockquote,details,form,.map,table,figure,.qa div,.path div,.grp div,.give'}</script>
 <!--UXKIT v1 (삼흥테크 방식: 스크롤 차분 등장 · 눌러서 크게 보기)-->
