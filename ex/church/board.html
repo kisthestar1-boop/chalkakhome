@@ -243,25 +243,112 @@ header .btn{font-size:16.5px!important;padding:13px 22px!important}
 @media(max-width:999px) and (min-width:561px){html{zoom:1.06}}
 @media(max-width:560px){html{zoom:1.05}}
 @media(min-width:761px){.badge{left:auto!important;right:14px!important;bottom:14px!important}}
+
+/* ===== 상세 페이지 (11/23) ===== */
+[hidden]{display:none!important}
+.gm.on>a.gt{color:var(--ol)!important;box-shadow:inset 0 -3px 0 var(--ol)}
+.sv2{position:relative;color:#fff;overflow:hidden;background:#2E2A22}
+.sv2>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%;opacity:.55;filter:saturate(.85)}
+.sv2:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,26,18,.82),rgba(30,26,18,.25) 70%)}
+.sv2 .w{position:relative;z-index:2;padding-top:40px;padding-bottom:40px}
+.sv2 .crumb{font-size:15px;opacity:.85}.sv2 .crumb a{color:#fff;text-decoration:none}
+.sv2 .en{display:block;margin-top:14px;font-size:14px;font-weight:800;letter-spacing:.22em;color:#E9C98B}
+.sv2 h1{font-family:"Nanum Myeongjo",serif;font-weight:800;font-size:clamp(38px,5.4vw,60px);margin:6px 0 8px;letter-spacing:-.03em;line-height:1.2}
+.sv2 p{margin:0;font-size:19px;opacity:.92}
+.stab{position:sticky;top:88px;z-index:20;background:#fff;border-bottom:1px solid var(--ln);box-shadow:0 6px 18px rgba(60,40,20,.05)}
+.stab .w{display:flex;justify-content:center;gap:6px;overflow-x:auto;scrollbar-width:none}.stab .w::-webkit-scrollbar{display:none}
+.stab a{flex:none;text-decoration:none;font-weight:800;font-size:17.5px;color:#5A5145;padding:18px 18px;border-bottom:3px solid transparent;white-space:nowrap}
+.stab a:hover{color:var(--ink)}.stab a.on{color:var(--ol2);border-color:var(--ol)}
+.pw{padding:64px 0 100px}.pw article{animation:fi .35s ease}@keyframes fi{from{opacity:0}to{opacity:1}}
+mark{background:linear-gradient(transparent 58%,#F1E2B8 58%);color:inherit;padding:0 2px}
+.lead2{font-size:19px;color:#2B2B2B;max-width:760px;margin:0 0 30px;line-height:1.75}
+.sub2{color:var(--mu);font-size:16.5px;margin:0 0 16px}
+.h3{font-family:"Nanum Myeongjo",serif;font-weight:800;font-size:clamp(25px,3vw,32px);margin:64px 0 22px;letter-spacing:-.02em}.h3 small{font-family:Pretendard,sans-serif;font-size:16px;color:var(--mu);font-weight:700}
+.g2{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:center}
+.ph.big img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:28px;box-shadow:0 24px 50px rgba(60,40,20,.18)}
+.letter h2{font-size:clamp(28px,3.4vw,40px)!important;line-height:1.45;margin:10px 0 22px!important}
+.letter p{font-size:18px;line-height:1.9;color:#2B2B2B;margin:0 0 14px}.letter .sign{margin-top:24px;font-size:17px;color:var(--mu)}.letter .sign b{font-family:"Nanum Myeongjo",serif;font-size:24px;color:var(--ink);margin-left:6px}
+.c2,.c3,.c4,.kd{display:grid;gap:18px}.c2{grid-template-columns:1fr 1fr}.c3,.kd{grid-template-columns:repeat(3,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
+.bx{background:#fff;border:1.5px solid var(--ln);border-radius:22px;padding:26px 24px;position:relative}
+.bx>i{font-style:normal;font-size:28px;width:56px;height:56px;border-radius:16px;background:var(--sand);display:grid;place-items:center;margin-bottom:14px}
+.bx>b,.bx div>b{display:block;font-size:21px;font-weight:900;letter-spacing:-.02em;margin-bottom:6px}
+.bx p{margin:0;font-size:17px;line-height:1.7;color:#2B2B2B}
+.bx.tall{padding-top:30px}.bx .no{position:absolute;right:22px;top:18px;font-family:"Nanum Myeongjo",serif;font-weight:800;font-size:34px;color:#EADFCD}
+.bx.row{display:flex;gap:18px;align-items:flex-start}.bx.row>i{flex:none;margin:0}.tm{display:inline-block;font-size:14px;font-weight:800;color:var(--clay);margin-bottom:4px}
+.ck{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:8px}.ck li{position:relative;padding-left:26px;font-size:17px;line-height:1.6;color:#2B2B2B}.ck li:before{content:"✓";position:absolute;left:2px;color:var(--ol);font-weight:900}
+.cta2{margin-top:56px;background:var(--ol);color:#fff;border-radius:26px;padding:30px 34px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.cta2 b{display:block;font-size:24px;font-family:"Nanum Myeongjo",serif}.cta2 span{opacity:.9;font-size:17px}.cta2 .btn{margin-left:auto;background:#fff;color:var(--ol2)}
+.name{background:#fff;border:1.5px solid var(--ln);border-radius:28px;padding:40px 44px}.name h2{margin:8px 0 14px!important}.name p{font-size:18.5px;line-height:1.85;margin:0;color:#2B2B2B;max-width:820px}
+.hist{list-style:none;margin:0;padding:0 0 0 28px;border-left:3px solid var(--ln);display:grid;gap:22px}
+.hist li{position:relative;display:grid;grid-template-columns:90px 1fr;gap:16px;align-items:baseline}.hist li:before{content:"";position:absolute;left:-37px;top:9px;width:15px;height:15px;border-radius:50%;background:#fff;border:3px solid var(--ol)}
+.hist b{font-family:"Nanum Myeongjo",serif;font-size:26px;color:var(--ol2)}.hist p{margin:0;font-size:18px}
+.staff{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.sf{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1.5px solid var(--ln);border-radius:22px;padding:22px}
+.sf>i{font-style:normal;flex:none;width:64px;height:64px;border-radius:50%;background:var(--sand);display:grid;place-items:center;font-size:28px}
+.sf span{font-size:14px;font-weight:800;color:var(--clay)}.sf b{display:block;font-size:21px;margin:2px 0 6px}.sf p{margin:0;font-size:16.5px;line-height:1.65;color:#2B2B2B}.sf small{display:block;margin-top:8px;color:var(--mu);font-size:15px}
+.sf.main{grid-column:1/-1;align-items:center}.sf.main img{width:150px;height:170px;object-fit:cover;border-radius:18px;flex:none}.sf.main b{font-size:26px;font-family:"Nanum Myeongjo",serif}
+.note{margin-top:22px;background:var(--sand);border-radius:16px;padding:16px 20px;font-size:17px}
+.give2{margin-top:30px;display:flex;gap:24px;align-items:center;flex-wrap:wrap;background:#fff;border:1.5px dashed var(--ol);border-radius:22px;padding:24px 28px}.give2>div:first-child{flex:1;min-width:260px}.give2 b{font-size:20px}.give2 p{margin:6px 0 0;font-size:16.5px;color:#2B2B2B}
+.acc{display:grid;gap:4px;justify-items:start}.acc code{font-size:19px;font-weight:800;background:var(--sand);padding:6px 12px;border-radius:10px}.acc small{color:var(--mu)}
+.gb{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--ln);background:#fff;border-radius:12px;padding:11px 18px;font:inherit;font-weight:800;font-size:16px;cursor:pointer;text-decoration:none;color:inherit}.gb:hover{border-color:var(--ol)}
+.map2{min-height:420px;border-radius:26px;background:repeating-linear-gradient(45deg,#EFE6D6 0 14px,#F5EEE2 14px 28px);display:grid;place-content:center;justify-items:center;gap:6px;text-align:center;padding:20px}
+.map2 span{font-size:44px}.map2 b{font-size:22px}.map2 small{color:var(--mu);font-size:15px}.mb{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;justify-content:center}
+.lnk2{border:0;background:none;color:var(--clay);font:inherit;font-weight:800;cursor:pointer;text-decoration:underline}
+.wy{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:14px}.wy li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--ln);border-radius:16px;padding:14px 16px}.wy i{font-style:normal;font-size:24px}.wy b{font-size:18px}.wy p{margin:2px 0 0;font-size:16.5px;color:#2B2B2B;line-height:1.6}
+.order{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.order li{background:#fff;border:1.5px solid var(--ln);border-radius:18px;padding:16px;display:grid;gap:4px}.order b{font-size:20px;color:var(--ol2)}.order span{font-size:16px;line-height:1.5}
+.vid2{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:16/9;background:#000}.vid2 img{width:100%;height:100%;object-fit:cover;opacity:.7}.vid2 b{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:54px}.vid2 small{position:absolute;left:16px;bottom:12px;color:#fff;font-size:14px;opacity:.9}
+.wd blockquote{font-size:clamp(24px,2.6vw,30px);line-height:1.5;margin:18px 0 0;padding-left:18px;border-left:4px solid var(--clay)}
+.serm{list-style:none;padding:0;margin:0;background:#fff;border:1.5px solid var(--ln);border-radius:22px;overflow:hidden}
+.serm li{display:grid;grid-template-columns:80px 1fr auto auto;gap:16px;align-items:center;padding:18px 22px;border-bottom:1px solid var(--ln)}.serm li:last-child{border:0}
+.serm .d{font-weight:800;color:var(--mu);font-size:16px}.serm b{font-size:19px}.serm .r{color:var(--mu);font-size:15.5px}.serm .pl{font-weight:800;color:var(--ol2);font-size:15.5px;cursor:pointer}
+.faq2{margin-top:44px;display:grid;gap:10px;max-width:900px}.faq2 details{background:#fff;border:1.5px solid var(--ln);border-radius:18px;padding:4px 22px}.faq2 summary{font-size:19px!important;font-weight:800;padding:16px 0;cursor:pointer}.faq2 p{font-size:17.5px!important;line-height:1.8;margin:0 0 18px;color:#2B2B2B}
+.tl{list-style:none;padding:0;margin:0;display:grid;gap:0;max-width:900px}
+.tl li{display:grid;grid-template-columns:100px 1fr;gap:22px;position:relative;padding-bottom:26px}.tl li:after{content:"";position:absolute;left:46px;top:44px;bottom:0;width:2px;background:var(--ln)}.tl li:last-child:after{display:none}
+.tl .t2{width:92px;height:44px;border-radius:99px;background:var(--ol);color:#fff;font-weight:900;font-size:17px;display:grid;place-items:center}
+.tl li>div{background:#fff;border:1.5px solid var(--ln);border-radius:20px;padding:18px 22px}.tl b{font-size:20px}.tl p{margin:6px 0 0;font-size:17px;line-height:1.7;color:#2B2B2B}
+.wk{text-align:center;padding-top:34px}.wk span{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--clay);color:#fff;font-weight:900;border-radius:99px;padding:4px 14px;font-size:15px}.wk b{font-size:22px!important}
+.ag{display:inline-block;background:var(--sand);color:var(--clay);font-weight:800;font-size:14.5px;border-radius:99px;padding:4px 12px;margin-bottom:6px}
+.yr{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.yr li{background:#fff;border:1.5px solid var(--ln);border-radius:18px;padding:18px;text-align:center;font-size:17px}.yr b{display:block;font-family:"Nanum Myeongjo",serif;font-size:24px;color:var(--ol2)}
+.big2 b small{font-size:15px;color:var(--mu);font-weight:700;margin-left:6px}.big2 p{margin-bottom:10px!important}
+.bk{align-items:start}
+@media(max-width:900px){.stab{top:76px}.stab .w{justify-content:flex-start}.stab a{font-size:16px;padding:15px 13px}.g2{grid-template-columns:1fr;gap:28px}.c3,.c4,.kd{grid-template-columns:1fr 1fr}.order{grid-template-columns:repeat(3,1fr)}.yr{grid-template-columns:repeat(3,1fr)}.staff{grid-template-columns:1fr}.ph.big img{aspect-ratio:4/3}}
+@media(max-width:560px){.sv2 .w{padding-top:40px;padding-bottom:36px}.sv2 p{font-size:16.5px}.pw{padding:36px 0 110px}.c2,.c3,.c4,.kd{grid-template-columns:1fr}.order{grid-template-columns:1fr 1fr}.yr{grid-template-columns:1fr 1fr}.sf.main{flex-direction:column;align-items:flex-start}.serm li{grid-template-columns:60px 1fr;row-gap:2px}.serm .r,.serm .pl{grid-column:2}.tl li{grid-template-columns:1fr;gap:8px}.tl li:after{display:none}.name{padding:26px 22px}.hist li{grid-template-columns:70px 1fr}.cta2{padding:24px}.cta2 .btn{margin-left:0}.lead2,.letter p{font-size:17px}.wk{padding-top:30px}.c4{gap:24px}}
+
+/* 게시판 목록 새 디자인 */
+.bw{display:block!important;max-width:1000px;padding-top:44px!important;padding-bottom:100px!important}
+.top{margin-bottom:22px!important}.top h2{font-size:30px!important}
+.pl2{list-style:none;margin:0;padding:0;border-top:2.5px solid var(--ink)}
+.pl2 li{display:grid;grid-template-columns:92px 1fr auto 24px;gap:22px;align-items:center;padding:22px 10px;border-bottom:1px solid var(--ln);cursor:pointer;transition:background .2s}
+.pl2 li:hover{background:#fff}.pl2 li:hover .ar{color:var(--ol);transform:translateX(3px)}
+.pl2 .dt2{text-align:center;border-right:1px solid var(--ln);padding-right:18px}.pl2 .dt2 b{display:block;font-family:"Nanum Myeongjo",serif;font-size:38px;line-height:1;color:var(--ink)}.pl2 .dt2 span{font-size:14px;color:var(--mu);font-weight:700}
+.pl2 .tx{min-width:0}.pl2 .tx h4{margin:6px 0 4px;font-size:21px;font-weight:900;letter-spacing:-.02em;line-height:1.4}
+.pl2 .tx p{margin:0;font-size:16.5px;color:#5A5145;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pl2 .mt2{font-size:14px;color:var(--mu);margin-left:8px;font-weight:700}
+.pl2 img{width:120px;height:84px;object-fit:cover;border-radius:14px}
+.pl2 .ar{font-size:26px;color:#C9BBA4;transition:.2s}
+.pl2 li.pin{background:linear-gradient(90deg,#F6EEDF,transparent);border-left:4px solid var(--clay)}
+.pl2 .new2{display:inline-block;background:#E8674A;color:#fff;font-size:11.5px;font-weight:900;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:3px}
+.stab a span{font-size:13.5px;color:var(--mu);margin-left:4px}
+.rd{max-width:860px;margin:0 auto}.acts{max-width:860px;margin:16px auto 0}
+.alb{grid-template-columns:repeat(3,1fr)!important}.alb a{transition:transform .25s,box-shadow .25s}.alb a:hover{transform:translateY(-4px);box-shadow:0 18px 34px rgba(60,40,20,.14)}
+@media(max-width:640px){.pl2 li{grid-template-columns:64px 1fr;gap:14px;padding:18px 4px}.pl2 .dt2{padding-right:12px}.pl2 .dt2 b{font-size:28px}.pl2 img,.pl2 .ar{display:none}.pl2 .tx h4{font-size:18px}.pl2 .tx p{font-size:15px}.alb{grid-template-columns:1fr 1fr!important}}
 </style></head><body>
 <header><div class="w">
- <a class="logo" href="#"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#56663A"/><path d="M20 8v24M13 15h14" stroke="#FBF6EE" stroke-width="3" stroke-linecap="round"/><path d="M8 31c4-3 8-4 12-4s8 1 12 4" stroke="#E9C98B" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><div><b>들빛교회</b><small>DEULBIT CHURCH · 장유</small></div></a>
- <nav class="gnb"><div class="gm"><button type="button">교회 소개</button><div class="sub"><a href="./#pastor">인사말</a><a href="./#serve">섬기는 분들</a><a href="./#way">오시는 길</a></div></div><div class="gm"><button type="button">예배 · 말씀</button><div class="sub"><a href="./#time">예배 시간</a><a href="./#word">이번 주 말씀</a><a href="board.html?c=주보">주보</a></div></div><div class="gm"><button type="button">새가족</button><div class="sub"><a href="./#new">처음 오셨나요?</a><a href="./#first">첫 주일 순서</a><a href="board.html?c=새가족">새가족 소개</a><a href="./#visit">방문 안내 받기</a></div></div><div class="gm"><button type="button">다음세대</button><div class="sub"><a href="./#kids">영아 · 유치 · 초등</a><a href="./#kids">청소년부</a></div></div><div class="gm"><a class="gt" href="board.html" style="color:var(--ol);box-shadow:inset 0 -3px 0 var(--ol)">교회 게시판</a><div class="sub"><a href="board.html?c=전체">전체 글</a><a href="board.html?c=공지">공지사항</a><a href="board.html?c=주보">주보</a><a href="board.html?c=새가족">새가족 소개</a><a href="board.html?c=앨범">교회 앨범</a><a href="board.html?c=기도">기도 제목</a></div></div></nav><button type="button" class="hb" id="hb" aria-label="전체 메뉴">☰</button>
- <a class="btn ol" href="./#visit">방문 안내 받기</a>
+ <a class="logo" href="./"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#56663A"/><path d="M20 8v24M13 15h14" stroke="#FBF6EE" stroke-width="3" stroke-linecap="round"/><path d="M8 31c4-3 8-4 12-4s8 1 12 4" stroke="#E9C98B" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><div><b>들빛교회</b><small>DEULBIT CHURCH · 장유</small></div></a>
+ <nav class="gnb"><div class="gm"><a class="gt" href="page.html?p=greet">교회 소개</a><div class="sub"><a href="page.html?p=greet">인사말</a><a href="page.html?p=vision">교회 비전 · 연혁</a><a href="page.html?p=serve">섬기는 분들</a><a href="page.html?p=together">공동체 · 나눔</a><a href="page.html?p=way">오시는 길</a></div></div><div class="gm"><a class="gt" href="page.html?p=times">예배 · 말씀</a><div class="sub"><a href="page.html?p=times">예배 시간</a><a href="page.html?p=word">이번 주 말씀</a><a href="board.html?c=주보">주보</a></div></div><div class="gm"><a class="gt" href="page.html?p=new">새가족</a><div class="sub"><a href="page.html?p=new">처음 오셨나요?</a><a href="page.html?p=first">첫 주일 순서</a><a href="page.html?p=course">새가족 4주 과정</a><a href="board.html?c=새가족">새가족 소개</a><a href="page.html?p=visit">방문 안내 신청</a></div></div><div class="gm"><a class="gt" href="page.html?p=kids">다음세대</a><div class="sub"><a href="page.html?p=kids">교회학교</a><a href="page.html?p=youth">청소년 · 청년부</a></div></div><div class="gm on"><a class="gt" href="board.html">교회 게시판</a><div class="sub"><a href="board.html">전체 글</a><a href="board.html?c=공지">공지사항</a><a href="board.html?c=주보">주보</a><a href="board.html?c=새가족">새가족 소개</a><a href="board.html?c=앨범">교회 앨범</a><a href="board.html?c=기도">기도 제목</a></div></div></nav><button type="button" class="hb" id="hb" aria-label="전체 메뉴">☰</button>
+ <a class="btn ol" href="page.html?p=visit">방문 안내 받기</a>
 </div></header>
 
-<div class="mm" id="mm" hidden><div class="mmi"><div class="mmh"><b>전체 메뉴</b><button type="button" id="mmx" aria-label="닫기">✕</button></div><div class="mmg"><b>교회 소개</b><a href="./#pastor">인사말</a><a href="./#serve">섬기는 분들</a><a href="./#way">오시는 길</a></div><div class="mmg"><b>예배 · 말씀</b><a href="./#time">예배 시간</a><a href="./#word">이번 주 말씀</a><a href="board.html?c=주보">주보</a></div><div class="mmg"><b>새가족</b><a href="./#new">처음 오셨나요?</a><a href="./#first">첫 주일 순서</a><a href="board.html?c=새가족">새가족 소개</a><a href="./#visit">방문 안내 받기</a></div><div class="mmg"><b>다음세대</b><a href="./#kids">영아 · 유치 · 초등</a><a href="./#kids">청소년부</a></div><div class="mmg"><b>교회 게시판</b><a href="board.html?c=전체">전체 글</a><a href="board.html?c=공지">공지사항</a><a href="board.html?c=주보">주보</a><a href="board.html?c=새가족">새가족 소개</a><a href="board.html?c=앨범">교회 앨범</a><a href="board.html?c=기도">기도 제목</a></div><a class="btn ol" href="./#visit" style="justify-content:center;margin-top:10px">🌿 방문 안내 받기</a></div></div>
+<div class="mm" id="mm" hidden><div class="mmi"><div class="mmh"><b>전체 메뉴</b><button type="button" id="mmx" aria-label="닫기">✕</button></div><div class="mmg"><b>교회 소개</b><a href="page.html?p=greet">인사말</a><a href="page.html?p=vision">교회 비전 · 연혁</a><a href="page.html?p=serve">섬기는 분들</a><a href="page.html?p=together">공동체 · 나눔</a><a href="page.html?p=way">오시는 길</a></div><div class="mmg"><b>예배 · 말씀</b><a href="page.html?p=times">예배 시간</a><a href="page.html?p=word">이번 주 말씀</a><a href="board.html?c=주보">주보</a></div><div class="mmg"><b>새가족</b><a href="page.html?p=new">처음 오셨나요?</a><a href="page.html?p=first">첫 주일 순서</a><a href="page.html?p=course">새가족 4주 과정</a><a href="board.html?c=새가족">새가족 소개</a><a href="page.html?p=visit">방문 안내 신청</a></div><div class="mmg"><b>다음세대</b><a href="page.html?p=kids">교회학교</a><a href="page.html?p=youth">청소년 · 청년부</a></div><div class="mmg"><b>교회 게시판</b><a href="board.html">전체 글</a><a href="board.html?c=공지">공지사항</a><a href="board.html?c=주보">주보</a><a href="board.html?c=새가족">새가족 소개</a><a href="board.html?c=앨범">교회 앨범</a><a href="board.html?c=기도">기도 제목</a></div><a class="btn ol" href="page.html?p=visit" style="justify-content:center;margin-top:10px">🌿 방문 안내 받기</a></div></div>
 
-<section class="sv"><div class="w"><div class="crumb"><a href="./">홈</a> › 교회 게시판 › <b id="cr">전체 글</b></div><h1>교회 게시판</h1><p>공지 · 주보 · 새가족 소개 · 앨범 · 기도 제목을 한곳에서 보세요.</p></div></section>
-<div class="w bw">
- <nav class="lnb" id="lnb"><b>교회 게시판</b></nav>
- <main id="main"></main>
-</div>
+<section class="sv2"><img src="img/hero.jpg" alt=""><div class="w"><div class="crumb"><a href="./">홈</a> › 교회 게시판 › <b id="cr">전체 글</b></div><span class="en">NEWS &amp; BOARD</span><h1>교회 게시판</h1><p>공지 · 주보 · 새가족 소개 · 앨범 · 기도 제목을 한곳에서 보세요.</p></div></section>
+<nav class="stab"><div class="w" id="lnb"></div></nav>
+<div class="w bw"><main id="main"></main></div>
 <footer><div class="w">
  <b>들빛교회 (예시)</b> · 장유 교회 · 율하 교회 · 김해 장유 주일예배 · 장유 교회학교<br>
  대한예수교장로회 (예시) · 담임목사 이○○ · 고유번호 000-00-00000 · 김해시 장유 율하 ○○로 ○○ (모두 예시)<br>© 2026 · 이 사이트는 <a href="https://chalkakhome.com/" target="_blank" rel="noopener">찰칵홈</a>이 만든 예시예요 · 교회 이름 · 목사 · 계좌는 가상
 </div></footer>
-<div class="dock"><a href="./#time">🕚 예배 시간</a><a class="m" href="./#visit">🌿 방문 안내</a><a href="./#way">🗺 길찾기</a></div>
+<div class="dock"><a href="page.html?p=times">🕚 예배 시간</a><a class="m" href="page.html?p=visit">🌿 방문 안내</a><a href="page.html?p=way">🗺 길찾기</a></div>
 <div class="badge">찰칵홈 예시 · <a href="https://chalkakhome.com/" target="_blank" rel="noopener">만들기 문의</a></div>
 <script src="board-data.js"></script>
 <script>
@@ -269,15 +356,15 @@ header .btn{font-size:16.5px!important;padding:13px 22px!important}
 const Q=()=>{const u=new URLSearchParams(location.search);return{c:u.get('c')||'전체',id:u.get('id'),p:+(u.get('p')||1),q:u.get('q')||'',w:u.get('w')}};
 const go=(o,rep)=>{const u=new URLSearchParams();for(const k in o)if(o[k]&&!(k==='c'&&o[k]==='전체')&&!(k==='p'&&o[k]==1))u.set(k,o[k]);const s='board.html'+(u+''?'?'+u:'');rep?history.replaceState(null,'',s):history.pushState(null,'',s);draw();scrollTo({top:0})};
 const cnt=c=>L.filter(x=>c==='전체'||x.c===c).length;
-function lnb(c){$('#lnb').innerHTML='<b>교회 게시판</b>'+['전체',...D.CATS].map(k=>`<a href="#" data-go="${k}" class="${k===c?'on':''}">${k==='전체'?'📋 전체 글':D.IC[k]+' '+D.NM[k]}<span>${cnt(k)}</span></a>`).join('');$('#cr').textContent=c==='전체'?'전체 글':D.NM[c]}
+function lnb(c){$('#lnb').innerHTML=['전체',...D.CATS].map(k=>`<a href="#" data-go="${k}" class="${k===c?'on':''}">${k==='전체'?'전체 글':D.NM[k]}<span>${cnt(k)}</span></a>`).join('');$('#cr').textContent=c==='전체'?'전체 글':D.NM[c];const on=$('#lnb a.on');on&&on.scrollIntoView({block:'nearest',inline:'center'})}
 function list(o){let a=D.sort(L.filter(x=>(o.c==='전체'||x.c===o.c)&&(!o.q||(x.t+x.b).includes(o.q))));
  const pins=o.q?[]:a.filter(x=>x.pin);if(!o.q)a=a.filter(x=>!x.pin);const pages=Math.max(1,Math.ceil(a.length/PER)),p=Math.min(o.p,pages),sl=a.slice((p-1)*PER,p*PER);
  const nm=o.c==='전체'?'전체 글':D.NM[o.c];
  let h=`<div class="top"><h2>${D.IC[o.c]||'📋'} ${nm}</h2><span class="n">총 ${a.length+pins.length}개</span><form class="sch" id="sch"><input name="q" value="${esc(o.q)}" placeholder="제목·내용 찾기"><button aria-label="찾기">🔍</button></form>${D.isAdm()?`<button class="gb k2" data-w="1">✏️ 글쓰기</button><button class="gb" id="out">관리자 나가기</button>`:`<button class="gb" id="adm">🔒 관리자</button>`}</div>
  <div id="adbox" hidden class="wf" style="margin-bottom:14px"><b>관리자 로그인</b><span style="color:var(--mu)">예시 사이트라 비밀번호는 <code>1234</code> 예요.</span><div style="display:flex;gap:8px"><input id="adpw" type="password" inputmode="numeric" placeholder="비밀번호" style="max-width:180px"><button class="gb k2" id="adgo">들어가기</button></div></div>`;
  if(o.c==='앨범'){h+=sl.length?`<div class="alb">${sl.map(x=>`<a data-id="${x.id}">${x.img?`<img src="${x.img}" alt="" loading="lazy">`:'<span class="nb">📷</span>'}<div><b>${esc(x.t)}</b><small>${x.d.replace(/-/g,'.')} · 조회 ${x.v||0}</small></div></a>`).join('')}</div>`:'<div class="em2">아직 올라온 사진이 없어요</div>'}
- else{const row=(x,i)=>`<tr data-id="${x.id}" class="${x.pin?'pn':''}"><td class="c-n">${x.pin?'<span class="tag p">공지</span>':i}</td><td class="c-c"><span class="tag">${esc(D.NM[x.c])}</span></td><td class="tl">${x.pin?'<span class="mt">📌 </span>':''}${esc(x.t)}${x.img?'<span class="ph">📷</span>':''}${D.isNew(x.d)?'<span class="new">N</span>':''}</td><td class="c-d">${x.d.replace(/-/g,'.')}</td><td class="c-v">${x.v||0}</td></tr>`;
-  const tot=a.length;h+=`<table class="bt2"><thead><tr><th style="width:70px">번호</th><th style="width:110px">분류</th><th>제목</th><th style="width:110px">날짜</th><th style="width:60px">조회</th></tr></thead><tbody>${pins.map(x=>row(x)).join('')}${sl.map((x,i)=>row(x,tot-(p-1)*PER-i)).join('')}${!pins.length&&!sl.length?`<tr><td colspan="5" class="em2">${o.q?'찾는 글이 없어요':'아직 올라온 글이 없어요'}</td></tr>`:''}</tbody></table>`}
+ else{const ex=t=>esc(t.replace(/\n/g,' ').replace(/^[•\s]+/,'').slice(0,80));const row=x=>`<li data-id="${x.id}" class="${x.pin?'pin':''}"><div class="dt2"><b>${+x.d.slice(8)}</b><span>${x.d.slice(0,7).replace('-','.')}</span></div><div class="tx"><span class="tag ${x.pin?'p':''}">${x.pin?'📌 ':''}${esc(D.NM[x.c])}</span><span class="mt2">조회 ${x.v||0}</span><h4>${esc(x.t)}${D.isNew(x.d)?'<span class="new2">N</span>':''}</h4><p>${ex(x.b)}</p></div>${x.img?`<img src="${x.img}" alt="" loading="lazy">`:'<span></span>'}<span class="ar">›</span></li>`;
+  h+=(pins.length||sl.length)?`<ul class="pl2">${pins.map(row).join('')}${sl.map(row).join('')}</ul>`:`<div class="em2">${o.q?'찾는 글이 없어요':'아직 올라온 글이 없어요'}</div>`}
  if(pages>1)h+=`<div class="pg">${Array.from({length:pages},(_,i)=>`<button data-p="${i+1}" class="${i+1===p?'on':''}">${i+1}</button>`).join('')}</div>`;
  $('#main').innerHTML=h}
 function read(o){const x=L.find(y=>y.id===o.id);if(!x){go({c:o.c},1);return}
@@ -305,7 +392,7 @@ document.addEventListener('click',e=>{const t=e.target,o=Q();
  if(t.closest('[data-w]')){go({c:o.c,w:1});return}
  const ed=t.closest('[data-e]');if(ed){go({c:o.c,id:ed.dataset.e,w:1});return}
  const dx=t.closest('[data-x]');if(dx){if(dx.dataset.sure){L=L.filter(y=>y.id!==dx.dataset.x);D.save(L);go({c:o.c},1)}else{dx.dataset.sure=1;dx.textContent='정말 지울까요? 한 번 더'}return}
- const r=t.closest('[data-id]');if(r&&$('#main').contains(r)){e.preventDefault();go({c:o.c,id:r.dataset.id});return}
+ const r=t.closest('[data-id]');if(r&&$('#main').contains(r)&&!t.closest('[data-e],[data-x]')){e.preventDefault();go({c:o.c,id:r.dataset.id});return}
  if(t.id==='adm'){const b=$('#adbox');b.hidden=!b.hidden;if(!b.hidden)$('#adpw').focus();return}
  if(t.id==='adgo'){if($('#adpw').value==='1234'){D.setAdm(1);draw()}else{$('#adpw').value='';$('#adpw').placeholder='비밀번호가 달라요'}return}
  if(t.id==='out'){D.setAdm(0);draw()}});
