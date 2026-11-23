@@ -163,15 +163,30 @@ nav{font-size:17px!important;gap:20px!important}nav a{color:#1F2F31!important;fo
 @media(max-width:999px) and (min-width:561px){html{zoom:1.06}}
 @media(max-width:560px){html{zoom:1.05}}
 @media(min-width:761px){.badge{left:auto!important;right:14px!important;bottom:14px!important}}
+
+/* 상단 메뉴 (펼침) · 휴대폰 메뉴 */
+header nav.gnb{margin-left:auto;display:flex;gap:2px!important;font-size:17px!important}
+.gm{position:relative}.gm>a.gt{display:block;text-decoration:none;font-weight:800;color:#1F2F31!important;padding:27px 12px;white-space:nowrap}.gm:hover>a.gt,.gm.on>a.gt{color:var(--tl)!important}.gm.on>a.gt{box-shadow:inset 0 -3px 0 var(--tl)}
+.gm .sub{position:absolute;left:50%;top:100%;transform:translateX(-50%);min-width:190px;background:#fff;border:1px solid var(--ln);border-radius:16px;box-shadow:0 16px 34px rgba(10,40,44,.14);padding:10px;display:none;margin-top:-6px;z-index:40}
+.gm:hover .sub,.gm:focus-within .sub{display:grid}.gm .sub a{text-decoration:none;color:#1F2F31!important;font-weight:700;font-size:16.5px;padding:11px 14px;border-radius:10px;white-space:nowrap}.gm .sub a:hover{background:var(--mint);color:var(--tl2)!important}
+.hb{display:none;border:0;background:var(--mint);border-radius:12px;width:44px;height:44px;font-size:20px;cursor:pointer;flex:none}
+.mm{position:fixed;inset:0;z-index:60;background:rgba(10,30,32,.45)}.mm[hidden]{display:none}
+.mmi{position:absolute;right:0;top:0;bottom:0;width:min(86vw,360px);background:var(--bg);overflow:auto;padding:18px 20px 30px;display:grid;align-content:start;gap:16px}
+.mmh{display:flex;justify-content:space-between;align-items:center}.mmh button{border:0;background:var(--mint);border-radius:10px;width:38px;height:38px;font-size:16px;cursor:pointer}
+.mmg{display:grid;gap:2px}.mmg b{font-size:14.5px;color:var(--tl);letter-spacing:.04em;margin-bottom:4px}.mmg a{text-decoration:none;font-weight:700;font-size:18px;padding:10px 0;border-bottom:1px solid var(--ln)}
+@media(max-width:1180px){.gm>a.gt{font-size:15.5px;padding:27px 8px}}
+@media(max-width:920px){header nav.gnb{display:none!important}.hb{display:block}}
+.more{display:inline-flex;align-items:center;gap:6px;margin-top:26px;font-weight:800;font-size:17px;color:var(--tl2);text-decoration:none;border-bottom:2px solid var(--tl);padding-bottom:3px}.more:hover{color:#B7791F;border-color:#B7791F}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalClinic","name":"다온내과의원 (예시)","medicalSpecialty":"InternalMedicine","areaServed":["김해 장유","율하"],"address":{"@type":"PostalAddress","addressLocality":"김해시","addressRegion":"경상남도","streetAddress":"장유 ○○로 ○○ 메디컬빌딩 3층 (예시)"},"openingHours":["Mo-Fr 08:30-20:00","Sa 08:30-13:00"]}</script>
 </head><body>
 <div class="now" id="now"><div class="w"><span class="dot"></span><span id="nowT">지금 진료 중이에요</span><small id="nowS">평일 08:30~20:00 · 점심 13:00~14:00</small></div></div>
 <header><div class="w">
- <a class="logo" href="#"><span class="mk">다</span><div><b>다온내과의원</b><small><i>DAON INTERNAL MEDICINE · </i>김해 장유 내과</small></div></a>
- <nav><a href="#first">처음 오시는 분</a><a href="#care">진료 안내</a><a href="#doc">의료진</a><a href="#check">건강검진</a><a href="#hours">진료시간</a><a href="#way">오시는 길</a></nav>
- <a class="tel" href="tel:0550000000">📞 <span>055-000-0000</span><b class="m">전화</b></a>
+ <a class="logo" href="./"><span class="mk">다</span><div><b>다온내과의원</b><small><i>DAON INTERNAL MEDICINE · </i>김해 장유 내과</small></div></a>
+ <nav class="gnb"><div class="gm"><a class="gt" href="page.html?p=hello">병원 소개</a><div class="sub"><a href="page.html?p=hello">인사말</a><a href="page.html?p=doctor">의료진</a><a href="page.html?p=tour">병원 둘러보기</a><a href="page.html?p=hours">진료시간 · 비용</a></div></div><div class="gm"><a class="gt" href="page.html?p=general">진료 안내</a><div class="sub"><a href="page.html?p=general">감기 · 내과 일반</a><a href="page.html?p=chronic">혈압 · 당뇨 관리</a><a href="page.html?p=endo">위 · 대장 내시경</a><a href="page.html?p=ultra">초음파 · 심전도</a><a href="page.html?p=vaccine">예방접종</a></div></div><div class="gm"><a class="gt" href="page.html?p=national">건강검진</a><div class="sub"><a href="page.html?p=national">국가건강검진</a><a href="page.html?p=premium">추가 검진</a><a href="page.html?p=prep">검진 준비</a></div></div><div class="gm"><a class="gt" href="page.html?p=flow">처음 오시는 분</a><div class="sub"><a href="page.html?p=flow">진료 순서</a><a href="page.html?p=faq">자주 묻는 질문</a><a href="page.html?p=docs">서류 발급</a></div></div><div class="gm"><a class="gt" href="page.html?p=book">예약 · 오시는 길</a><div class="sub"><a href="page.html?p=book">진료 예약</a><a href="page.html?p=way">오시는 길</a></div></div></nav>
+ <a class="tel" href="tel:0550000000">📞 <span>055-000-0000</span><b class="m">전화</b></a><button type="button" class="hb" id="hb" aria-label="전체 메뉴">☰</button>
 </div></header>
+<div class="mm" id="mm" hidden><div class="mmi"><div class="mmh"><b>전체 메뉴</b><button type="button" id="mmx" aria-label="닫기">✕</button></div><div class="mmg"><b>병원 소개</b><a href="page.html?p=hello">인사말</a><a href="page.html?p=doctor">의료진</a><a href="page.html?p=tour">병원 둘러보기</a><a href="page.html?p=hours">진료시간 · 비용</a></div><div class="mmg"><b>진료 안내</b><a href="page.html?p=general">감기 · 내과 일반</a><a href="page.html?p=chronic">혈압 · 당뇨 관리</a><a href="page.html?p=endo">위 · 대장 내시경</a><a href="page.html?p=ultra">초음파 · 심전도</a><a href="page.html?p=vaccine">예방접종</a></div><div class="mmg"><b>건강검진</b><a href="page.html?p=national">국가건강검진</a><a href="page.html?p=premium">추가 검진</a><a href="page.html?p=prep">검진 준비</a></div><div class="mmg"><b>처음 오시는 분</b><a href="page.html?p=flow">진료 순서</a><a href="page.html?p=faq">자주 묻는 질문</a><a href="page.html?p=docs">서류 발급</a></div><div class="mmg"><b>예약 · 오시는 길</b><a href="page.html?p=book">진료 예약</a><a href="page.html?p=way">오시는 길</a></div><a class="btn tl" href="page.html?p=book" style="justify-content:center;margin-top:10px">📅 진료 예약</a></div></div>
 
 <section class="hero" style="padding:0">
  <video autoplay muted loop playsinline preload="metadata" poster="img/hero.jpg"><source src="img/hero.mp4" type="video/mp4"></video>
@@ -179,7 +194,7 @@ nav{font-size:17px!important;gap:20px!important}nav a{color:#1F2F31!important;fo
   <span class="tag">🩺 장유 동네 내과 · 평일 저녁 8시 · 토요일 진료</span>
   <h1 class="se">기다림은 짧게,<br><em>설명은 충분히.</em></h1>
   <p>감기부터 혈압·당뇨 관리, 건강검진까지. 무엇이 왜 필요한지 알기 쉽게 설명해 드릴게요.</p>
-  <div class="cta"><a class="btn tl" href="#book">📅 진료 예약하기</a><a class="btn ln" href="#hours">🕘 오늘 진료시간</a></div>
+  <div class="cta"><a class="btn tl" href="page.html?p=book">📅 진료 예약하기</a><a class="btn ln" href="page.html?p=hours">🕘 오늘 진료시간</a></div>
  </div>
  <div class="hours"><b>🕘 진료시간</b><table id="hT">
   <tr data-d="1,2,3,4,5"><td>평일</td><td>08:30 – 20:00</td></tr>
@@ -189,9 +204,9 @@ nav{font-size:17px!important;gap:20px!important}nav a{color:#1F2F31!important;fo
 </section>
 
 <div class="quick"><div class="w">
- <a href="#hours"><i>🕘</i><div><b>진료시간</b><span>평일 저녁 8시까지</span></div></a>
- <a href="#book"><i>📅</i><div><b>예약 · 접수</b><span>대기 없이 바로</span></div></a>
- <a href="#way"><i>🚗</i><div><b>주차 · 오시는 길</b><span>건물 주차 2시간</span></div></a>
+ <a href="page.html?p=hours"><i>🕘</i><div><b>진료시간</b><span>평일 저녁 8시까지</span></div></a>
+ <a href="page.html?p=book"><i>📅</i><div><b>예약 · 접수</b><span>대기 없이 바로</span></div></a>
+ <a href="page.html?p=way"><i>🚗</i><div><b>주차 · 오시는 길</b><span>건물 주차 2시간</span></div></a>
  <a href="#faq"><i>📄</i><div><b>서류 발급</b><span>진단서 · 소견서</span></div></a>
 </div></div>
 
@@ -207,7 +222,7 @@ nav{font-size:17px!important;gap:20px!important}nav a{color:#1F2F31!important;fo
    <div><span><b>수납 · 처방전</b><p>같은 건물 1층 약국에서 바로 받으실 수 있어요.</p></span></div>
   </div>
  </div>
-</div></section>
+<a class="more" href="page.html?p=flow">자세히 보기 →</a></div></section>
 
 <section id="care" class="alt"><div class="w">
  <span class="k">CARE</span><h2 class="se">이런 진료를 해요</h2>
@@ -220,7 +235,7 @@ nav{font-size:17px!important;gap:20px!important}nav a{color:#1F2F31!important;fo
   <div class="card"><i>💉</i><h3>예방접종</h3><p>독감, 폐렴구균, 대상포진, A·B형 간염.</p><ul><li>어르신 무료 접종 대상 안내</li><li>접종 후 15분 관찰</li></ul></div>
   <div class="card"><i>🩻</i><h3>초음파 검사</h3><p>복부 · 갑상선 초음파로 간, 담낭, 갑상선을 확인해요.</p><ul><li>검사 당일 결과 설명</li><li>금식 여부 미리 안내</li></ul></div>
  </div>
-</div></section>
+<a class="more" href="page.html?p=general">자세히 보기 →</a></div></section>
 
 <section id="doc"><div class="w doc">
  <figure class="ph"><img src="img/doctor.jpg" alt="진료실의 원장 (예시 사진)" loading="lazy"><figcaption>대표원장 (예시 사진)</figcaption></figure>
@@ -234,9 +249,9 @@ nav{font-size:17px!important;gap:20px!important}nav a{color:#1F2F31!important;fo
    <div><i>📱</i><b>다음 검사 날 문자</b><span>잊지 않게 미리 알려 드려요</span></div>
   </div>
   <dl><dt>대표원장</dt><dd>김○○ (예시) · 내과 전문의 · 소화기내과 분과 전문의</dd><dt>경력</dt><dd>○○대학교병원 내과 전공의 · 임상강사 (예시)</dd></dl>
-  <a class="btn tl" href="#book" style="margin-top:20px">원장님께 진료 예약하기 →</a>
+  <a class="btn tl" href="page.html?p=book" style="margin-top:20px">원장님께 진료 예약하기 →</a>
  </div>
-</div></section>
+<a class="more" href="page.html?p=hello">자세히 보기 →</a></div></section>
 
 <section id="check" class="alt"><div class="w">
  <span class="k">CHECK-UP</span><h2 class="se">건강검진, 이것만 준비하세요</h2>
@@ -248,7 +263,7 @@ nav{font-size:17px!important;gap:20px!important}nav a{color:#1F2F31!important;fo
   <div><b>신분증</b><span>모바일 신분증 · 건강보험증 가능</span></div>
  </div>
  <p class="note">※ 개인 상황에 따라 다를 수 있어요. 예약 때 드시는 약을 알려 주시면 맞춰서 안내해 드려요.</p>
-</div></section>
+<a class="more" href="page.html?p=national">자세히 보기 →</a></div></section>
 
 <section id="hours"><div class="w">
  <span class="k">HOURS & FEES</span><h2 class="se">진료시간 · 비용 안내</h2>
@@ -266,7 +281,7 @@ nav{font-size:17px!important;gap:20px!important}nav a{color:#1F2F31!important;fo
    <tr><td>진단서 (일반)</td><td class="r">20,000원</td></tr></table>
    <p class="note">※ 찰칵홈 예시 사이트라 금액은 예시예요. 실제 사이트에는 병원에서 신고한 비급여 진료비를 그대로 싣습니다.</p></div>
  </div>
-</div></section>
+<a class="more" href="page.html?p=hours">자세히 보기 →</a></div></section>
 
 <section id="faq" class="alt"><div class="w" style="max-width:820px">
  <span class="k">FAQ</span><h2 class="se">자주 묻는 질문</h2>
@@ -274,7 +289,7 @@ nav{font-size:17px!important;gap:20px!important}nav a{color:#1F2F31!important;fo
  <details><summary>진단서 · 소견서는 어떻게 받나요?</summary><p>진료 후 접수 데스크에서 바로 발급돼요. 보험 청구용 서류(진료비 영수증 · 세부내역서)는 무료예요.</p></details>
  <details><summary>주차는 어디에 하나요?</summary><p>건물 지하 주차장을 이용하시면 진료 후 2시간 무료 주차 도장을 찍어 드려요.</p></details>
  <details><summary>아이도 진료받을 수 있나요?</summary><p>초등학생 이상은 감기 · 장염 진료가 가능해요. 영유아는 가까운 소아청소년과를 안내해 드려요.</p></details>
-</div></section>
+<a class="more" href="page.html?p=faq">자세히 보기 →</a></div></section>
 
 <section id="book"><div class="w bk">
  <div id="way">
@@ -304,7 +319,7 @@ nav{font-size:17px!important;gap:20px!important}nav a{color:#1F2F31!important;fo
  <div class="law">⚖️ 의료법에 따라 이 사이트에는 치료 후기 · 치료 전후 사진 · "최고" 같은 표현을 싣지 않아요. 비급여 진료비는 병원이 신고한 금액을 그대로 안내합니다.</div>
  상호 다온내과의원 · 대표 김○○ · 사업자등록번호 000-00-00000 · 김해시 장유 ○○로 ○○ (모두 예시)<br>© 2026 · 이 사이트는 <a href="https://chalkakhome.com/" target="_blank" rel="noopener">찰칵홈</a>이 만든 예시예요 · 병원 이름 · 의료진 · 금액은 가상
 </div></footer>
-<div class="dock"><a href="tel:0550000000">📞 전화</a><a class="m" href="#book">📅 예약</a><a href="#way">🗺 길찾기</a></div>
+<div class="dock"><a href="tel:0550000000">📞 전화</a><a class="m" href="page.html?p=book">📅 예약</a><a href="page.html?p=way">🗺 길찾기</a></div>
 <div class="badge">찰칵홈 예시 · <a href="https://chalkakhome.com/" target="_blank" rel="noopener">만들기 문의</a></div>
 <script>
 // 지금 진료 중인지 (한국 시간 기준)
@@ -377,4 +392,4 @@ const g=new Map();$$(C.reveal).filter(e=>!e.closest('.hero,header,#uxk-md')).for
 </script>
 <!--/UXKIT-->
 <script>(()=>{const v=document.querySelector(".hero video");if(!v)return;if(matchMedia("(prefers-reduced-motion: reduce)").matches){v.removeAttribute("autoplay");v.pause()}document.addEventListener("visibilitychange",()=>{document.hidden?v.pause():v.play().catch(()=>{})})})()</script>
-</body></html>
+<script>/*mmclose*/(()=>{const m=document.getElementById("mm");document.getElementById("hb").addEventListener("click",()=>m.hidden=false);document.addEventListener("click",e=>{if(e.target.closest("#mm a")||e.target.id==="mmx"||e.target.id==="mm")m.hidden=true})})()</script></body></html>

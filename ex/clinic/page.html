@@ -1,0 +1,575 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>다온내과의원 | 김해 장유 내과 (찰칵홈 예시)</title>
+<meta name="description" content="장유 다온내과의원(예시) — 동네 내과. 평일 야간 8시, 토요일 오후 1시까지 진료. 감기·고혈압·당뇨·국가건강검진·예방접종. 오늘 진료 중인지 바로 확인하세요.">
+<meta name="keywords" content="장유 내과, 장유 병원, 율하 내과, 김해 장유 건강검진, 장유 예방접종, 장유 야간진료, 장유 토요일 진료">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="기다림은 짧게, 설명은 충분히 — 장유 다온내과의원"><meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--ink:#14262A;--mu:#4E6266;--bg:#F7FAF9;--ln:#DFE9E7;--tl:#0E6B6F;--tl2:#0A5357;--mint:#E3F2EF;--sun:#F2B84B;--card:#fff;--red:#D9534F;--ok:#1E9E6A}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Pretendard,"Apple SD Gothic Neo",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;word-break:keep-all}
+a{color:inherit}img{display:block;max-width:100%}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+.se{font-family:"Gowun Batang",serif;font-weight:700;letter-spacing:-.02em}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:14px;padding:15px 24px;font:inherit;font-weight:800;font-size:16px;text-decoration:none;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn.tl{background:var(--tl);color:#fff}.btn.tl:hover{background:var(--tl2)}
+.btn.wh{background:#fff;color:var(--ink)}
+.btn.ln{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}
+.k{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--tl)}
+section{padding:80px 0}
+h2{font-size:clamp(28px,3.8vw,44px);line-height:1.25;margin:8px 0 12px}
+.lead{color:#46595D;font-size:18px;margin:0 0 32px;max-width:640px}
+/* 지금 진료 상태 띠 */
+.now{background:var(--ink);color:#fff;font-size:14.5px;font-weight:700}
+.now .w{display:flex;align-items:center;gap:12px;min-height:42px;flex-wrap:wrap}
+.now .dot{width:10px;height:10px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(30,158,106,.25)}
+.now.off .dot{background:#9AA9AC;box-shadow:none}.now.lunch .dot{background:var(--sun);box-shadow:0 0 0 4px rgba(242,184,75,.25)}
+.now small{color:#A9BDC0;font-weight:600;margin-left:auto}
+/* 헤더 */
+header{position:sticky;top:0;z-index:30;background:rgba(247,250,249,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+header .w{display:flex;align-items:center;gap:18px;height:76px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo .mk{width:44px;height:44px;border-radius:50%;background:var(--tl);display:grid;place-items:center;color:#fff;font-weight:900;font-size:20px}
+.logo b{display:block;font-size:28px;font-weight:900;letter-spacing:-.03em;line-height:1}
+.logo small i{font-style:normal}.logo small{display:block;font-size:11.5px;font-weight:700;color:var(--mu);margin-top:4px;letter-spacing:.08em}
+nav{margin-left:auto;display:flex;gap:22px;font-weight:700;font-size:15px}nav a{text-decoration:none;color:#30474B}nav a:hover{color:var(--tl)}
+.tel{font-weight:900;font-size:19px;text-decoration:none;color:var(--tl)}.tel .m{display:none}@media(max-width:920px){.tel .m{display:inline}}
+@media(max-width:920px){nav{display:none}.tel{margin-left:auto;font-size:15px;background:var(--tl);color:#fff;border-radius:12px;padding:9px 13px}.tel span{display:none}}
+@media(max-width:560px){.logo small{letter-spacing:.04em;font-size:10.5px}.logo small i{display:none}.logo b{font-size:25px}.now{font-size:13.5px}.now small{font-size:12px;margin-left:0;width:100%;padding-bottom:6px}.hero .w{padding-bottom:110px}.hero .tag{font-size:12.5px}}
+/* 히어로 */
+.hero{position:relative;min-height:min(84vh,720px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#1d3033}
+.hero video,.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}@media(min-width:761px){.hero video,.hero img.bg{transform:scaleX(-1)}}@media(max-width:760px){.hero video,.hero img.bg{object-position:36% 30%}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,30,32,.86) 0%,rgba(10,30,32,.5) 45%,rgba(10,30,32,.05) 78%),linear-gradient(0deg,rgba(10,30,32,.6),transparent 45%)}
+.hero .w{position:relative;z-index:2;width:100%;padding-bottom:64px}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:7px 14px;font-weight:700;font-size:14px}
+.hero h1{font-size:clamp(42px,6.6vw,84px);line-height:1.15;margin:18px 0 16px}
+.hero h1 em{font-style:normal;color:var(--sun)}
+.hero p{font-size:clamp(16px,1.6vw,19px);max-width:520px;margin:0 0 26px;color:rgba(255,255,255,.92)}
+.hero .cta{display:flex;gap:10px;flex-wrap:wrap}
+.hours{position:absolute;right:20px;bottom:64px;z-index:2;background:#fff;color:var(--ink);border-radius:20px;padding:18px 20px;box-shadow:0 18px 40px rgba(0,0,0,.25);min-width:260px}
+.hours b{font-size:15px}.hours table{width:100%;border-collapse:collapse;margin-top:8px;font-size:14.5px}.hours td{padding:4px 0}.hours td:last-child{text-align:right;font-weight:800}
+.hours tr.today td{color:var(--tl)}.hours tr.today td:first-child:before{content:"오늘 ";font-size:11px;background:var(--tl);color:#fff;border-radius:6px;padding:1px 5px;margin-right:4px}
+@media(max-width:920px){.hours{display:none}}
+/* 빠른 4칸 */
+.quick{margin-top:-1px;background:#fff;border-bottom:1px solid var(--ln)}
+.quick .w{display:grid;grid-template-columns:repeat(4,1fr)}
+.quick a{display:flex;gap:12px;align-items:center;padding:22px 10px;text-decoration:none;border-right:1px solid var(--ln)}.quick a:last-child{border-right:0}
+.quick i{font-style:normal;font-size:26px;width:48px;height:48px;border-radius:14px;background:var(--mint);display:grid;place-items:center;flex:none}
+.quick b{display:block;font-size:16.5px}.quick span{font-size:13.5px;color:var(--mu)}
+@media(max-width:760px){.quick .w{grid-template-columns:1fr 1fr;padding:0}.quick a{border-bottom:1px solid var(--ln);padding:16px 14px}.quick a:nth-child(2n){border-right:0}}
+/* 처음 오시는 분 */
+.first{display:grid;grid-template-columns:1fr 1.1fr;gap:46px;align-items:center}
+@media(max-width:920px){.first{grid-template-columns:1fr}}
+.ph{border-radius:24px;overflow:hidden;position:relative;box-shadow:0 22px 48px rgba(10,40,44,.14)}
+.ph figcaption{position:absolute;left:14px;bottom:14px;background:rgba(0,0,0,.55);color:#fff;font-size:12.5px;padding:6px 11px;border-radius:99px}
+figure{margin:0}
+.flow{display:grid;gap:12px;counter-reset:s}
+.flow div{display:grid;grid-template-columns:54px 1fr;gap:14px;background:#fff;border:1px solid var(--ln);border-radius:18px;padding:18px}
+.flow div:before{counter-increment:s;content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--mint);color:var(--tl);font-weight:900;font-size:20px;display:grid;place-items:center}
+.flow b{font-size:17.5px}.flow p{margin:3px 0 0;color:var(--mu);font-size:15px}
+/* 진료 */
+.alt{background:#fff}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:920px){.cards{grid-template-columns:1fr 1fr}}@media(max-width:560px){.cards{grid-template-columns:1fr}}
+.card{background:var(--bg);border:1px solid var(--ln);border-radius:22px;padding:24px 22px}
+.card i{font-style:normal;font-size:30px}.card h3{font-size:21px;margin:10px 0 6px}.card p{margin:0;color:var(--mu);font-size:15px}
+.card ul{margin:12px 0 0;padding-left:18px;font-size:14.5px;color:#3D5256}
+/* 의료진 */
+.doc{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}@media(max-width:920px){.doc{grid-template-columns:1fr}}
+.doc blockquote{margin:0 0 18px;font-size:clamp(22px,2.6vw,30px);line-height:1.5}
+.doc dl{display:grid;grid-template-columns:90px 1fr;gap:8px 14px;margin:0;font-size:15px}.doc dt{color:var(--mu);font-weight:700}.doc dd{margin:0}
+.doc .story{font-size:17.5px;color:#2E4246;margin:0 0 20px;line-height:1.8}.doc .story b{background:linear-gradient(transparent 60%,#FCE7B2 60%)}
+.prom{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 20px}@media(max-width:560px){.prom{grid-template-columns:1fr}}
+.prom div{background:#fff;border:1px solid var(--ln);border-radius:16px;padding:14px}.prom i{font-style:normal;font-size:22px}.prom b{display:block;font-size:15.5px;margin:4px 0 2px}.prom span{font-size:13.5px;color:var(--mu);line-height:1.45;display:block}
+/* 검진 준비 */
+.prep{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}@media(max-width:920px){.prep{grid-template-columns:1fr 1fr}}
+.prep div{background:var(--tl);color:#fff;border-radius:20px;padding:20px}
+.prep b{display:block;font-size:30px;line-height:1.1}.prep span{font-size:14.5px;opacity:.9}
+/* 표 */
+table.t{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;font-size:15px}
+table.t th,table.t td{padding:13px 14px;border-bottom:1px solid var(--ln);text-align:left}table.t th{background:var(--mint);font-size:14px}
+table.t td.r{text-align:right;font-weight:800}
+.note{font-size:13.5px;color:var(--mu);margin-top:10px}
+/* FAQ */
+details{background:#fff;border:1px solid var(--ln);border-radius:16px;padding:16px 18px;margin-bottom:10px}
+summary{font-weight:800;font-size:16.5px;cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}summary:after{content:"+";float:right;color:var(--tl);font-size:20px}
+details[open] summary:after{content:"−"}details p{margin:10px 0 0;color:#3D5256}
+/* 예약 */
+.bk{display:grid;grid-template-columns:1fr 1fr;gap:36px}@media(max-width:920px){.bk{grid-template-columns:1fr}}
+form{background:#fff;border:1px solid var(--ln);border-radius:24px;padding:24px;display:grid;gap:12px}
+label{font-size:14px;font-weight:700;display:grid;gap:6px}
+input,select,textarea{font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid var(--ln);border-radius:12px;background:var(--bg)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--tl)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chips label{display:block}.chips input{display:none}
+.chips span{display:inline-block;padding:9px 14px;border-radius:99px;border:1.5px solid var(--ln);font-weight:700;font-size:14.5px;cursor:pointer;background:#fff}
+.chips input:checked+span{background:var(--tl);border-color:var(--tl);color:#fff}
+.ok{display:none;background:var(--mint);border-radius:14px;padding:14px;font-weight:700;color:var(--tl2)}
+.map{background:#DCE8E6;border-radius:20px;min-height:240px;display:grid;place-items:center;color:var(--mu);font-weight:700}
+.info{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px;font-size:15.5px}.info b{display:inline-block;width:64px;color:var(--mu)}
+/* 푸터 */
+footer{background:var(--ink);color:#AFC0C2;font-size:13.5px;padding:40px 0 110px}
+footer b{color:#fff}footer a{color:#fff}
+.law{background:#1D3438;border-radius:14px;padding:14px 16px;margin:14px 0;color:#CFDDDE}
+/* 휴대폰 하단 */
+.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:none;gap:8px;background:rgba(20,38,42,.95);padding:8px;border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+.dock a{flex:1;text-align:center;color:#fff;text-decoration:none;font-weight:800;font-size:14.5px;padding:12px 4px;border-radius:12px}.dock a.m{background:var(--tl)}
+@media(max-width:760px){.dock{display:flex}}
+.badge{position:fixed;left:12px;bottom:86px;z-index:41;background:var(--ink);color:#fff;font-size:12px;padding:6px 11px;border-radius:99px}.badge a{color:var(--sun)}
+@media(min-width:761px){.badge{bottom:14px}}@media(max-width:760px){.badge{display:none}}
+
+/* 읽기 좋게 (11/23) */
+body{font-size:17px}
+.bk>*{min-width:0}input,select,textarea{width:100%;min-width:0}.chips input,.pin input{width:auto}
+.card p,.qa p,.path p,.flow p,.grp p{font-size:16px;line-height:1.65;color:#3A3A3A}
+.card h3{font-size:22px}.card ul{font-size:15.5px;color:#2F3B3D;line-height:1.75}
+.qa b,.path b,.flow b{font-size:18.5px}
+.prom span,.prep span,.note,.info{font-size:15px}
+.uxk-hint{font-size:13.5px!important;opacity:.75!important}
+table.t{font-size:16px}
+details p{font-size:16px}summary{font-size:17px}
+.k{font-size:13.5px}
+@media(max-width:560px){body{font-size:16.5px}.card p,.qa p,.path p,.flow p{font-size:15.5px}}
+
+/* 눈에 띄게 (11/23 2차) */
+body{font-size:18px}
+.lead{font-size:19.5px!important;color:#2B2B2B!important;font-weight:500}
+h2{font-size:clamp(32px,4.4vw,50px)!important}
+.card{padding:28px 26px!important;border-width:1.5px!important;background:#fff!important}
+.card i{font-size:30px;width:58px;height:58px;border-radius:18px;background:var(--mint);display:grid;place-items:center}
+.card h3{font-size:25px!important;font-weight:900;margin:14px 0 8px!important;letter-spacing:-.02em}
+.card p{font-size:17.5px!important;color:#1F1F1F!important;font-weight:500;line-height:1.6!important}
+.card ul{list-style:none;padding-left:0!important;font-size:16.5px!important;color:#1F1F1F!important;font-weight:600}
+.card ul li{padding-left:24px;position:relative;margin-top:6px}.card ul li:before{content:"✓";position:absolute;left:0;color:var(--tl);font-weight:900}
+.card .age{font-size:15px!important}
+.qa p,.path p,.flow p,.grp p{font-size:17px!important;color:#1F1F1F!important;font-weight:500}
+.qa b,.path b,.flow b{font-size:20px!important;font-weight:900}
+.prom b{font-size:17px!important}.prom span{font-size:15.5px!important;color:#333!important}
+.uxk-hint{font-size:14px!important;opacity:1!important;color:var(--tl)}
+table.t{font-size:17px!important}details p{font-size:17px!important;color:#1F1F1F}summary{font-size:18px!important}
+.k{font-size:14px!important}
+@media(max-width:560px){body{font-size:17px}.lead{font-size:17.5px!important}.card h3{font-size:22px!important}.card p,.qa p,.path p,.flow p{font-size:16.5px!important}.card ul{font-size:16px!important}}
+
+nav a,.tel{white-space:nowrap}
+@media(max-width:1180px){nav{gap:14px;font-size:14.5px}.logo small i{display:none}.tel{font-size:16px}}
+
+nav{font-size:17px!important;gap:20px!important}nav a{color:#1F2F31!important;font-weight:800}
+.tel{font-size:20px!important}.logo b{font-size:30px}@media(max-width:560px){.logo b{font-size:25px}}
+@media(max-width:1180px){nav{font-size:15.5px!important;gap:13px!important}.tel{font-size:17px!important}}
+
+/* 어르신도 편하게: 전체 크게 (11/23) */
+@media(min-width:1000px){html{zoom:1.12}}
+@media(max-width:999px) and (min-width:561px){html{zoom:1.06}}
+@media(max-width:560px){html{zoom:1.05}}
+@media(min-width:761px){.badge{left:auto!important;right:14px!important;bottom:14px!important}}
+
+/* 상단 메뉴 (펼침) · 휴대폰 메뉴 */
+header nav.gnb{margin-left:auto;display:flex;gap:2px!important;font-size:17px!important}
+.gm{position:relative}.gm>a.gt{display:block;text-decoration:none;font-weight:800;color:#1F2F31!important;padding:27px 12px;white-space:nowrap}.gm:hover>a.gt,.gm.on>a.gt{color:var(--tl)!important}.gm.on>a.gt{box-shadow:inset 0 -3px 0 var(--tl)}
+.gm .sub{position:absolute;left:50%;top:100%;transform:translateX(-50%);min-width:190px;background:#fff;border:1px solid var(--ln);border-radius:16px;box-shadow:0 16px 34px rgba(10,40,44,.14);padding:10px;display:none;margin-top:-6px;z-index:40}
+.gm:hover .sub,.gm:focus-within .sub{display:grid}.gm .sub a{text-decoration:none;color:#1F2F31!important;font-weight:700;font-size:16.5px;padding:11px 14px;border-radius:10px;white-space:nowrap}.gm .sub a:hover{background:var(--mint);color:var(--tl2)!important}
+.hb{display:none;border:0;background:var(--mint);border-radius:12px;width:44px;height:44px;font-size:20px;cursor:pointer;flex:none}
+.mm{position:fixed;inset:0;z-index:60;background:rgba(10,30,32,.45)}.mm[hidden]{display:none}
+.mmi{position:absolute;right:0;top:0;bottom:0;width:min(86vw,360px);background:var(--bg);overflow:auto;padding:18px 20px 30px;display:grid;align-content:start;gap:16px}
+.mmh{display:flex;justify-content:space-between;align-items:center}.mmh button{border:0;background:var(--mint);border-radius:10px;width:38px;height:38px;font-size:16px;cursor:pointer}
+.mmg{display:grid;gap:2px}.mmg b{font-size:14.5px;color:var(--tl);letter-spacing:.04em;margin-bottom:4px}.mmg a{text-decoration:none;font-weight:700;font-size:18px;padding:10px 0;border-bottom:1px solid var(--ln)}
+@media(max-width:1180px){.gm>a.gt{font-size:15.5px;padding:27px 8px}}
+@media(max-width:920px){header nav.gnb{display:none!important}.hb{display:block}}
+.more{display:inline-flex;align-items:center;gap:6px;margin-top:26px;font-weight:800;font-size:17px;color:var(--tl2);text-decoration:none;border-bottom:2px solid var(--tl);padding-bottom:3px}.more:hover{color:#B7791F;border-color:#B7791F}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalClinic","name":"다온내과의원 (예시)","medicalSpecialty":"InternalMedicine","areaServed":["김해 장유","율하"],"address":{"@type":"PostalAddress","addressLocality":"김해시","addressRegion":"경상남도","streetAddress":"장유 ○○로 ○○ 메디컬빌딩 3층 (예시)"},"openingHours":["Mo-Fr 08:30-20:00","Sa 08:30-13:00"]}</script>
+<style>
+/* ===== 상세 페이지 (11/23) ===== */
+[hidden]{display:none!important}
+.gm.on>a.gt{color:var(--tl)!important;box-shadow:inset 0 -3px 0 var(--tl)}
+.sv2{position:relative;color:#fff;overflow:hidden;background:#10282B}
+.sv2>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%;opacity:.55;filter:saturate(.85)}
+.sv2:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,30,33,.82),rgba(8,30,33,.25) 70%)}
+.sv2 .w{position:relative;z-index:2;padding-top:40px;padding-bottom:40px}
+.sv2 .crumb{font-size:15px;opacity:.85}.sv2 .crumb a{color:#fff;text-decoration:none}
+.sv2 .en{display:block;margin-top:14px;font-size:14px;font-weight:800;letter-spacing:.22em;color:#9FE0D6}
+.sv2 h1{font-family:"Gowun Batang",serif;font-weight:800;font-size:clamp(38px,5.4vw,60px);margin:6px 0 8px;letter-spacing:-.03em;line-height:1.2}
+.sv2 p{margin:0;font-size:19px;opacity:.92}
+.stab{position:sticky;top:88px;z-index:20;background:#fff;border-bottom:1px solid var(--ln);box-shadow:0 6px 18px rgba(10,40,44,.05)}
+.stab .w{display:flex;justify-content:center;gap:6px;overflow-x:auto;scrollbar-width:none}.stab .w::-webkit-scrollbar{display:none}
+.stab a{flex:none;text-decoration:none;font-weight:800;font-size:17.5px;color:#36504F;padding:18px 18px;border-bottom:3px solid transparent;white-space:nowrap}
+.stab a:hover{color:var(--ink)}.stab a.on{color:var(--tl2);border-color:var(--tl)}
+.pw{padding:64px 0 100px}.pw article{animation:fi .35s ease}@keyframes fi{from{opacity:0}to{opacity:1}}
+mark{background:linear-gradient(transparent 58%,#FBE3A6 58%);color:inherit;padding:0 2px}
+.lead2{font-size:19px;color:#2B2B2B;max-width:760px;margin:0 0 30px;line-height:1.75}
+.sub2{color:var(--mu);font-size:16.5px;margin:0 0 16px}
+.h3{font-family:"Gowun Batang",serif;font-weight:800;font-size:clamp(25px,3vw,32px);margin:64px 0 22px;letter-spacing:-.02em}.h3 small{font-family:Pretendard,sans-serif;font-size:16px;color:var(--mu);font-weight:700}
+.g2{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:center}
+.ph.big img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:28px;box-shadow:0 24px 50px rgba(10,40,44,.18)}
+.letter h2{font-size:clamp(28px,3.4vw,40px)!important;line-height:1.45;margin:10px 0 22px!important}
+.letter p{font-size:18px;line-height:1.9;color:#2B2B2B;margin:0 0 14px}.letter .sign{margin-top:24px;font-size:17px;color:var(--mu)}.letter .sign b{font-family:"Gowun Batang",serif;font-size:24px;color:var(--ink);margin-left:6px}
+.c2,.c3,.c4,.kd{display:grid;gap:18px}.c2{grid-template-columns:1fr 1fr}.c3,.kd{grid-template-columns:repeat(3,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
+.bx{background:#fff;border:1.5px solid var(--ln);border-radius:22px;padding:26px 24px;position:relative}
+.bx>i{font-style:normal;font-size:28px;width:56px;height:56px;border-radius:16px;background:var(--mint);display:grid;place-items:center;margin-bottom:14px}
+.bx>b,.bx div>b{display:block;font-size:21px;font-weight:900;letter-spacing:-.02em;margin-bottom:6px}
+.bx p{margin:0;font-size:17px;line-height:1.7;color:#2B2B2B}
+.bx.tall{padding-top:30px}.bx .no{position:absolute;right:22px;top:18px;font-family:"Gowun Batang",serif;font-weight:800;font-size:34px;color:#CFE3DF}
+.bx.row{display:flex;gap:18px;align-items:flex-start}.bx.row>i{flex:none;margin:0}.tm{display:inline-block;font-size:14px;font-weight:800;color:#B7791F;margin-bottom:4px}
+.ck{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:8px}.ck li{position:relative;padding-left:26px;font-size:17px;line-height:1.6;color:#2B2B2B}.ck li:before{content:"✓";position:absolute;left:2px;color:var(--tl);font-weight:900}
+.cta2{margin-top:56px;background:var(--tl);color:#fff;border-radius:26px;padding:30px 34px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.cta2 b{display:block;font-size:24px;font-family:"Gowun Batang",serif}.cta2 span{opacity:.9;font-size:17px}.cta2 .btn{margin-left:auto;background:#fff;color:var(--tl2)}
+.name{background:#fff;border:1.5px solid var(--ln);border-radius:28px;padding:40px 44px}.name h2{margin:8px 0 14px!important}.name p{font-size:18.5px;line-height:1.85;margin:0;color:#2B2B2B;max-width:820px}
+.hist{list-style:none;margin:0;padding:0 0 0 28px;border-left:3px solid var(--ln);display:grid;gap:22px}
+.hist li{position:relative;display:grid;grid-template-columns:90px 1fr;gap:16px;align-items:baseline}.hist li:before{content:"";position:absolute;left:-37px;top:9px;width:15px;height:15px;border-radius:50%;background:#fff;border:3px solid var(--tl)}
+.hist b{font-family:"Gowun Batang",serif;font-size:26px;color:var(--tl2)}.hist p{margin:0;font-size:18px}
+.staff{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.sf{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1.5px solid var(--ln);border-radius:22px;padding:22px}
+.sf>i{font-style:normal;flex:none;width:64px;height:64px;border-radius:50%;background:var(--mint);display:grid;place-items:center;font-size:28px}
+.sf span{font-size:14px;font-weight:800;color:#B7791F}.sf b{display:block;font-size:21px;margin:2px 0 6px}.sf p{margin:0;font-size:16.5px;line-height:1.65;color:#2B2B2B}.sf small{display:block;margin-top:8px;color:var(--mu);font-size:15px}
+.sf.main{grid-column:1/-1;align-items:center}.sf.main img{width:150px;height:170px;object-fit:cover;border-radius:18px;flex:none}.sf.main b{font-size:26px;font-family:"Gowun Batang",serif}
+.note{margin-top:22px;background:var(--mint);border-radius:16px;padding:16px 20px;font-size:17px}
+.give2{margin-top:30px;display:flex;gap:24px;align-items:center;flex-wrap:wrap;background:#fff;border:1.5px dashed var(--tl);border-radius:22px;padding:24px 28px}.give2>div:first-child{flex:1;min-width:260px}.give2 b{font-size:20px}.give2 p{margin:6px 0 0;font-size:16.5px;color:#2B2B2B}
+.acc{display:grid;gap:4px;justify-items:start}.acc code{font-size:19px;font-weight:800;background:var(--mint);padding:6px 12px;border-radius:10px}.acc small{color:var(--mu)}
+.gb{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--ln);background:#fff;border-radius:12px;padding:11px 18px;font:inherit;font-weight:800;font-size:16px;cursor:pointer;text-decoration:none;color:inherit}.gb:hover{border-color:var(--tl)}
+.map2{min-height:420px;border-radius:26px;background:repeating-linear-gradient(45deg,#EFE6D6 0 14px,#F5EEE2 14px 28px);display:grid;place-content:center;justify-items:center;gap:6px;text-align:center;padding:20px}
+.map2 span{font-size:44px}.map2 b{font-size:22px}.map2 small{color:var(--mu);font-size:15px}.mb{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;justify-content:center}
+.lnk2{border:0;background:none;color:#B7791F;font:inherit;font-weight:800;cursor:pointer;text-decoration:underline}
+.wy{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:14px}.wy li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--ln);border-radius:16px;padding:14px 16px}.wy i{font-style:normal;font-size:24px}.wy b{font-size:18px}.wy p{margin:2px 0 0;font-size:16.5px;color:#2B2B2B;line-height:1.6}
+.order{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.order li{background:#fff;border:1.5px solid var(--ln);border-radius:18px;padding:16px;display:grid;gap:4px}.order b{font-size:20px;color:var(--tl2)}.order span{font-size:16px;line-height:1.5}
+.vid2{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:16/9;background:#000}.vid2 img{width:100%;height:100%;object-fit:cover;opacity:.7}.vid2 b{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:54px}.vid2 small{position:absolute;left:16px;bottom:12px;color:#fff;font-size:14px;opacity:.9}
+.wd blockquote{font-size:clamp(24px,2.6vw,30px);line-height:1.5;margin:18px 0 0;padding-left:18px;border-left:4px solid #B7791F}
+.serm{list-style:none;padding:0;margin:0;background:#fff;border:1.5px solid var(--ln);border-radius:22px;overflow:hidden}
+.serm li{display:grid;grid-template-columns:80px 1fr auto auto;gap:16px;align-items:center;padding:18px 22px;border-bottom:1px solid var(--ln)}.serm li:last-child{border:0}
+.serm .d{font-weight:800;color:var(--mu);font-size:16px}.serm b{font-size:19px}.serm .r{color:var(--mu);font-size:15.5px}.serm .pl{font-weight:800;color:var(--tl2);font-size:15.5px;cursor:pointer}
+.faq2{margin-top:44px;display:grid;gap:10px;max-width:900px}.faq2 details{background:#fff;border:1.5px solid var(--ln);border-radius:18px;padding:4px 22px}.faq2 summary{font-size:19px!important;font-weight:800;padding:16px 0;cursor:pointer}.faq2 p{font-size:17.5px!important;line-height:1.8;margin:0 0 18px;color:#2B2B2B}
+.tl{list-style:none;padding:0;margin:0;display:grid;gap:0;max-width:900px}
+.tl li{display:grid;grid-template-columns:100px 1fr;gap:22px;position:relative;padding-bottom:26px}.tl li:after{content:"";position:absolute;left:46px;top:44px;bottom:0;width:2px;background:var(--ln)}.tl li:last-child:after{display:none}
+.tl .t2{width:92px;height:44px;border-radius:99px;background:var(--tl);color:#fff;font-weight:900;font-size:17px;display:grid;place-items:center}
+.tl li>div{background:#fff;border:1.5px solid var(--ln);border-radius:20px;padding:18px 22px}.tl b{font-size:20px}.tl p{margin:6px 0 0;font-size:17px;line-height:1.7;color:#2B2B2B}
+.wk{text-align:center;padding-top:34px}.wk span{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#B7791F;color:#fff;font-weight:900;border-radius:99px;padding:4px 14px;font-size:15px}.wk b{font-size:22px!important}
+.ag{display:inline-block;background:var(--mint);color:#B7791F;font-weight:800;font-size:14.5px;border-radius:99px;padding:4px 12px;margin-bottom:6px}
+.yr{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.yr li{background:#fff;border:1.5px solid var(--ln);border-radius:18px;padding:18px;text-align:center;font-size:17px}.yr b{display:block;font-family:"Gowun Batang",serif;font-size:24px;color:var(--tl2)}
+.big2 b small{font-size:15px;color:var(--mu);font-weight:700;margin-left:6px}.big2 p{margin-bottom:10px!important}
+.bk{align-items:start}
+@media(max-width:900px){.stab{top:76px}.stab .w{justify-content:flex-start}.stab a{font-size:16px;padding:15px 13px}.g2{grid-template-columns:1fr;gap:28px}.c3,.c4,.kd{grid-template-columns:1fr 1fr}.order{grid-template-columns:repeat(3,1fr)}.yr{grid-template-columns:repeat(3,1fr)}.staff{grid-template-columns:1fr}.ph.big img{aspect-ratio:4/3}}
+@media(max-width:560px){.sv2 .w{padding-top:40px;padding-bottom:36px}.sv2 p{font-size:16.5px}.pw{padding:36px 0 110px}.c2,.c3,.c4,.kd{grid-template-columns:1fr}.order{grid-template-columns:1fr 1fr}.yr{grid-template-columns:1fr 1fr}.sf.main{flex-direction:column;align-items:flex-start}.serm li{grid-template-columns:60px 1fr;row-gap:2px}.serm .r,.serm .pl{grid-column:2}.tl li{grid-template-columns:1fr;gap:8px}.tl li:after{display:none}.name{padding:26px 22px}.hist li{grid-template-columns:70px 1fr}.cta2{padding:24px}.cta2 .btn{margin-left:0}.lead2,.letter p{font-size:17px}.wk{padding-top:30px}.c4{gap:24px}}
+
+.cta2 .btn{background:#fff;color:var(--tl2)}
+.gal{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px}.gal figure{position:relative;border-radius:22px;overflow:hidden}.gal img{width:100%;height:320px;object-fit:cover}.gal figcaption{position:absolute;left:12px;bottom:12px;background:rgba(10,30,32,.7);color:#fff;font-size:14.5px;font-weight:700;border-radius:99px;padding:5px 12px}
+.g2.sm{grid-template-columns:1fr 1.2fr}.c2s{display:grid;grid-template-columns:1fr 1fr;gap:12px}.c2s .bx{padding:20px}.c2s .bx b{font-size:19px}
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;counter-reset:s}.steps li{background:#fff;border:1.5px solid var(--ln);border-radius:20px;padding:20px;display:grid;gap:4px}.steps li:before{counter-increment:s;content:counter(s);width:36px;height:36px;border-radius:50%;background:var(--tl);color:#fff;font-weight:900;display:grid;place-items:center;margin-bottom:6px}.steps b{font-size:20px}.steps span{font-size:16.5px;color:#2B2B2B}
+.warn{margin-top:28px;background:#FFF4F2;border:1.5px solid #F3C9C2;border-radius:20px;padding:20px 24px}.warn b{font-size:19px}.warn p{margin:6px 0 0;font-size:17px;line-height:1.7}
+.yr4{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.yr4 li{background:#fff;border:1.5px solid var(--ln);border-radius:18px;padding:18px;text-align:center;font-size:17px}.yr4 b{display:block;font-family:"Gowun Batang",serif;font-size:24px;color:var(--tl2)}
+.pill{display:inline-block;margin-top:12px;background:var(--mint);color:var(--tl2);font-weight:800;font-size:14px;border-radius:99px;padding:4px 12px}
+.pk .bx>.pill{margin:0 0 10px}.pr{font-size:26px!important;font-weight:900;color:var(--tl2)!important;margin:4px 0 6px!important}.pr small{font-size:14px;color:var(--mu)}.pk .hot{border-color:var(--tl);box-shadow:0 16px 34px rgba(10,40,44,.12)}.pk .hot .pill{background:var(--tl);color:#fff}
+.prep2{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.prep2 div{background:var(--tl);color:#fff;border-radius:22px;padding:24px}.prep2 b{display:block;font-size:32px;line-height:1.1;margin-bottom:6px}.prep2 span{font-size:16.5px;opacity:.95}
+nav.stab{display:block!important;margin:0!important;font-size:inherit!important}
+.note2{margin-top:14px;color:var(--mu);font-size:15.5px}
+.tel2{display:inline-block;font-size:30px;font-weight:900;color:var(--tl);text-decoration:none}
+table.t td,table.t th{font-size:17px!important;padding:15px 16px!important}
+.tl .t2{width:auto;min-width:44px;padding:0 14px}
+@media(max-width:900px){.gal{grid-template-columns:1fr}.gal img{height:240px}.steps,.yr4,.prep2{grid-template-columns:1fr 1fr}.g2.sm{grid-template-columns:1fr}}
+@media(max-width:560px){.c2s{grid-template-columns:1fr}table.t td,table.t th{font-size:15.5px!important;padding:12px 10px!important}.tel2{font-size:26px}}
+</style></head><body class="subp">
+<header><div class="w">
+ <a class="logo" href="./"><span class="mk">다</span><div><b>다온내과의원</b><small><i>DAON INTERNAL MEDICINE · </i>김해 장유 내과</small></div></a>
+ <nav class="gnb"><div class="gm"><a class="gt" href="page.html?p=hello">병원 소개</a><div class="sub"><a href="page.html?p=hello">인사말</a><a href="page.html?p=doctor">의료진</a><a href="page.html?p=tour">병원 둘러보기</a><a href="page.html?p=hours">진료시간 · 비용</a></div></div><div class="gm"><a class="gt" href="page.html?p=general">진료 안내</a><div class="sub"><a href="page.html?p=general">감기 · 내과 일반</a><a href="page.html?p=chronic">혈압 · 당뇨 관리</a><a href="page.html?p=endo">위 · 대장 내시경</a><a href="page.html?p=ultra">초음파 · 심전도</a><a href="page.html?p=vaccine">예방접종</a></div></div><div class="gm"><a class="gt" href="page.html?p=national">건강검진</a><div class="sub"><a href="page.html?p=national">국가건강검진</a><a href="page.html?p=premium">추가 검진</a><a href="page.html?p=prep">검진 준비</a></div></div><div class="gm"><a class="gt" href="page.html?p=flow">처음 오시는 분</a><div class="sub"><a href="page.html?p=flow">진료 순서</a><a href="page.html?p=faq">자주 묻는 질문</a><a href="page.html?p=docs">서류 발급</a></div></div><div class="gm"><a class="gt" href="page.html?p=book">예약 · 오시는 길</a><div class="sub"><a href="page.html?p=book">진료 예약</a><a href="page.html?p=way">오시는 길</a></div></div></nav>
+ <a class="tel" href="tel:0550000000">📞 <span>055-000-0000</span><b class="m">전화</b></a><button type="button" class="hb" id="hb" aria-label="전체 메뉴">☰</button>
+</div></header>
+<div class="mm" id="mm" hidden><div class="mmi"><div class="mmh"><b>전체 메뉴</b><button type="button" id="mmx" aria-label="닫기">✕</button></div><div class="mmg"><b>병원 소개</b><a href="page.html?p=hello">인사말</a><a href="page.html?p=doctor">의료진</a><a href="page.html?p=tour">병원 둘러보기</a><a href="page.html?p=hours">진료시간 · 비용</a></div><div class="mmg"><b>진료 안내</b><a href="page.html?p=general">감기 · 내과 일반</a><a href="page.html?p=chronic">혈압 · 당뇨 관리</a><a href="page.html?p=endo">위 · 대장 내시경</a><a href="page.html?p=ultra">초음파 · 심전도</a><a href="page.html?p=vaccine">예방접종</a></div><div class="mmg"><b>건강검진</b><a href="page.html?p=national">국가건강검진</a><a href="page.html?p=premium">추가 검진</a><a href="page.html?p=prep">검진 준비</a></div><div class="mmg"><b>처음 오시는 분</b><a href="page.html?p=flow">진료 순서</a><a href="page.html?p=faq">자주 묻는 질문</a><a href="page.html?p=docs">서류 발급</a></div><div class="mmg"><b>예약 · 오시는 길</b><a href="page.html?p=book">진료 예약</a><a href="page.html?p=way">오시는 길</a></div><a class="btn tl" href="page.html?p=book" style="justify-content:center;margin-top:10px">📅 진료 예약</a></div></div>
+
+<section class="sv2" id="sv2"><img id="svImg" src="img/hero.jpg" alt=""><div class="w"><div class="crumb"><a href="./">홈</a> › <span id="crG"></span> › <b id="crP"></b></div><span class="en" id="svEn"></span><h1 id="svT"></h1><p id="svD"></p></div></section>
+<nav class="stab" id="stab"><div class="w" id="stabI"></div></nav>
+<main class="pw">
+
+<!-- ───── 병원 소개 ───── -->
+<article data-p="hello" hidden><div class="w">
+ <div class="g2">
+  <figure class="ph big"><img src="img/doctor.jpg" alt="진료실의 대표원장 (예시 사진)"><figcaption>대표원장 김○○ (예시 사진)</figcaption></figure>
+  <div class="letter">
+   <span class="k">GREETING</span>
+   <h2 class="se">“약만 드리고 보내지 않아요.<br><mark>왜 아픈지</mark>부터 같이 봐요.”</h2>
+   <p>다온내과의원을 찾아 주셔서 감사합니다. ‘다온’은 <b>좋은 일이 다 온다</b>는 우리말이에요. 아파서 오신 분이 나가실 때는 조금이라도 마음이 가벼워지셨으면 하는 바람으로 지은 이름입니다.</p>
+   <p>“혈압약을 5년째 먹는데, 왜 먹는지 아무도 설명해 준 적이 없다”는 어르신이 계셨어요. 그날부터 정했습니다. 검사 결과는 화면으로 함께 보고, 약은 이름과 이유를 적어서 드리기로요.</p>
+   <p>동네 내과의 역할은 큰 병을 일찍 발견하고, 오래 가는 병을 꾸준히 함께 관리하는 것이라고 생각합니다. 큰 병원 진료가 필요하면 미루지 않고 바로 연결해 드리겠습니다.</p>
+   <p class="sign">다온내과의원 대표원장 <b>김○○</b> (예시)</p>
+  </div>
+ </div>
+ <h3 class="h3">다온내과가 지키는 세 가지</h3>
+ <div class="c3">
+  <div class="bx"><i>🖥</i><b>결과는 화면으로 같이</b><p>숫자만 불러 드리지 않고, 지난번 결과와 그래프로 비교해서 보여 드려요.</p></div>
+  <div class="bx"><i>📝</i><b>약 설명 메모</b><p>무슨 약인지, 언제까지, 왜 먹는지 종이에 적어 드려요. 가족에게 보여 주셔도 돼요.</p></div>
+  <div class="bx"><i>📱</i><b>다음 검사 날 문자</b><p>혈액검사 · 내시경 · 검진 날짜를 잊지 않게 미리 문자로 알려 드려요.</p></div>
+ </div>
+ <div class="cta2"><div><b>오늘 진료가 필요하신가요?</b><span>예약하시면 도착 순서보다 먼저 안내해 드려요.</span></div><a class="btn wh" href="page.html?p=book">진료 예약하기 →</a></div>
+</div></article>
+
+<article data-p="doctor" hidden><div class="w">
+ <div class="sf main"><img src="img/doctor.jpg" alt="대표원장 (예시 사진)"><div><span>대표원장 · 내과 전문의</span><b>김○○ 원장</b><p>소화기내과 분과 전문의 · 위 · 대장 내시경과 만성질환 관리를 맡고 있어요. 월 – 토 전 시간 진료.</p></div></div>
+ <div class="c2" style="margin-top:18px">
+  <div class="bx"><b>🎓 학력 · 경력 (예시)</b><ul class="ck"><li>○○대학교 의과대학 졸업</li><li>○○대학교병원 내과 전공의 · 소화기내과 임상강사</li><li>前 ○○병원 내과 과장</li><li>現 다온내과의원 대표원장</li></ul></div>
+  <div class="bx"><b>📜 자격 · 학회 (예시)</b><ul class="ck"><li>내과 전문의 · 소화기내과 분과 전문의</li><li>대한소화기내시경학회 정회원 · 내시경 세부전문의</li><li>대한내과학회 · 대한고혈압학회 정회원</li><li>국가건강검진 지정 의료기관 책임의사</li></ul></div>
+ </div>
+ <h3 class="h3">함께 일하는 사람들</h3>
+ <div class="staff">
+  <div class="sf"><i>👩‍⚕️</i><div><span>간호팀</span><b>간호사 4명</b><p>채혈 · 수액 · 예방접종 · 내시경 보조. 어르신 문진표도 같이 써 드려요.</p></div></div>
+  <div class="sf"><i>🔬</i><div><span>검사실</span><b>임상병리사 1명</b><p>혈액 · 소변 검사를 당일 처리해요. 대부분의 결과는 다음 날 문자로 안내.</p></div></div>
+  <div class="sf"><i>💬</i><div><span>원무팀</span><b>접수 · 수납 2명</b><p>예약 · 서류 발급 · 실손보험 서류를 챙겨 드려요.</p></div></div>
+  <div class="sf"><i>🧼</i><div><span>감염 관리</span><b>내시경 세척 전담 1명</b><p>내시경은 검사마다 소독 기준에 따라 세척 · 기록해요.</p></div></div>
+ </div>
+</div></article>
+
+<article data-p="tour" hidden><div class="w">
+ <p class="lead2">메디컬빌딩 3층, 엘리베이터에서 내리면 바로 접수 데스크예요. 휠체어 · 유모차도 편하게 다니실 수 있어요.</p>
+ <div class="gal">
+  <figure><img src="img/desk.jpg" alt="접수 데스크 (예시 사진)"><figcaption>접수 · 대기실</figcaption></figure>
+  <figure><img src="img/hero.jpg" alt="진료실 (예시 사진)"><figcaption>진료실 · 결과 설명 모니터</figcaption></figure>
+  <figure><img src="img/doctor.jpg" alt="원장 진료실 (예시 사진)"><figcaption>원장 진료실</figcaption></figure>
+ </div>
+ <div class="c4" style="margin-top:26px">
+  <div class="bx"><i>🛋</i><b>대기실</b><p>좌석 24석 · 대기 순서 화면 · 정수기 · 휴대폰 충전</p></div>
+  <div class="bx"><i>🔬</i><b>내시경실</b><p>독립 공간 · 회복실 침대 4개 · 보호자 대기 공간</p></div>
+  <div class="bx"><i>🩻</i><b>검사실</b><p>초음파 · 심전도 · 골밀도 · 채혈실</p></div>
+  <div class="bx"><i>♿</i><b>편의 시설</b><p>휠체어 · 경사로 · 장애인 화장실 · 수유실</p></div>
+ </div>
+</div></article>
+
+<article data-p="hours" hidden><div class="w">
+ <div class="bk">
+  <div><h3 class="h3" style="margin-top:0">진료시간</h3>
+  <table class="t" id="hT3"><tr><th>요일</th><th>진료시간</th></tr>
+   <tr data-d="1,2,3,4,5"><td>월 – 금</td><td class="r">08:30 – 20:00</td></tr>
+   <tr data-d="6"><td>토요일</td><td class="r">08:30 – 13:00</td></tr>
+   <tr><td>점심시간</td><td class="r">13:00 – 14:00</td></tr>
+   <tr data-d="0"><td>일요일 · 공휴일</td><td class="r">휴진</td></tr></table>
+  <ul class="ck" style="margin-top:16px"><li>접수 마감: 진료 종료 30분 전</li><li>내시경 · 검진은 오전에만 (금식 필요)</li><li>평일 저녁 8시까지라 퇴근 후에도 진료 가능</li></ul></div>
+  <div><h3 class="h3" style="margin-top:0">비급여 진료비 안내 <small>(예시)</small></h3>
+  <table class="t"><tr><th>항목</th><th style="text-align:right">비용</th></tr>
+   <tr><td>독감 예방접종 (4가)</td><td class="r">35,000원</td></tr>
+   <tr><td>대상포진 예방접종 (생백신)</td><td class="r">150,000원</td></tr>
+   <tr><td>폐렴구균 (PCV)</td><td class="r">상담 후 안내</td></tr>
+   <tr><td>수면 내시경 진정 비용</td><td class="r">50,000원</td></tr>
+   <tr><td>갑상선 초음파</td><td class="r">60,000원</td></tr>
+   <tr><td>일반 진단서</td><td class="r">20,000원</td></tr>
+   <tr><td>영양 수액</td><td class="r">40,000원 ~</td></tr></table>
+  <p class="note2">※ 찰칵홈 예시 사이트라 금액은 예시예요. 실제 사이트에는 병원이 신고한 비급여 진료비를 그대로 공개합니다.</p></div>
+ </div>
+</div></article>
+
+<!-- ───── 진료 안내 ───── -->
+<article data-p="general" hidden><div class="w">
+ <div class="g2 sm">
+  <div><span class="k">GENERAL</span><h2 class="se">갑자기 아플 때,<br>가까운 내과부터</h2><p class="lead2">감기, 장염, 두통처럼 흔하지만 괴로운 증상. 원인을 확인하고 필요한 만큼만 처방해요.</p></div>
+  <div class="c2s">
+   <div class="bx"><b>🤧 호흡기</b><p>감기 · 독감 · 코로나 · 기관지염 · 비염</p></div><div class="bx"><b>🤢 소화기</b><p>장염 · 복통 · 설사 · 변비 · 역류성 식도염</p></div>
+   <div class="bx"><b>🤕 신경 · 통증</b><p>두통 · 어지럼증 · 몸살 · 근육통</p></div><div class="bx"><b>🩺 기타</b><p>방광염 · 피부 두드러기 · 피로 · 빈혈</p></div>
+  </div>
+ </div>
+ <h3 class="h3">이렇게 진료해요</h3>
+ <ol class="steps"><li><b>문진</b><span>언제부터 · 어떻게 아픈지 듣기</span></li><li><b>신속 검사</b><span>독감 · 코로나 10분 결과</span></li><li><b>필요 시 피검사</b><span>염증 수치 · 탈수 확인</span></li><li><b>처방 · 설명</b><span>약 이름과 이유를 메모로</span></li></ol>
+ <div class="warn"><b>⚠️ 이럴 땐 바로 응급실로 가세요</b><p>갑자기 숨이 차거나 가슴이 조이는 통증, 말이 어눌해지거나 한쪽 팔다리에 힘이 빠질 때, 피를 토하거나 검은 변을 볼 때는 내과보다 응급실이 먼저예요.</p></div>
+</div></article>
+
+<article data-p="chronic" hidden><div class="w">
+ <p class="lead2">고혈압 · 당뇨 · 고지혈증은 증상이 없어도 꾸준히 관리하는 게 전부예요. 다온내과는 ‘잊지 않게’ 함께 챙깁니다.</p>
+ <div class="c3">
+  <div class="bx"><i>❤️</i><b>고혈압</b><ul class="ck"><li>가정 혈압 기록지 드려요</li><li>3개월마다 약 조절 상담</li><li>1년에 한 번 심전도 · 콩팥 검사</li></ul></div>
+  <div class="bx"><i>🩸</i><b>당뇨</b><ul class="ck"><li>당화혈색소 3개월마다 확인</li><li>눈 · 발 · 콩팥 합병증 검사 일정 안내</li><li>식사 · 운동 상담 (보호자 동석 가능)</li></ul></div>
+  <div class="bx"><i>🫀</i><b>고지혈증 · 지방간</b><ul class="ck"><li>콜레스테롤 수치 그래프로 비교</li><li>복부 초음파로 지방간 확인</li><li>약 없이 조절 가능한지 먼저 상담</li></ul></div>
+ </div>
+ <h3 class="h3">‘잊지 않게’ 관리 달력</h3>
+ <ol class="yr4"><li><b>매달</b>약 처방 · 혈압 확인</li><li><b>3개월</b>혈액검사 · 약 조절</li><li><b>6개월</b>콩팥 · 간 기능</li><li><b>1년</b>심전도 · 안저 · 초음파</li></ol>
+ <p class="note2">※ 검사 주기는 환자 상태에 따라 달라질 수 있어요.</p>
+</div></article>
+
+<article data-p="endo" hidden><div class="w">
+ <p class="lead2">위 · 대장 내시경은 소화기내과 분과 전문의가 직접 해요. 수면(진정) 내시경이 가능하고, 작은 용종은 검사 중에 바로 떼어 내요.</p>
+ <div class="c2">
+  <div class="bx"><i>🔬</i><b>위 내시경</b><ul class="ck"><li>검사 시간 약 5 – 10분</li><li>국가검진 위암 검진 (만 40세 이상 2년마다)</li><li>전날 저녁 9시 이후 금식</li></ul></div>
+  <div class="bx"><i>🧪</i><b>대장 내시경</b><ul class="ck"><li>검사 시간 약 15 – 30분</li><li>장 정결제 복용 방법 미리 안내</li><li>용종 발견 시 당일 제거 · 조직검사</li></ul></div>
+ </div>
+ <h3 class="h3">검사 전날부터 당일까지</h3>
+ <ol class="tl">
+  <li><span class="t2">3일 전</span><div><b>씨 있는 과일 · 잡곡 피하기</b><p>대장 내시경이면 김치, 깨, 현미, 수박 · 참외 같은 씨 있는 음식을 피해 주세요.</p></div></li>
+  <li><span class="t2">전날</span><div><b>저녁은 흰죽 · 저녁 9시 이후 금식</b><p>대장 내시경은 안내받은 시간에 장 정결제를 드세요. 물은 조금 괜찮아요.</p></div></li>
+  <li><span class="t2">당일</span><div><b>혈압약은 아침에 물 한 모금과</b><p>당뇨약 · 인슐린은 드시지 마세요. 혈전약(아스피린 등)은 예약 때 꼭 말씀해 주세요.</p></div></li>
+  <li><span class="t2">검사 후</span><div><b>회복실에서 30분 · 결과 설명</b><p>수면 내시경 후엔 운전을 하시면 안 돼요. 보호자와 함께 오시거나 대중교통을 이용하세요.</p></div></li>
+ </ol>
+</div></article>
+
+<article data-p="vaccine" hidden><div class="w">
+ <p class="lead2">어른도 맞아야 하는 예방접종이 있어요. 나이와 건강 상태에 맞춰 필요한 것만 안내해 드려요.</p>
+ <table class="t"><tr><th>접종</th><th>대상 (예시)</th><th>안내</th></tr>
+  <tr><td><b>독감 (인플루엔자)</b></td><td>모든 성인 · 매년 가을</td><td>만 65세 이상 · 임신부 국가 무료</td></tr>
+  <tr><td><b>폐렴구균</b></td><td>만 65세 이상 · 만성질환자</td><td>만 65세 이상 1회 국가 무료 (PPSV23)</td></tr>
+  <tr><td><b>대상포진</b></td><td>만 50세 이상</td><td>생백신 · 재조합 백신 상담 후 선택</td></tr>
+  <tr><td><b>A형 간염</b></td><td>항체 없는 20 – 40대</td><td>항체 검사 후 2회 접종</td></tr>
+  <tr><td><b>B형 간염</b></td><td>항체 없는 성인</td><td>3회 접종 · 일정 문자 안내</td></tr>
+  <tr><td><b>파상풍 (Td/Tdap)</b></td><td>10년마다 · 상처 났을 때</td><td>손주 돌보는 조부모 Tdap 권장</td></tr></table>
+ <div class="c3" style="margin-top:24px">
+  <div class="bx"><i>⏱</i><b>접종 후 15분</b><p>대기실에서 15분 쉬었다 가세요. 드물게 생기는 알레르기 반응을 확인해요.</p></div>
+  <div class="bx"><i>🌡</i><b>열이 있으면 미루기</b><p>37.5도 이상 열이 있으면 다음에 맞는 게 좋아요. 도착하면 체온부터 재요.</p></div>
+  <div class="bx"><i>📱</i><b>다음 차수 문자</b><p>2 – 3회 맞아야 하는 접종은 다음 날짜를 문자로 알려 드려요.</p></div>
+ </div>
+</div></article>
+
+<article data-p="ultra" hidden><div class="w">
+ <p class="lead2">초음파는 방사선 걱정 없이 몸속을 보는 검사예요. 검사한 날 원장이 화면을 같이 보며 바로 설명해 드려요.</p>
+ <div class="c3">
+  <div class="bx"><i>🫁</i><b>복부 초음파</b><p>간 · 담낭 · 췌장 · 콩팥 · 비장. 지방간, 담석, 혹 유무를 확인해요.</p><span class="pill">8시간 금식</span></div>
+  <div class="bx"><i>🦋</i><b>갑상선 초음파</b><p>갑상선 결절(혹)과 크기 변화를 확인해요. 필요하면 조직검사를 안내해요.</p><span class="pill">금식 필요 없음</span></div>
+  <div class="bx"><i>💓</i><b>심전도 · 골밀도</b><p>가슴 두근거림, 고혈압 환자 정기 검사, 50대 이상 골다공증 확인.</p><span class="pill">당일 결과</span></div>
+ </div>
+</div></article>
+
+<!-- ───── 건강검진 ───── -->
+<article data-p="national" hidden><div class="w">
+ <p class="lead2">다온내과는 <b>국가건강검진 지정 기관</b>이에요. 대상자라면 대부분 무료로 받으실 수 있어요. 건강보험공단 우편이나 ‘The건강보험’ 앱에서 대상 여부를 확인하세요.</p>
+ <table class="t"><tr><th>검진</th><th>대상 (예시)</th><th>본인 부담</th></tr>
+  <tr><td><b>일반 건강검진</b></td><td>만 20세 이상 · 2년마다 (사무직)</td><td>없음</td></tr>
+  <tr><td><b>위암 검진 (위 내시경)</b></td><td>만 40세 이상 · 2년마다</td><td>10% (수면 비용 별도)</td></tr>
+  <tr><td><b>대장암 검진</b></td><td>만 50세 이상 · 매년 (분변 검사)</td><td>없음</td></tr>
+  <tr><td><b>간암 검진</b></td><td>만 40세 이상 고위험군 · 6개월마다</td><td>10%</td></tr>
+  <tr><td><b>생애전환기 검진</b></td><td>만 40세 · 66세</td><td>없음</td></tr></table>
+ <div class="c3" style="margin-top:24px">
+  <div class="bx"><i>🕗</i><b>평일 · 토요일 오전</b><p>검진은 오전 8:30 – 11:00. 토요일에도 받으실 수 있어요.</p></div>
+  <div class="bx"><i>🧾</i><b>결과 상담까지</b><p>결과지가 나오면 문자 드려요. 원장이 직접 결과를 설명해 드려요.</p></div>
+  <div class="bx"><i>🏢</i><b>회사 검진</b><p>직원 단체 검진도 예약 가능해요. 담당자 전화 주세요.</p></div>
+ </div>
+</div></article>
+
+<article data-p="premium" hidden><div class="w">
+ <p class="lead2">국가검진에 없는 항목이 궁금하다면 필요한 것만 골라 추가할 수 있어요. 비싼 패키지를 권하지 않아요.</p>
+ <div class="c3 pk">
+  <div class="bx"><span class="pill">기본 추가</span><b>40대 기본</b><p class="pr">150,000원 <small>(예시)</small></p><ul class="ck"><li>복부 초음파</li><li>갑상선 기능 · 간염 항체</li><li>종양 표지자 3종</li></ul></div>
+  <div class="bx hot"><span class="pill">가장 많이 선택</span><b>50대 꼼꼼</b><p class="pr">280,000원 <small>(예시)</small></p><ul class="ck"><li>40대 기본 전체</li><li>갑상선 초음파 · 골밀도</li><li>심전도 · 동맥경화 검사</li></ul></div>
+  <div class="bx"><span class="pill">내시경 포함</span><b>위 · 대장 함께</b><p class="pr">상담 후 안내</p><ul class="ck"><li>수면 위 · 대장 내시경 한 번에</li><li>용종 당일 제거</li><li>하루 만에 끝내기</li></ul></div>
+ </div>
+ <p class="note2">※ 금액은 예시예요. 실제 사이트에는 병원이 정한 비급여 비용을 그대로 공개합니다.</p>
+</div></article>
+
+<article data-p="prep" hidden><div class="w">
+ <p class="lead2">검진 전날이 제일 헷갈리죠. 예약하시면 같은 내용을 문자로도 보내 드려요.</p>
+ <div class="prep2">
+  <div><b>8시간</b><span>전날 밤 9시 이후 금식 (물은 조금 괜찮아요)</span></div>
+  <div><b>혈압약</b><span>아침에 물 한 모금과 드세요</span></div>
+  <div><b>당뇨약</b><span>검진 당일 아침엔 드시지 마세요</span></div>
+  <div><b>신분증</b><span>모바일 신분증 · 건강보험증 가능</span></div>
+ </div>
+ <h3 class="h3">준비물 체크리스트</h3>
+ <div class="c2">
+  <div class="bx"><ul class="ck"><li>신분증 (모바일 신분증 가능)</li><li>건강보험공단 문진표 (미리 작성하면 빨라요)</li><li>대변 검사 용기 (대장암 검진 대상자)</li><li>드시는 약 목록 또는 약 봉투 사진</li></ul></div>
+  <div class="bx"><ul class="ck"><li>편한 옷 · 화장 · 매니큐어는 피해 주세요</li><li>여성은 생리 기간을 피해 예약하세요</li><li>수면 내시경이면 보호자 동행 또는 대중교통</li><li>검진 후 첫 식사는 죽처럼 부드럽게</li></ul></div>
+ </div>
+ <p class="note2">※ 개인 상황에 따라 다를 수 있어요. 예약 때 드시는 약을 알려 주시면 맞춰서 안내해 드려요.</p>
+</div></article>
+
+<!-- ───── 처음 오시는 분 ───── -->
+<article data-p="flow" hidden><div class="w">
+ <div class="g2">
+  <figure class="ph big"><img src="img/desk.jpg" alt="접수 데스크에서 안내하는 간호사 (예시 사진)"><figcaption>접수 데스크 (예시 사진)</figcaption></figure>
+  <div><p class="lead2">처음 가는 병원은 순서부터 헷갈리죠. 들어오시는 순간부터 집에 가실 때까지 미리 알려 드려요.</p>
+  <ol class="tl">
+   <li><span class="t2">1</span><div><b>신분증만 챙겨 오세요</b><p>모바일 건강보험증도 돼요. 드시는 약이 있으면 약 봉투나 사진도요.</p></div></li>
+   <li><span class="t2">2</span><div><b>접수 · 간단한 문진표</b><p>어디가 불편한지 체크만 하시면 돼요. 글씨가 어려우면 간호사가 같이 써 드려요.</p></div></li>
+   <li><span class="t2">3</span><div><b>진료 · 충분한 설명</b><p>검사 결과는 화면으로 같이 보면서, 약은 왜 먹는지까지 설명해 드려요.</p></div></li>
+   <li><span class="t2">4</span><div><b>수납 · 처방전</b><p>같은 건물 1층 약국에서 바로 받으실 수 있어요.</p></div></li>
+  </ol></div>
+ </div>
+</div></article>
+
+<article data-p="faq" hidden><div class="w">
+ <div class="faq2">
+  <details open><summary>예약 없이 가도 되나요?</summary><p>네, 바로 오셔도 진료받으실 수 있어요. 예약하시면 도착 순서보다 먼저 안내해 드려서 기다림이 줄어요.</p></details>
+  <details><summary>대기 시간은 얼마나 되나요?</summary><p>평일 오전 9 – 10시, 토요일 오전이 가장 붐벼요. 평일 오후 2 – 4시, 저녁 6시 이후가 비교적 한가해요.</p></details>
+  <details><summary>주차는 어디에 하나요?</summary><p>건물 지하 주차장을 이용하시면 진료 후 2시간 무료 주차 도장을 찍어 드려요.</p></details>
+  <details><summary>아이도 진료받을 수 있나요?</summary><p>초등학생 이상은 감기 · 장염 진료가 가능해요. 영유아는 가까운 소아청소년과를 안내해 드려요.</p></details>
+  <details><summary>다른 병원 검사 결과를 가져가도 되나요?</summary><p>네, 가져오시면 같이 보고 중복 검사를 줄여 드려요. 결과지 사진도 괜찮아요.</p></details>
+  <details><summary>큰 병원 진료의뢰서도 써 주시나요?</summary><p>필요하면 대학병원 · 종합병원 진료의뢰서를 바로 써 드리고, 예약 방법도 안내해 드려요.</p></details>
+ </div>
+</div></article>
+
+<article data-p="docs" hidden><div class="w">
+ <p class="lead2">진료 후 접수 데스크에서 바로 발급해 드려요. 실손보험 청구 서류는 무료예요.</p>
+ <table class="t"><tr><th>서류</th><th>용도</th><th style="text-align:right">비용 (예시)</th></tr>
+  <tr><td><b>진료비 영수증</b></td><td>실손보험 청구</td><td class="r">무료</td></tr>
+  <tr><td><b>진료비 세부내역서</b></td><td>실손보험 청구</td><td class="r">무료</td></tr>
+  <tr><td><b>처방전 사본</b></td><td>보험 · 회사 제출</td><td class="r">1,000원</td></tr>
+  <tr><td><b>진료확인서</b></td><td>회사 · 학교 결석 확인</td><td class="r">3,000원</td></tr>
+  <tr><td><b>일반 진단서</b></td><td>보험 · 휴직</td><td class="r">20,000원</td></tr>
+  <tr><td><b>소견서</b></td><td>다른 병원 · 회사 제출</td><td class="r">10,000원</td></tr></table>
+ <div class="warn" style="margin-top:22px;background:var(--mint);border-color:var(--ln)"><b>👨‍👩‍👧 가족이 대신 받을 때</b><p>환자 본인의 신분증 사본 · 위임장 · 대리인 신분증이 필요해요. 위임장 양식은 접수 데스크에 있어요.</p></div>
+</div></article>
+
+<!-- ───── 예약 · 오시는 길 ───── -->
+<article data-p="book" hidden><div class="w bk">
+ <div>
+  <h2 class="se" style="margin-top:0">원하시는 시간을 남겨 주세요</h2>
+  <p class="lead2">진료 시간 안에 확인 문자를 보내 드려요. 급하시면 전화가 가장 빨라요.</p>
+  <a class="tel2" href="tel:0550000000">📞 055-000-0000</a>
+  <ul class="wy" style="margin-top:18px"><li><i>⏰</i><div><b>평일 08:30 – 20:00</b><p>토요일 08:30 – 13:00 · 점심 13:00 – 14:00</p></div></li></ul>
+ </div>
+ <form id="f">
+  <label>성함<input name="n" required placeholder="홍길동"></label>
+  <label>연락처<input name="p" required inputmode="tel" placeholder="010-0000-0000"></label>
+  <div><b style="font-size:15px">어떤 진료인가요?</b><div class="chips" style="margin-top:8px">
+   <label><input type="radio" name="c" value="일반" checked><span>🤧 일반 진료</span></label>
+   <label><input type="radio" name="c" value="만성"><span>❤️ 혈압 · 당뇨</span></label>
+   <label><input type="radio" name="c" value="검진"><span>📋 건강검진</span></label>
+   <label><input type="radio" name="c" value="내시경"><span>🔬 내시경</span></label>
+   <label><input type="radio" name="c" value="접종"><span>💉 예방접종</span></label></div></div>
+  <label>희망 날짜 · 시간<input name="d" type="datetime-local"></label>
+  <label>남기실 말씀 (선택)<textarea name="m" rows="3" placeholder="예: 혈압약을 먹고 있어요"></textarea></label>
+  <button class="btn tl" type="submit" style="justify-content:center">📅 예약 요청 보내기</button>
+  <div class="ok" id="ok">예약 요청이 접수됐어요. 진료 시간 안에 확인 문자를 보내 드릴게요. (예시 사이트라 실제로 전송되지는 않아요)</div>
+ </form>
+</div></article>
+
+<article data-p="way" hidden><div class="w">
+ <div class="g2 way">
+  <div class="map2"><span>🗺</span><b>다온내과의원</b><small>실제 사이트에서는 네이버 · 카카오 지도가 들어가요</small><div class="mb"><a class="gb" href="#" onclick="return false">네이버 지도로 보기</a><a class="gb" href="#" onclick="return false">카카오맵 길찾기</a></div></div>
+  <div>
+   <h2 class="se" style="margin-top:0">경남 김해시 장유 ○○로 ○○<br>메디컬빌딩 3층</h2>
+   <p class="sub2">다온내과의원 (예시 주소) · <button type="button" class="lnk2" id="cpAd">주소 복사</button></p>
+   <ul class="wy">
+    <li><i>🚗</i><div><b>자가용</b><p>내비게이션에 ‘다온내과의원’ 또는 위 주소를 입력하세요.</p></div></li>
+    <li><i>🅿️</i><div><b>주차</b><p>건물 지하 1 – 2층 · 진료 시 2시간 무료 (접수 데스크에서 도장)</p></div></li>
+    <li><i>🚌</i><div><b>버스</b><p>‘장유 ○○사거리’ 정류장 하차 도보 2분 · 1, 7, 58번 (예시)</p></div></li>
+    <li><i>💊</i><div><b>약국</b><p>같은 건물 1층 약국 · 평일 저녁 8시 30분까지</p></div></li>
+    <li><i>♿</i><div><b>편의 시설</b><p>엘리베이터 · 휠체어 대여 · 장애인 주차 2면</p></div></li>
+   </ul>
+  </div>
+ </div>
+</div></article>
+
+</main>
+<footer><div class="w">
+ <b>다온내과의원 (예시)</b> · 장유 내과 · 율하 내과 · 김해 건강검진 · 장유 예방접종 · 장유 야간진료
+ <div class="law">⚖️ 의료법에 따라 이 사이트에는 치료 후기 · 치료 전후 사진 · "최고" 같은 표현을 싣지 않아요. 비급여 진료비는 병원이 신고한 금액을 그대로 안내합니다.</div>
+ 상호 다온내과의원 · 대표 김○○ · 사업자등록번호 000-00-00000 · 김해시 장유 ○○로 ○○ (모두 예시)<br>© 2026 · 이 사이트는 <a href="https://chalkakhome.com/" target="_blank" rel="noopener">찰칵홈</a>이 만든 예시예요 · 병원 이름 · 의료진 · 금액은 가상
+</div></footer>
+<div class="dock"><a href="tel:0550000000">📞 전화</a><a class="m" href="page.html?p=book">📅 예약</a><a href="page.html?p=way">🗺 길찾기</a></div>
+<div class="badge">찰칵홈 예시 · <a href="https://chalkakhome.com/" target="_blank" rel="noopener">만들기 문의</a></div>
+<script>
+(()=>{const G=[["about", "병원 소개", "ABOUT", "img/doctor.jpg", [["hello", "인사말", "page.html?p=hello"], ["doctor", "의료진", "page.html?p=doctor"], ["tour", "병원 둘러보기", "page.html?p=tour"], ["hours", "진료시간 · 비용", "page.html?p=hours"]]], ["care", "진료 안내", "MEDICAL CARE", "img/hero.jpg", [["general", "감기 · 내과 일반", "page.html?p=general"], ["chronic", "혈압 · 당뇨 관리", "page.html?p=chronic"], ["endo", "위 · 대장 내시경", "page.html?p=endo"], ["ultra", "초음파 · 심전도", "page.html?p=ultra"], ["vaccine", "예방접종", "page.html?p=vaccine"]]], ["check", "건강검진", "CHECK-UP", "img/desk.jpg", [["national", "국가건강검진", "page.html?p=national"], ["premium", "추가 검진", "page.html?p=premium"], ["prep", "검진 준비", "page.html?p=prep"]]], ["first", "처음 오시는 분", "FIRST VISIT", "img/desk.jpg", [["flow", "진료 순서", "page.html?p=flow"], ["faq", "자주 묻는 질문", "page.html?p=faq"], ["docs", "서류 발급", "page.html?p=docs"]]], ["visit", "예약 · 오시는 길", "BOOK & VISIT", "img/hero.jpg", [["book", "진료 예약", "page.html?p=book"], ["way", "오시는 길", "page.html?p=way"]]]],DESC={"hello": "좋은 일이 다 오는 동네 내과", "doctor": "내과 · 소화기내과 분과 전문의가 직접 진료해요", "tour": "메디컬빌딩 3층, 엘리베이터 앞", "hours": "평일 저녁 8시 · 토요일 오후 1시까지", "general": "갑자기 아플 때 가까운 내과부터", "chronic": "증상이 없어도 꾸준히, 잊지 않게", "endo": "수면 내시경 · 용종 당일 제거", "ultra": "검사한 날 화면을 같이 보며 설명", "vaccine": "어른도 맞아야 하는 예방접종", "national": "국가건강검진 지정 기관", "premium": "필요한 항목만 골라서", "prep": "검진 전날 이것만 챙기세요", "flow": "접수부터 처방전까지 미리 알려 드려요", "faq": "가장 많이 물어보시는 것", "docs": "실손보험 청구 서류는 무료", "book": "예약하시면 기다림이 줄어요", "way": "건물 지하 주차 2시간 무료"},$=s=>document.querySelector(s);
+const find=p=>{for(const g of G)for(const it of g[4])if(it[0]===p)return[g,it];return null};
+function show(p,push){let f=find(p);if(!f){p='greet';f=find(p)}const[g,it]=f;
+ document.querySelectorAll('main.pw article').forEach(a=>a.hidden=a.dataset.p!==p);
+ $('#svImg').src=g[3];$('#svEn').textContent=g[2];$('#svT').textContent=it[1];$('#svD').textContent=DESC[p]||'';$('#crG').textContent=g[1];$('#crP').textContent=it[1];
+ $('#stabI').innerHTML=g[4].map(x=>`<a href="${x[2]}" class="${x[0]===p?'on':''}">${x[1]}</a>`).join('');
+ document.querySelectorAll('.gnb .gm').forEach((m,i)=>m.classList.toggle('on',G[i]&&G[i][0]===g[0]));
+ document.title=it[1]+' | '+'장유 다온내과의원 (찰칵홈 예시)';
+ if(push)history.pushState(null,'','page.html?p='+p);
+ const hd=document.querySelector('header');if(hd)$('#stab').style.top=hd.offsetHeight+'px';const on=$('#stabI a.on');on&&on.scrollIntoView({block:'nearest',inline:'center'});scrollTo({top:0})}
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="page.html?p="]');
+ if(e.target.closest('#mm a')||e.target.id==='mmx'||e.target.id==='mm')$('#mm').hidden=true;
+ if(!a||e.ctrlKey||e.metaKey)return;e.preventDefault();show(new URLSearchParams(a.getAttribute('href').split('?')[1]).get('p'),1)});
+addEventListener('popstate',()=>show(new URLSearchParams(location.search).get('p')));
+$('#hb')&&$('#hb').addEventListener('click',()=>{$('#mm').hidden=false});
+// 오늘 예배 표시 · 방문 날짜 · 복사 · 신청
+const n=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Seoul'})),d=n.getDay();
+document.querySelectorAll('table tr[data-d]').forEach(r=>{if(r.dataset.d.split(',').includes(String(d)))r.classList.add('today')});
+const s=new Date(n);s.setDate(n.getDate()+((7-d)%7));const sel=$('#sd');if(sel)for(let i=0;i<4;i++){const x=new Date(s);x.setDate(s.getDate()+7*i);const o=document.createElement('option');o.textContent=(x.getMonth()+1)+'월 '+x.getDate()+'일 주일 · 오전 11시'+(i===0?' (이번 주)':'');sel.appendChild(o)}
+const cp=(btn,t)=>{(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{btn.textContent='복사됐어요 ✓'},()=>{btn.textContent='길게 눌러 복사'})};
+$('#cp')&&$('#cp').addEventListener('click',e=>cp(e.target,''));$('#cpAd')&&$('#cpAd').addEventListener('click',e=>cp(e.target,'경남 김해시 장유 ○○로 ○○ 메디컬빌딩 3층'));
+$('#f')&&$('#f').addEventListener('submit',e=>{e.preventDefault();$('#ok').style.display='block';e.target.querySelector('button[type=submit]').disabled=true});
+show(new URLSearchParams(location.search).get('p'));history.replaceState(null,'',location.href)})();
+
+</script>
+</body></html>
