@@ -1,0 +1,22 @@
+const sl=ms=>new Promise(r=>setTimeout(r,ms));const bt=t=>[...document.querySelectorAll('button')].find(b=>b.textContent.trim()===t);
+const fire=el=>{for(const ev of ['pointerdown','mousedown','pointerup','mouseup','click'])el.dispatchEvent(new MouseEvent(ev,{bubbles:true}))};
+const setv=(el,v)=>{const p=el.tagName==='TEXTAREA'?HTMLTextAreaElement.prototype:HTMLInputElement.prototype;Object.getOwnPropertyDescriptor(p,'value').set.call(el,v);el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}))};
+const log=[];
+// step1
+let ti=document.querySelector('input[placeholder^="포트폴리오 제목"]');
+if(ti){for(let i=0;i<20&&!bt('IT·프로그래밍');i++){const b1=[...document.querySelectorAll('button')].find(b=>b.textContent.trim().startsWith('1차 카테고리'));b1&&b1.click();await sl(300)}
+ bt('IT·프로그래밍').click();await sl(400);[...document.querySelectorAll('button')].find(b=>b.textContent.trim().startsWith('2차 카테고리')).click();await sl(500);bt('홈페이지 신규 제작').click();await sl(400);
+ setv(ti,O.title);await sl(300);bt('다음').click();await sl(2500);log.push('s1')}
+// step2 images
+const get=async n=>{const b=await (await fetch(`https://chalkakhome.com/img/kmong/${O.k}/${n}`,{cache:'no-store'})).blob();return new File([b],`${O.k}_${n}`,{type:'image/jpeg'})};
+const inp=document.querySelector('input[type=file]');const dt=new DataTransfer();for(const n of ['1_intro.jpg','2_pc.jpg','3_mobile.jpg','4_screens.jpg'])dt.items.add(await get(n));inp.files=dt.files;inp.dispatchEvent(new Event('change',{bubbles:true}));await sl(2500);
+const oc=HTMLInputElement.prototype.click;const cov=await get('0_cover.jpg');let used=0;HTMLInputElement.prototype.click=function(){if(this.type==='file'&&!used){used=1;const d=new DataTransfer();d.items.add(cov);this.files=d.files;this.dispatchEvent(new Event('change',{bubbles:true}));return}return oc.call(this)};
+const sec=[...document.querySelectorAll('h2,h3,h4,p,span,strong,div')].find(e=>e.childElementCount<=2&&/^대표 이미지/.test(e.textContent.trim()));let box=sec;while(box&&!box.querySelector('button'))box=box.parentElement;[...box.querySelectorAll('button')].find(b=>b.textContent.includes('추가')).click();await sl(2500);
+const ok=bt('추가하기');if(ok)ok.click();await sl(1500);
+// industry
+const cb=document.querySelector('[role=combobox]');fire(cb);await sl(600);const op=[...document.querySelectorAll('[role=option]')].find(e=>e.textContent.trim()===O.ind);fire(op);await sl(500);
+setv(document.querySelector('textarea[placeholder^="프로젝트 목적"]'),O.desc);setv(document.querySelector('input[placeholder="고객사명을 입력해 주세요"]'),O.client);
+const kw=document.querySelector('input[placeholder="키워드를 입력해 주세요"]');for(const k of O.kws){setv(kw,k);await sl(100);for(const t of ['keydown','keypress','keyup'])kw.dispatchEvent(new KeyboardEvent(t,{key:'Enter',code:'Enter',keyCode:13,which:13,bubbles:true}));await sl(250)}
+await sl(400);let tx=document.body.innerText;log.push([tx.match(/대표 이미지\s*\(\d\/1\)/)?.[0],tx.match(/상세 이미지\s*\(\d+\/10\)/)?.[0],tx.match(/키워드\s*\(\d\/5\)/)?.[0],tx.includes(O.ind),tx.includes('제한된 단어')?'BANNED':'ok'].join(' ').replace(/\s+/g,' '));
+if(!tx.includes('제한된 단어')){bt('다음').click();await sl(3000);const card=[...document.querySelectorAll('button')].find(b=>b.textContent.includes('결제 전 시안'));if(card){if(!/border-gray-900/.test(card.className))card.click();await sl(500);log.push('step3 sel:'+/border-gray-900/.test(card.className))}else log.push('no step3')}
+log.join(' | ')
