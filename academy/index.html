@@ -68,7 +68,7 @@ footer{padding:28px 0 40px;color:var(--mu);font-size:13px;text-align:center}
 
 <section id="ask" style="padding-top:20px"><div class="w"><div class="ask">
 <div><h2>무료 시안 신청</h2><p>남겨 주시면 하루 안에 연락드리고, 3일 안에 시안을 보내 드려요.</p><p class="mail">메일로 보내셔도 돼요 · <b>kisthestar1@gmail.com</b><br>(학원 사진 3장 + 학원 이름)</p></div>
-<form id="f"><label>학원 이름<input id="co" required placeholder="예) 장유 ○○영어학원"></label><label>원장님 성함<input id="nm" required placeholder="홍길동"></label><label>연락처 (휴대폰 또는 메일)<input id="ct" required placeholder="010- 또는 메일"></label><label>바라는 점 (선택)<textarea id="ms" rows="2" placeholder="예) 시간표가 학년별로 보였으면 해요"></textarea></label><button id="bt">무료 시안 받기</button><div class="ok" id="ok" hidden></div></form>
+<form id="f"><label>학원 이름<input id="co" required placeholder="예) 장유 ○○영어학원"></label><label>원장님 성함<input id="nm" required placeholder="홍길동"></label><label>연락처 (휴대폰 또는 메일)<input id="ct" required placeholder="010- 또는 메일"></label><label>소개해 주신 곳 (선택)<input id="rf" placeholder="예) 안내지를 전해 준 서점·총판 이름"></label><label>바라는 점 (선택)<textarea id="ms" rows="2" placeholder="예) 시간표가 학년별로 보였으면 해요"></textarea></label><button id="bt">무료 시안 받기</button><div class="ok" id="ok" hidden></div></form>
 </div></div></section>
 <footer>찰칵홈 · 김해 장유 · 동네 학원 · 가게 홈페이지 · kisthestar1@gmail.com</footer>
 <script>
@@ -78,6 +78,6 @@ if(src==="walk"||src==="flyer"){document.getElementById("hi").textContent="장�
 if(a&&NAMES[a]){const n=NAMES[a];document.getElementById("who").textContent=n+" 원장님";document.getElementById("seoName").textContent=n;document.getElementById("co").value=n;document.title=n+" 원장님께 · 찰칵홈 학원 홈페이지 무료 시안"}
 const PROXY="https://script.google.com/macros/s/AKfycbz09Pualc3dVyOYhjRIBLY1lVpeZMpi8YMoUFlBcqWjJ30gKJagm0HAhio3rFaIf_E/exec";
 document.getElementById("f").onsubmit=async e=>{e.preventDefault();const $=id=>document.getElementById(id).value.trim();const ok=document.getElementById("ok"),b=document.getElementById("bt");
- const f={kind:"학원 무료 시안 ("+src+")",company:$("co"),name:$("nm"),contact:$("ct"),url:"",msg:$("ms"),diag:null};b.disabled=true;ok.hidden=false;ok.textContent="보내는 중…";
+ const f={kind:"학원 무료 시안 ("+src+")",company:$("co"),name:$("nm"),contact:$("ct"),url:"",msg:($("rf")?"[소개: "+$("rf")+"] ":"")+$("ms"),diag:null};b.disabled=true;ok.hidden=false;ok.textContent="보내는 중…";
  try{const j=await (await fetch(PROXY,{method:"POST",body:JSON.stringify({op:"hpq",f})})).json();if(j.error)throw new Error(j.error);ok.textContent="✅ 접수됐어요. 하루 안에 연락드릴게요!";e.target.reset()}catch(err){ok.textContent="보내지 못했어요. kisthestar1@gmail.com 으로 보내 주세요."}b.disabled=false};
 </script></body></html>
