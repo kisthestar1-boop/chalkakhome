@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
 Sitemap: https://chalkakhome.com/sitemap.xml
+Disallow: /s/
+Disallow: /pub/
