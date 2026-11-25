@@ -25,7 +25,7 @@
 .note{font-size:12px;color:var(--mu);text-align:center;margin:6px 0 20px}
 @media(max-width:760px){.kpi{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}}
 </style></head><body>
-<div class="top"><div class="lg" id="lg">학</div><b id="an">우리학원</b> 관리 화면<small>시연용 · 예시 데이터</small></div>
+<div class="top"><div class="lg" id="lg">학</div><b id="an">우리학원</b> 관리 화면<small>개발 중 · 미리보기 · 예시 데이터</small></div>
 <div class="w">
 <div class="kpi"><div><span>오늘 출석</span><b id="k1">-</b></div><div><span>이번 달 원비 납부</span><b id="k2">-</b></div><div><span>미납 알림 대상</span><b id="k3">-</b></div><div><span>이번 주 교재 진도</span><b>STAGE 3</b></div></div>
 <div class="grid"><div>
@@ -35,7 +35,7 @@
  <div class="card"><h3>💳 이번 달 원비</h3><div id="pay"></div></div>
  <div class="card"><h3>💬 학부모 알림 문자 <small>자동 작성</small></h3><div class="msg" id="msg"></div><div style="margin-top:10px;display:flex;gap:8px"><button class="btn" id="send">학부모님께 보내기</button><button class="btn" style="background:#64748B" id="next">다른 학생</button></div></div>
 </div></div>
-<div class="note">시연용 화면이에요. 실제 학원에 맞춰 출결·원비·문자·교재 진도를 한 화면에서 관리하도록 만들어 드려요. · 찰칵홈</div>
+<div class="note">지금 개발 중인 학원 관리 프로그램의 미리보기예요. 완성되면 출결·원비·문자·교재 진도를 한 화면에서 관리하실 수 있어요. · 찰칵홈</div>
 </div><div class="toast" id="toast"></div>
 <script>
 const q=new URLSearchParams(location.search),N=(q.get('n')||'우리학원').slice(0,20);
@@ -54,6 +54,6 @@ function draw(){
  document.querySelectorAll('.tg').forEach(b=>b.onclick=()=>{const i=+b.dataset.i;A[i]=NX[A[i]];cur=i;draw()});
 }
 function toast(t){const e=document.getElementById('toast');e.textContent=t;e.style.opacity=1;setTimeout(()=>e.style.opacity=0,1800)}
-document.getElementById('send').onclick=()=>toast('시연용이라 실제로 보내지지는 않아요 🙂');
+document.getElementById('send').onclick=()=>toast('미리보기라 실제로 보내지지는 않아요 🙂');
 document.getElementById('next').onclick=()=>{cur=(cur+1)%S.length;draw()};draw();
 </script></body></html>
