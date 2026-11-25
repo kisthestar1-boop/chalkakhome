@@ -1,0 +1,59 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>학원 관리 화면 미리보기 · 찰칵홈</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--ink:#17202A;--mu:#5B6673;--bg:#F4F6F9;--card:#fff;--ln:#E3E8EE;--c1:#1E5BA8;--c2:#F2683A;--ok:#16A34A;--no:#DC2626;--warn:#D97706}
+*{box-sizing:border-box}body{margin:0;font-family:Pretendard,system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.55}
+.top{background:var(--ink);color:#fff;display:flex;align-items:center;gap:10px;padding:12px 18px}
+.top .lg{width:30px;height:30px;border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center;font-weight:900}
+.top b{font-size:17px}.top small{margin-left:auto;background:#ffffff1f;border-radius:999px;padding:3px 10px;font-size:12px}
+.w{max-width:1100px;margin:0 auto;padding:16px}
+.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}
+.kpi div{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:12px 14px}.kpi span{color:var(--mu);font-size:13px}.kpi b{display:block;font-size:24px}
+.grid{display:grid;grid-template-columns:1.2fr 1fr;gap:12px}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:14px;margin-bottom:12px}
+.card h3{margin:0 0 10px;font-size:16px;display:flex;align-items:center;gap:8px}.card h3 small{margin-left:auto;color:var(--mu);font-weight:500;font-size:12px}
+.st{display:flex;align-items:center;gap:8px;padding:8px 2px;border-bottom:1px solid var(--ln)}.st:last-child{border-bottom:0}
+.st .nm{flex:1}.st .nm small{color:var(--mu);margin-left:6px}
+.tg{border:0;border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.tg.in{background:#DCFCE7;color:var(--ok)}.tg.out{background:#F1F5F9;color:var(--mu)}.tg.late{background:#FEF3C7;color:var(--warn)}
+.pay{font-size:13px;font-weight:700;border-radius:8px;padding:3px 8px}.pay.y{background:#DCFCE7;color:var(--ok)}.pay.n{background:#FEE2E2;color:var(--no)}
+.bar{height:8px;background:#EEF2F6;border-radius:99px;overflow:hidden;width:120px}.bar i{display:block;height:100%;background:var(--c2)}
+.msg{background:#FEF9C3;border-radius:14px 14px 14px 4px;padding:10px 12px;font-size:14px;white-space:pre-line}
+.btn{border:0;background:var(--c1);color:#fff;border-radius:10px;padding:9px 14px;font:inherit;font-weight:700;cursor:pointer}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;opacity:0;transition:opacity .3s;font-size:14px}
+.note{font-size:12px;color:var(--mu);text-align:center;margin:6px 0 20px}
+@media(max-width:760px){.kpi{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}}
+</style></head><body>
+<div class="top"><div class="lg" id="lg">학</div><b id="an">우리학원</b> 관리 화면<small>시연용 · 예시 데이터</small></div>
+<div class="w">
+<div class="kpi"><div><span>오늘 출석</span><b id="k1">-</b></div><div><span>이번 달 원비 납부</span><b id="k2">-</b></div><div><span>미납 알림 대상</span><b id="k3">-</b></div><div><span>이번 주 교재 진도</span><b>STAGE 3</b></div></div>
+<div class="grid"><div>
+ <div class="card"><h3>✅ 오늘 출결 <small>누르면 바뀌어요 (등원 → 지각 → 미등원)</small></h3><div id="att"></div></div>
+ <div class="card"><h3>📘 교재 진도 · 숙제 <small>학원 전용 교재와 연결</small></h3><div id="book"></div></div>
+</div><div>
+ <div class="card"><h3>💳 이번 달 원비</h3><div id="pay"></div></div>
+ <div class="card"><h3>💬 학부모 알림 문자 <small>자동 작성</small></h3><div class="msg" id="msg"></div><div style="margin-top:10px;display:flex;gap:8px"><button class="btn" id="send">학부모님께 보내기</button><button class="btn" style="background:#64748B" id="next">다른 학생</button></div></div>
+</div></div>
+<div class="note">시연용 화면이에요. 실제 학원에 맞춰 출결·원비·문자·교재 진도를 한 화면에서 관리하도록 만들어 드려요. · 찰칵홈</div>
+</div><div class="toast" id="toast"></div>
+<script>
+const q=new URLSearchParams(location.search),N=(q.get('n')||'우리학원').slice(0,20);
+document.getElementById('an').textContent=N;document.getElementById('lg').textContent=N[0];document.title=N+' 관리 화면 미리보기 · 찰칵홈';
+const S=[["김하린","중2"],["이도윤","중2"],["박서준","중1"],["최지아","중3"],["정우진","중2"],["한유나","중1"]];
+const A=["in","in","late","in","out","in"],P=[1,1,0,1,1,0],B=[["경우의 수","STAGE 3",70],["경우의 수","STAGE 2",45],["정수와 유리수","STAGE 4",90],["이차방정식","STAGE 1",20],["경우의 수","STAGE 3",65],["정수와 유리수","STAGE 2",40]];
+const L={in:"등원",late:"지각",out:"미등원"},NX={in:"late",late:"out",out:"in"};let cur=0;
+function draw(){
+ document.getElementById('att').innerHTML=S.map((s,i)=>`<div class=st><span class=nm>${s[0]}<small>${s[1]}</small></span><button class="tg ${A[i]}" data-i=${i}>${L[A[i]]}</button></div>`).join('');
+ document.getElementById('pay').innerHTML=S.map((s,i)=>`<div class=st><span class=nm>${s[0]}<small>${s[1]}</small></span><span class="pay ${P[i]?'y':'n'}">${P[i]?'납부 완료':'미납'}</span></div>`).join('');
+ document.getElementById('book').innerHTML=S.map((s,i)=>`<div class=st><span class=nm>${s[0]}<small>${B[i][0]} · ${B[i][1]}</small></span><span class=bar><i style="width:${B[i][2]}%"></i></span></div>`).join('');
+ document.getElementById('k1').textContent=A.filter(x=>x!='out').length+' / '+S.length;
+ document.getElementById('k2').textContent=P.filter(Boolean).length+' / '+S.length;document.getElementById('k3').textContent=P.filter(x=>!x).length+'명';
+ const s=S[cur],a=A[cur];
+ document.getElementById('msg').textContent=`[${N}] ${s[0]} 학생 오늘 ${L[a]} 알림\n${a=='out'?'오늘 수업에 오지 않았어요. 확인 부탁드려요.':'오늘 '+B[cur][0]+' '+B[cur][1]+'까지 공부했어요. 숙제: 교재 다음 STAGE 풀기'}${P[cur]?'':'\n이번 달 원비 안내드려요.'}`;
+ document.querySelectorAll('.tg').forEach(b=>b.onclick=()=>{const i=+b.dataset.i;A[i]=NX[A[i]];cur=i;draw()});
+}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.style.opacity=1;setTimeout(()=>e.style.opacity=0,1800)}
+document.getElementById('send').onclick=()=>toast('시연용이라 실제로 보내지지는 않아요 🙂');
+document.getElementById('next').onclick=()=>{cur=(cur+1)%S.length;draw()};draw();
+</script></body></html>
