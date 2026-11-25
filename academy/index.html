@@ -73,7 +73,7 @@ footer{padding:28px 0 40px;color:var(--mu);font-size:13px;text-align:center}
 <footer>찰칵홈 · 김해 장유 · 동네 학원 · 가게 홈페이지 · kisthestar1@gmail.com</footer>
 <script>
 const NAMES={"ybm-ingloo":"YBM잉글루영어수학학원","hansuwi":"한수위영어수학전문학원","gnb":"삼문GnB영어전문학원","gcamp":"지캠프클래스 김해장유학원","ilta":"일타수학학원","hansaem-math":"한선생수학학원","julies":"줄리스 잉글리쉬톡 영어교습소","ppuri":"뿌리깊은수학학원","dehan":"더한수학학원"};
-const q=new URLSearchParams(location.search),a=q.get("a"),src=q.get("src")||(a?"mail_"+a:"direct");
+const q=new URLSearchParams(location.search),a=q.get("a"),fr=q.get("from");if(fr){try{localStorage.setItem("chk_from",fr)}catch(_){}}let fr2=fr;if(!fr2){try{fr2=localStorage.getItem("chk_from")}catch(_){}}var src=q.get("src")||(fr2?"총판_"+fr2:(a?"mail_"+a:"direct"));
 if(src==="walk"||src==="flyer"){document.getElementById("hi").textContent="장유 · 율하 원장님 · 사장님께";document.querySelector("h1").innerHTML='원장님 가게 홈페이지,<br><em>시안부터 먼저</em> 보여 드릴게요'}
 if(a&&NAMES[a]){const n=NAMES[a];document.getElementById("who").textContent=n+" 원장님";document.getElementById("seoName").textContent=n;document.getElementById("co").value=n;document.title=n+" 원장님께 · 찰칵홈 학원 홈페이지 무료 시안"}
 const PROXY="https://script.google.com/macros/s/AKfycbz09Pualc3dVyOYhjRIBLY1lVpeZMpi8YMoUFlBcqWjJ30gKJagm0HAhio3rFaIf_E/exec";
